@@ -7101,6 +7101,9 @@ body#tinymce {
       @media screen and (min-width: 40em) {
         .entry-content section.intro p {
           font-size: 3.5em; } }
+      .entry-content section.intro em {
+        font-style: normal;
+        font-weight: 700; }
       .entry-content section.intro strong {
         font-family: "abril-fatface", "Garamond Bold", Times, serif;
         font-weight: 500;
