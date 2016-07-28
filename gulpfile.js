@@ -13,7 +13,7 @@ var del         = require('del');
 
 // Enter URL of your local server here
 // Example: 'http://localwebsite.dev'
-var URL = '';
+var URL = 'http://127.0.0.1/happy-place/';
 
 // Check for --production flag
 var isProduction = !!(argv.production);

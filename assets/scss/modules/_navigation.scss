@@ -4,9 +4,9 @@
   @include show-for(medium);
 }
 
-#mobile-menu, .title-bar {
-  @include hide-for(medium);
-}
+// #mobile-menu, .title-bar {
+//   @include hide-for(medium);
+// }
 
 /* Mobile menu */
 

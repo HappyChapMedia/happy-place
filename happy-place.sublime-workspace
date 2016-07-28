@@ -1,0 +1,522 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"bac",
+				"background-color	(_navigation.scss)"
+			],
+			[
+				"font-st",
+				"font-style"
+			],
+			[
+				"letter",
+				"letter-spacing"
+			],
+			[
+				"header",
+				"header-font-family"
+			],
+			[
+				"border",
+				"border-bottom"
+			],
+			[
+				"40px",
+				"40px"
+			],
+			[
+				"background",
+				"background-size"
+			],
+			[
+				"rel",
+				"relative"
+			],
+			[
+				"po",
+				"position"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"w",
+				"width"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"padding",
+				"padding-bottom"
+			],
+			[
+				"rgb",
+				"rgba()"
+			],
+			[
+				"le",
+				"letter-spacing"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"font-",
+				"font-weight"
+			],
+			[
+				"font-s",
+				"font-size"
+			],
+			[
+				"back",
+				"background-size"
+			],
+			[
+				"padd",
+				"padding-bottom"
+			],
+			[
+				"rg",
+				"rgba()"
+			],
+			[
+				"mo",
+				"moz-border-radius"
+			],
+			[
+				"line",
+				"line-height"
+			],
+			[
+				"white",
+				"white-space"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "Package Control: ",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Add Repository"
+			],
+			[
+				"Package Control: install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 480.0
+	},
+	"console":
+	{
+		"height": 146.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/D/Ampps/www/happy-place/wp-content/themes/happy-place"
+	],
+	"file_history":
+	[
+		"/D/Ampps/www/lyndale/wp-content/themes/lyndale/assets/javascript/custom/slick-gallery.js",
+		"/D/Ampps/www/lyndale/wp-content/themes/lyndale/library/responsive-images.php",
+		"/D/Ampps/www/lyndale/wp-content/themes/lyndale/library/custom-functions.php",
+		"/D/Ampps/www/lyndale/wp-content/themes/lyndale/template-parts/featured-gallery.php",
+		"/D/Ampps/www/lyndale/wp-content/themes/lyndale/page-templates/page-product.php",
+		"/D/Ampps/www/lyndale/wp-content/themes/lyndale/footer.php",
+		"/D/Ampps/www/lyndale/wp-content/themes/lyndale/header.php",
+		"/D/Ampps/www/lyndale/wp-content/themes/lyndale/assets/javascript/custom/slick.js",
+		"/D/Ampps/www/lyndale/wp-content/themes/lyndale/assets/scss/components/_slick-slider-theme.scss",
+		"/D/Ampps/www/lyndale/wp-content/themes/lyndale/assets/scss/components/_slick-slider.scss",
+		"/D/Ampps/www/lyndale/wp-content/themes/lyndale/assets/scss/foundation.scss",
+		"/D/Ampps/www/lyndale/wp-content/themes/lyndale/node_modules/slick-carousel/slick/slick-theme.scss",
+		"/D/Ampps/www/lyndale/wp-content/themes/lyndale/style.css",
+		"/D/Ampps/www/lyndale/wp-content/themes/lyndale/assets/scss/global/_settings.scss",
+		"/D/Ampps/www/lyndale/wp-content/themes/lyndale/assets/scss/modules/_navigation.scss",
+		"/D/Ampps/www/lyndale/wp-content/themes/lyndale/assets/scss/modules/_masthead.scss",
+		"/D/Ampps/www/lyndale/wp-content/themes/lyndale/assets/scss/templates/_page.scss",
+		"/D/Ampps/www/lyndale/wp-content/themes/lyndale/assets/scss/templates/_front.scss",
+		"/D/Ampps/www/lyndale/wp-content/themes/lyndale/assets/scss/global/_mixins.scss",
+		"/D/Ampps/www/lyndale/wp-content/themes/lyndale/assets/scss/modules/_sidebar.scss",
+		"/D/Ampps/www/lyndale/wp-content/themes/lyndale/pages/windows.html",
+		"/D/Ampps/www/lyndale/wp-content/themes/lyndale/single-faqs.php",
+		"/D/Ampps/www/lyndale/wp-content/themes/lyndale/page-templates/page-product-windows.php",
+		"/C/Users/Casey/Desktop/object-cache.php",
+		"/C/Users/Casey/Downloads/acf-export-2016-06-22.json",
+		"/D/Ampps/www/lyndale/wp-content/themes/lyndale/assets/scss/templates/_single-FAQ.scss",
+		"/D/Ampps/www/lyndale/wp-content/themes/lyndale/assets/scss/templates/_archive-faqs.scss",
+		"/D/Ampps/www/lyndale/wp-content/themes/lyndale/assets/scss/components/_employment.scss",
+		"/D/Ampps/www/lyndale/wp-content/themes/lyndale/page-templates/page-faqs.php",
+		"/D/Ampps/www/lyndale/wp-content/themes/lyndale/assets/javascript/custom/joyride-demo.js",
+		"/D/Ampps/www/lyndale/wp-content/themes/lyndale/archive-faqs.php",
+		"/D/Ampps/www/lyndale/wp-content/mu-plugins/custom-post-type.php",
+		"/D/Ampps/www/lyndale/wp-content/themes/lyndale/page-templates/front.php",
+		"/D/Ampps/www/lyndale/wp-content/themes/lyndale/library/navigation.php",
+		"/D/Ampps/www/lyndale/wp-content/themes/lyndale/functions.php",
+		"/D/Ampps/www/lyndale/wp-content/themes/lyndale/sidebar.php",
+		"/D/Ampps/www/lyndale/wp-content/themes/lyndale/page-templates/page-employment.php",
+		"/D/Ampps/www/lyndale/wp-content/themes/lyndale/library/custom-post-FAQs.php",
+		"/D/Ampps/www/sterling/wp-content/plugins/preserved-html-editor-markup-plus/preserved_markup_plus.php",
+		"/D/Ampps/www/lyndale/wp-content/themes/lyndale/assets/scss/components/_featured-image.scss",
+		"/D/Ampps/www/lyndale/wp-content/themes/lyndale/template-parts/featured-image.php",
+		"/D/Ampps/www/lyndale/wp-content/themes/lyndale/assets/images/svg-defs.svg",
+		"/D/Ampps/www/lyndale/wp-content/themes/lyndale/gulpfile.js",
+		"/D/Ampps/www/skagitfoodcoop/wp-content/themes/eat-beets/scss/config/_settings.scss",
+		"/D/Ampps/www/skagitfoodcoop/wp-content/themes/eat-beets/style.css",
+		"/D/Ampps/www/skagitfoodcoop/wp-content/themes/eat-beets/scss/site/_structure.scss",
+		"/D/Ampps/www/skagitfoodcoop/wp-content/themes/eat-beets/footer.php",
+		"/D/Ampps/www/skagitfoodcoop/wp-content/themes/eat-beets/header.php",
+		"/D/Ampps/www/skagitfoodcoop/wp-content/themes/eat-beets/template-home.php",
+		"/D/Ampps/www/skagitfoodcoop/wp-content/themes/eat-beets/template-sales-specials.php",
+		"/D/Ampps/www/skagitfoodcoop/wp-content/themes/eat-beets/functions.php",
+		"/D/Ampps/www/skagitfoodcoop/wp-content/themes/eat-beets/pages/Learn/newsletter.html",
+		"/D/Ampps/www/skagitfoodcoop/wp-content/themes/eat-beets/parts/shop-sales-specials-new.php",
+		"/D/Ampps/www/skagitfoodcoop/wp-content/themes/eat-beets/scss/config/_variables.scss",
+		"/D/Ampps/www/skagitfoodcoop/wp-content/themes/eat-beets/category-coop-brew-corner.php",
+		"/D/Ampps/www/skagitfoodcoop/wp-content/themes/eat-beets/single-post.php",
+		"/D/Ampps/www/skagitfoodcoop/wp-content/themes/eat-beets/scss/config/_colors.scss",
+		"/D/Ampps/www/skagitfoodcoop/wp-content/themes/eat-beets/category-sales-specials.php",
+		"/D/Ampps/www/skagitfoodcoop/wp-content/themes/eat-beets/single-sales-specials.php",
+		"/D/Ampps/www/skagitfoodcoop/wp-content/themes/eat-beets/library/theme-support.php",
+		"/D/Ampps/www/skagitfoodcoop/wp-content/themes/eat-beets/template-home-12-28.php",
+		"/C/Users/Casey/Desktop/wp-config.php",
+		"/D/Ampps/www/skagitfoodcoop/wp-content/themes/eat-beets/template-home-live.php",
+		"/D/Ampps/www/skagitfoodcoop/wp-content/themes/eat-beets/template-home-local.php",
+		"/D/Ampps/www/skagitfoodcoop/wp-content/themes/eat-beets/page.php",
+		"/D/Ampps/www/skagitfoodcoop/wp-content/themes/eat-beets/page.php.bak.php",
+		"/D/Ampps/www/skagitfoodcoop/wp-content/themes/eat-beets/js/custom.js",
+		"/D/Ampps/www/skagitfoodcoop/wp-content/themes/eat-beets/pages/sales-specials",
+		"/D/Ampps/www/skagitfoodcoop/wp-content/themes/eat-beets/parts/shop-sales-specials.php",
+		"/D/Ampps/www/skagitfoodcoop/wp-content/themes/eat-beets/parts/natural-enquirer.php",
+		"/D/Ampps/www/skagitfoodcoop/wp-content/themes/eat-beets/template-sales-specials-OLD.php",
+		"/D/Ampps/www/skagitfoodcoop/wp-config.php",
+		"/D/Ampps/www/licensing-pros/wp-content/themes/licensing_pros/style.css",
+		"/D/Ampps/www/licensing-pros/wp-content/themes/licensing_pros/css/all.css",
+		"/D/Ampps/www/licensing-pros/wp-content/themes/licensing_pros/pages/licensing.html",
+		"/D/Ampps/www/licensing-pros/wp-content/themes/licensing_pros/js/main.js",
+		"/D/Ampps/www/licensing-pros/wp-content/themes/licensing_pros/header.php",
+		"/D/Ampps/www/licensing-pros/wp-content/themes/licensing_pros/framework/headers/header-v4.php",
+		"/D/Ampps/www/licensing-pros/wp-content/themes/licensing_pros/pages/home.html",
+		"/D/Ampps/www/licensing-pros/wp-content/themes/licensing_pros/css/media.css",
+		"/D/Ampps/www/licensing-pros/wp-content/themes/licensing_pros/footer.php",
+		"/D/Ampps/www/licensing-pros/wp-content/themes/licensing_pros/pages/faq.html",
+		"/D/Ampps/www/licensing-pros/wp-content/themes/licensing_pros/pages/contact.html",
+		"/D/Ampps/www/licensing-pros/wp-content/themes/licensing_pros/pages/aviation.html",
+		"/D/Ampps/www/licensing-pros/wp-content/themes/licensing_pros/pages/about-newest.html",
+		"/D/Ampps/www/licensing-pros/wp-content/themes/licensing_pros/single.php",
+		"/D/Ampps/www/licensing-pros/wp-content/themes/licensing_pros/pages/about.html",
+		"/D/Ampps/www/licensing-pros/wp-content/themes/licensing_pros/pages/about-newest",
+		"/D/Ampps/www/licensing-pros/wp-content/themes/licensing_pros/pages/home-old.html",
+		"/D/Ampps/www/run-padden/wp-config.php",
+		"/D/Ampps/www/licensing-pros/wp-content/themes/licensing_pros/lp.sublime-project",
+		"/C/Users/caseyb/Desktop/header.php",
+		"/C/WORK/LOCAL/mafia_8_22_NEW/iwpserver/htdocs/wordpress/wp-content/themes/mafia/team_page.php",
+		"/C/WORK/LOCAL/lp/iwpserver/htdocs/wordpress/wp-content/themes/licensing_pros/header.php",
+		"/C/Users/caseyb/Desktop/wp-config.php",
+		"/C/Users/caseyb/Desktop/installer.php",
+		"/C/WORK/LOCAL/lp/iwpserver/htdocs/wordpress/wp-content/themes/licensing_pros/framework/custom_functions.php",
+		"/C/WORK/LOCAL/lp/iwpserver/htdocs/wordpress/wp-content/themes/licensing_pros/footer.php",
+		"/C/WORK/LOCAL/lp/iwpserver/htdocs/wordpress/wp-content/themes/licensing_pros/shortcodes.php",
+		"/C/WORK/LOCAL/lp/iwpserver/htdocs/wordpress/wp-content/themes/licensing_pros/faqs.php",
+		"/C/WORK/LOCAL/lp/iwpserver/htdocs/wordpress/wp-content/themes/licensing_pros/single.php",
+		"/C/Users/caseyb/Desktop/bytes/index.html",
+		"/C/WORK/LOCAL/lp/iwpserver/htdocs/wordpress/wp-content/themes/licensing_pros/css/all.css",
+		"/C/WORK/LOCAL/lp/iwpserver/htdocs/wordpress/wp-content/themes/licensing_pros/style.css",
+		"/C/WORK/LOCAL/lp/iwpserver/htdocs/wordpress/wp-content/themes/licensing_pros/index.php",
+		"/C/WORK/LOCAL/lp/iwpserver/htdocs/wordpress/wp-content/themes/licensing_pros/framework/headers/header-v4.php",
+		"/C/Users/caseyb/Desktop/default.php",
+		"/C/WORK/LOCAL/lp/iwpserver/htdocs/wordpress/wp-content/themes/licensing_pros/admin/front-end/options.php",
+		"/C/WORK/LOCAL/lp/iwpserver/htdocs/wordpress/wp-content/themes/licensing_pros/page.php",
+		"/C/WORK/CLIENTS/Lyndale/Website/Avada_Theme/Lisc_Pros/Lisc_Pros/shortcodes.php",
+		"/C/WORK/LOCAL/lp/iwpserver/htdocs/wordpress/wp-content/themes/licensing_pros/functions.php",
+		"/C/WORK/LOCAL/mafia/iwpserver/htdocs/mafiaracing/wp-content/themes/mafia/header.php",
+		"/C/WORK/LOCAL/lp/iwpserver/htdocs/wordpress/wp-config.php",
+		"/C/WORK/LOCAL/hog/iwpserver/htdocs/wordpress/wp-content/themes/copper-hog/style.css"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			"D:\\Ampps\\www\\skagitfoodcoop\\wp-content\\themes\\eat-beets",
+			"D:\\Ampps\\www\\licensing-pros\\wp-content\\themes\\licensing_pros"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"title",
+			"callout",
+			"call-out",
+			"and Doors",
+			"<li>",
+			"<?php echo get_stylesheet_directory_uri(); ?>",
+			"strong",
+			"<img src=\"",
+			"style=\"padding-left: 30px;",
+			"single-faq",
+			"accordion-toggle",
+			"&",
+			"href=\"",
+			">",
+			"href=\"",
+			"broker",
+			":00",
+			"p",
+			"(360)",
+			"</span>",
+			".",
+			">\n",
+			"span",
+			"image",
+			"repeater_field_name",
+			"left",
+			"lyndale_products_menu",
+			"sub-footer",
+			"footer",
+			"http://www.facebook.com/pages/Mount-Vernon-WA/Skagit-Valley-Food-Co-op/119521910103",
+			"span",
+			"header",
+			"prefix-button",
+			"prefix",
+			"label",
+			"newsletter",
+			"contact",
+			"constant",
+			"learn-page",
+			"cc_",
+			"panel",
+			"em",
+			"orbit",
+			"sales-specials",
+			"member-owner",
+			"home",
+			"go",
+			"Go to",
+			"go",
+			".",
+			"header-v4",
+			"font-weight: 100",
+			"two_third",
+			"cta",
+			"h2",
+			"10px",
+			"h5.toggle",
+			"main",
+			"v4",
+			"home",
+			"logo",
+			"Aviation Insurance Association",
+			"Here are some commonly asked questions answered by our insurance licensing professionals. Feel free to <strong><a title=\"Contact Us\" href=\"http://127.0.0.1/licensing-pros/contact/\">contact us </a></strong>with any additional questions you may have!Here are some commonly asked questions answered by our insurance licensing professionals. Feel free to <strong><a title=\"Contact Us\" href=\"http://127.0.0.1/licensing-pros/contact/\">contact us </a></strong>with any additional questions you may have!",
+			"h5.toggle",
+			"including",
+			"toggle",
+			"person",
+			"wordpress",
+			"image-extras",
+			"call",
+			"post-content h3",
+			"post-content",
+			"h2",
+			"page-title-conta",
+			"post-content h2",
+			".page-title h1",
+			"page-title",
+			"(151,176,76, 1)",
+			"rgba(151,176,76, 1);",
+			");",
+			"#97b04c",
+			"a0ce4e",
+			"hr",
+			"-webkit-margin",
+			"hr",
+			"column",
+			"2col",
+			"col",
+			"footer-area h3",
+			"footer",
+			"toggle",
+			"nav",
+			"slide",
+			"slider",
+			"slide",
+			"holder",
+			"linked",
+			"cleints",
+			"comment-submit",
+			"toggle",
+			"tottle",
+			"toggle",
+			"h1",
+			"google",
+			"person",
+			"phone",
+			"title",
+			"transition",
+			"tagline",
+			"search"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"rgba(151,176,76, 1)",
+			"rgba(151,176,76, 1);",
+			"97b04c"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		},
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.5,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "happy-place.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"D:\\Ampps\\www\\c-square\\wp-content\\themes\\c-square\\c-square.sublime-project"
+			],
+			[
+				"ster",
+				"D:\\Ampps\\www\\sterling\\wp-content\\themes\\sterling\\sterling.sublime-project"
+			]
+		],
+		"width": 620.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 1,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 311.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

@@ -1,0 +1,12 @@
+
+#masthead {
+	.branding {
+		@include grid-row();
+		text-align: center;
+		h1.logo {
+			font-size: 	8rem;
+			text-transform: uppercase;
+		}
+	}
+	
+}
