@@ -18,6 +18,7 @@
 				<?php do_action( 'foundationpress_after_footer' ); ?>
 			</footer>
 		</div>
+		<?php get_template_part('template-parts/hc-colophon') ?>
 
 		<?php do_action( 'foundationpress_layout_end' ); ?>
 
@@ -29,6 +30,9 @@
 
 
 <?php wp_footer(); ?>
+<script async defer
+	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCddZlpuvo3zZbvmRZviLdWbNEaQ3W48UQ&callback=initialize">
+</script>
 <?php do_action( 'foundationpress_before_closing_body' ); ?>
 </body>
 </html>

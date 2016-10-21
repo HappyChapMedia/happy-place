@@ -1,59 +1,96 @@
 // Page header
 #front-hero {
+	background: darken($yellow, 10%);
+	display: inline-block;
+	width: 100%;
+	.branding-contain {
+		background: darken($yellow, 12%);
+		@include breakpoint(large) {
+			@include grid-column(73%);
+		}
+		.branding {
+			text-align: center;
+			h1.logo {
+				// font-size: 	8rem;
+				text-transform: uppercase;
+				padding: 1em 0;
+				margin: 0;
+				.cls-1 {
+					fill: $white;
+				}
+			}
+		}
+	}
+	.address-tag-contain {
+		background: $blue;
+		@include breakpoint(large) {
+			@include grid-column(27%);
+		}
+		  
+		.address-tag {
+			padding: 3em 2.5em;
+			text-align: center;
+			p {
+				color: $white;
+				margin: 0;
+			}
+			.address {
+				.cls-1 {
+					fill: $white;
+				}
+				p.bham {
+					font-size: 1.5em;
+					font-family: $header-font-family;
+					letter-spacing: .25em;
+					text-transform: uppercase;
+				}
+			}
+			p.tagline {
+				@include breakpoint(medium) {
+					font-size: 3.5em;
+				}
+				padding: 1em 0;
+			}
+			p.for-lease {
+				background: $alert-color;
+				padding: .05em .5em;
+				font-size: 2.5em;
+				font-weight: 500;
+				text-transform: uppercase;
+				letter-spacing: .15em;
+				display: inline-block;
+				border: solid 8px $white;
+				// margin-top: 50%;
+			}
+		}
+	}
+
+}
+.featured-gallery {
+	display: block;
 	figure {
 		margin: 0;
 	}
-	.marketing {
-		@include grid-row();
-		max-width: 55rem;
-	}
-
-	// @include breakpoint(small) {
-	// 	background: url('../images/space-hero-mobile') bottom center;
-	// 	background-size: cover;
-	// 	background-position: bottom;
-	// 	padding: rem-calc(65%) 0;
-	// 	margin: 0 0 rem-calc(32);
-	// 	height: auto;
-	// 	position: relative;
-	// 	text-align: left;
-	// }
-
-	@include breakpoint(medium) {
-		// background: url('../images/space-hero.jpg') bottom center;
-		// background-size: cover;
-		// background-position: center;
-		// height: rem-calc(685);
-		// margin: 0 0 rem-calc(72);
-	}
-
-
-
 }
 
 // Intro
 .entry-content {
-	h2 {
-		font-size: 8em;
-		text-transform: uppercase;
-		letter-spacing: .08;
-	}
-	text-align: center;
+	display: block;
+	// h2 {
+	// 	font-size: 8em;
+	// 	text-transform: uppercase;
+	// 	letter-spacing: .08;
+	// }
 	section {
-		min-height: 600px;
+		// min-height: 600px;
 		.section-contain {
 			@include grid-row();
 			padding: 4em;
 		}
-		p {
-			font-size: 2em;
-			font-weight: 100;
-		}
-
 		&.intro {
 			background: $blue;
 			color: $white;
-			padding: 6em 0 0;
+			text-align: justify;
 			p {
 				// font-family: $serif;
 				@include breakpoint(medium) {
@@ -69,9 +106,24 @@
 				font-weight: 500;
 				text-transform: uppercase;
 			}
+			a {
+				color: darken($blue, 10%);
+			}
 		}
 		&.why {
 			background: $yellow;
+		}
+	}
+	.usps {
+		section {
+			@include breakpoint(large) {
+			    @include grid-column(4);
+			}
+			li {
+				font-size: 1.3em;
+				list-style: square;
+				margin-left: .5em;
+			}
 		}
 	}
 }

@@ -1,0 +1,93 @@
+.hc-colophon {
+	// position: absolute;
+	// bottom: 0;
+	display: block;
+	width: 100%;
+	background-color: darken($white, 8%);
+	padding: .15em 0;
+	transition: all ease-in-out 800ms;
+	&:hover {
+		background-color: #00A2A6;
+		transition: all ease-in-out 800ms;
+	}
+	.colophon-container {
+		@include grid-row();
+		text-align: center;
+		transition: all ease-in-out 800ms;
+		&:hover #hc-icon {
+			width: 25px;
+			height: 25px;
+			opacity: 1;
+			bottom: 0px;
+			margin: 10px 0;
+			transition: all ease-in-out 800ms;
+		}
+		#hc-icon {
+			width: 0px;
+			height: 0px;
+			opacity: 0;
+			position: relative;
+			bottom: -10px;
+			margin-top: -10px;
+			transition: all ease-in-out 800ms;
+			&:hover {
+				width: 35px;
+				height: 35px;
+				transition: all ease-in-out 400ms;
+			}
+			.hc-icon-fill {
+				&:hover {
+					fill: darken(#F04D27, 10%);
+					transition: all ease-in-out 200ms;
+				}
+			}
+		}
+		.hc-icon-fill {
+			fill: darken($white, 20%);
+			transition: all ease-in-out 800ms;
+			// display: inline;
+				&:hover {
+					fill: darken(#F04D27, 10%);
+					transition: all ease-in-out 200ms;
+				}
+		}
+		.hc-credit {
+			color: darken($white, 25%);
+			font-size: 1.5em;
+			// letter-spacing: .1em;
+			// text-transform: uppercase;
+			// display: none;
+			transition: all ease-in-out 800ms;
+
+			a {
+				color: darken($white, 20%);
+				font-weight: 700;
+				transition: all ease-in-out 800ms;
+				strong {
+					font-weight: 700;
+				}
+			}
+		}
+		&:hover > .hc-credit {
+			color: $white;
+			opacity: 1;
+			// display: inline;
+			position: relative;
+			right: 0px;
+			transition: all ease-in-out 800ms;
+			a {
+				color: $white;
+				&:hover {
+					color: darken(#F04D27, 10%);
+					transition: all ease-in-out 200ms;
+				}
+				transition: all ease-in-out 800ms;
+				border-bottom: dotted 1px $white;
+			}
+		}
+		&:hover .hc-icon-fill {
+			fill: $white;
+			transition: all ease-in-out 800ms;
+		}
+	} // colophon-container
+} // hc-colophon
