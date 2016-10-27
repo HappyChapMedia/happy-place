@@ -2501,7 +2501,7 @@ html {
 body {
   padding: 0;
   margin: 0;
-  font-family: "acumin-pro-extra-condensed", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: Roboto, Arial, sans-serif;
   font-weight: normal;
   line-height: 1.5;
   color: #0a0a0a;
@@ -7285,7 +7285,7 @@ body.lb-disable-scrolling {
     background: #f8ee6f; }
     @media screen and (min-width: 64em) {
       #front-hero .branding-contain {
-        width: 73%;
+        width: 65%;
         float: left;
         padding-left: 0.625rem;
         padding-right: 0.625rem; } }
@@ -7308,7 +7308,7 @@ body.lb-disable-scrolling {
     background: #54c2b6; }
     @media screen and (min-width: 64em) {
       #front-hero .address-tag-contain {
-        width: 27%;
+        width: 35%;
         float: left;
         padding-left: 0.625rem;
         padding-right: 0.625rem; } }
@@ -7320,23 +7320,20 @@ body.lb-disable-scrolling {
         #front-hero .address-tag-contain:last-child:not(:first-child) {
           float: right; } }
     #front-hero .address-tag-contain .address-tag {
-      padding: 3em 2.5em;
+      padding: 0em 2.5em;
       text-align: center; }
       #front-hero .address-tag-contain .address-tag p {
         color: #fefefe;
         margin: 0; }
-      #front-hero .address-tag-contain .address-tag .address .cls-1 {
-        fill: #fefefe; }
-      #front-hero .address-tag-contain .address-tag .address p.bham {
-        font-size: 1.5em;
-        font-family: "acumin-pro-extra-condensed", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-        letter-spacing: .25em;
-        text-transform: uppercase; }
       #front-hero .address-tag-contain .address-tag p.tagline {
-        padding: 1em 0; }
+        font-family: "acumin-pro-extra-condensed", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+        padding: 1em 0 0; }
         @media screen and (min-width: 40em) {
           #front-hero .address-tag-contain .address-tag p.tagline {
-            font-size: 3.5em; } }
+            font-size: 5.5em; } }
+        #front-hero .address-tag-contain .address-tag p.tagline small {
+          font-size: .35em;
+          font-weight: 100; }
       #front-hero .address-tag-contain .address-tag p.for-lease {
         background: #ec5840;
         padding: .05em .5em;
@@ -7354,6 +7351,34 @@ body.lb-disable-scrolling {
 
 .entry-content {
   display: block; }
+  .entry-content section h2 {
+    font-size: 6em;
+    margin-bottom: .5em;
+    color: #54c2b6; }
+    .entry-content section h2 strong {
+      font-family: "abril-fatface", "Garamond Bold", Times, serif;
+      color: #ec5840; }
+  .entry-content section h3 {
+    text-transform: uppercase;
+    text-align: center;
+    padding: .5em;
+    margin: 1em 0 .75em; }
+    .entry-content section h3 strong {
+      font-family: "abril-fatface", "Garamond Bold", Times, serif;
+      color: #ec5840;
+      padding: 0 .15em;
+      text-transform: none; }
+  .entry-content section ul {
+    margin: 0; }
+    .entry-content section ul li {
+      list-style: none;
+      background: #fefefe;
+      padding: 1em 1.5em .75em;
+      margin: 1em 0;
+      display: inline-block;
+      width: 100%; }
+      .entry-content section ul li h4 {
+        margin: 0; }
   .entry-content section .section-contain {
     max-width: 75rem;
     margin-left: auto;
@@ -7365,12 +7390,14 @@ body.lb-disable-scrolling {
     .entry-content section .section-contain::after {
       clear: both; }
   .entry-content section.intro {
-    background: #54c2b6;
+    background: #3adb76;
     color: #fefefe;
     text-align: justify; }
-    @media screen and (min-width: 40em) {
-      .entry-content section.intro p {
-        font-size: 3.5em; } }
+    .entry-content section.intro p {
+      font-family: "acumin-pro-extra-condensed", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; }
+      @media screen and (min-width: 40em) {
+        .entry-content section.intro p {
+          font-size: 3.5em; } }
     .entry-content section.intro em {
       font-style: normal;
       font-weight: 700; }
@@ -7382,23 +7409,92 @@ body.lb-disable-scrolling {
       color: #3ca79c; }
   .entry-content section.why {
     background: #fbf5a9; }
-  @media screen and (min-width: 64em) {
-    .entry-content .usps section {
-      width: 33.33333%;
-      float: left;
-      padding-left: 0.625rem;
-      padding-right: 0.625rem; } }
+  .entry-content .usps {
+    background: #54c2b6; }
+    .entry-content .usps h2, .entry-content .usps h3 {
+      color: #fefefe; }
+    @media screen and (min-width: 40em) {
+      .entry-content .usps section ul {
+        -webkit-columns: 2;
+           -moz-columns: 2;
+                columns: 2;
+        -webkit-column-gap: 5em;
+           -moz-column-gap: 5em;
+                column-gap: 5em; } }
+    .entry-content .usps section ul li h4 {
+      font-size: 1.85em;
+      text-transform: uppercase; }
+  .entry-content .uses {
+    background: #fefefe; }
+    .entry-content .uses ul {
+      list-style: inherit; }
+      @media screen and (min-width: 40em) {
+        .entry-content .uses ul {
+          -webkit-columns: 2;
+             -moz-columns: 2;
+                  columns: 2; } }
+      .entry-content .uses ul li {
+        color: #54c2b6;
+        border-bottom: solid 2px;
+        padding: 1.5em 0 0em;
+        margin: 0; }
+  .entry-content .location-map {
+    background-color: #54c2b6;
+    display: block; }
+    .entry-content .location-map .section-contain {
+      max-width: 100%;
+      padding: 0 !important; }
+    .entry-content .location-map .address {
+      margin: 4em auto 0;
+      padding: 5em !important; }
+      @media screen and (min-width: 64em) {
+        .entry-content .location-map .address {
+          width: 50%;
+          float: left;
+          padding-left: 0.625rem;
+          padding-right: 0.625rem; } }
   @media screen and (min-width: 64em) and (min-width: 40em) {
-    .entry-content .usps section {
+    .entry-content .location-map .address {
       padding-left: 0.9375rem;
       padding-right: 0.9375rem; } }
-  @media screen and (min-width: 64em) {
-      .entry-content .usps section:last-child:not(:first-child) {
-        float: right; } }
-  .entry-content .usps section li {
-    font-size: 1.3em;
-    list-style: square;
-    margin-left: .5em; }
+      @media screen and (min-width: 64em) {
+          .entry-content .location-map .address:last-child:not(:first-child) {
+            float: right; } }
+      .entry-content .location-map .address .cls-1 {
+        fill: #fefefe; }
+      .entry-content .location-map .address p.bham {
+        font-size: 3.75em;
+        font-family: "acumin-pro-extra-condensed", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+        text-align: center;
+        color: #3ca79c; }
+    .entry-content .location-map .map {
+      height: 500px;
+      padding: 0 !important; }
+      @media screen and (min-width: 64em) {
+        .entry-content .location-map .map {
+          width: 50%;
+          float: left;
+          padding-left: 0.625rem;
+          padding-right: 0.625rem; } }
+  @media screen and (min-width: 64em) and (min-width: 40em) {
+    .entry-content .location-map .map {
+      padding-left: 0.9375rem;
+      padding-right: 0.9375rem; } }
+      @media screen and (min-width: 64em) {
+          .entry-content .location-map .map:last-child:not(:first-child) {
+            float: right; } }
+  .entry-content .proximity ul {
+    -webkit-columns: 3;
+       -moz-columns: 3;
+            columns: 3; }
+  .entry-content .gallery-wanted {
+    background-color: #f1816e; }
+    .entry-content .gallery-wanted p {
+      font-family: "abril-fatface", "Garamond Bold", Times, serif;
+      font-weight: 100;
+      font-size: 3.5em; }
+    .entry-content .gallery-wanted h3, .entry-content .gallery-wanted p {
+      color: #fefefe; }
 
 .section-divider {
   max-width: 75rem;
