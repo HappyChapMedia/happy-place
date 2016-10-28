@@ -31,7 +31,7 @@
           ]
         });
 
-        var iconBase = '../happy-place/wp-content/themes/happy-place/assets/images/';
+        var iconBase = '../wp-content/themes/happy-place/assets/images/';
         var icons = {
           hplogo: {
             title:"The Happy Place - shared office & retail space!",
