@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"tras",
+				"transparent"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"backgrou",
+				"background-color"
+			],
+			[
 				"end",
 				"endif\t(header.php)"
 			],
@@ -50,10 +62,6 @@
 			[
 				"po",
 				"position"
-			],
-			[
-				"text",
-				"text-align"
 			],
 			[
 				"w",
@@ -116,38 +124,10 @@
 	"buffers":
 	[
 		{
-			"file": "header.php",
-			"settings":
-			{
-				"buffer_size": 1296,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
 			"file": "page-templates/front.php",
 			"settings":
 			{
-				"buffer_size": 11745,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "pages/front.html",
-			"settings":
-			{
-				"buffer_size": 1611,
-				"encoding": "UTF-8",
-				"line_ending": "Windows",
-				"name": "<section class=\"intro\" role=\"main\">"
-			}
-		},
-		{
-			"file": "assets/scss/foundation.scss",
-			"settings":
-			{
-				"buffer_size": 2903,
+				"buffer_size": 18341,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -156,25 +136,34 @@
 			"file": "library/custom-functions.php",
 			"settings":
 			{
-				"buffer_size": 905,
+				"buffer_size": 1109,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "library/custom-gallery-shortcodes.php",
+			"file": "footer.php",
 			"settings":
 			{
-				"buffer_size": 10857,
+				"buffer_size": 1045,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "functions.php",
+			"file": "pages/front.html",
 			"settings":
 			{
-				"buffer_size": 1688,
+				"buffer_size": 10147,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "style.css",
+			"settings":
+			{
+				"buffer_size": 1510,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -183,25 +172,17 @@
 			"file": "assets/scss/templates/_front.scss",
 			"settings":
 			{
-				"buffer_size": 2261,
+				"buffer_size": 6576,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "/C/Users/Casey/Desktop/wp-config.php",
+			"file": "assets/scss/global/_settings.scss",
 			"settings":
 			{
-				"buffer_size": 3645,
+				"buffer_size": 14618,
 				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": ".gitignore",
-			"settings":
-			{
-				"buffer_size": 141,
 				"line_ending": "Windows"
 			}
 		}
@@ -257,26 +238,31 @@
 		"/D/Ampps/www/happy-place/wp-content/themes/happy-place/assets/scss/global",
 		"/D/Ampps/www/happy-place/wp-content/themes/happy-place/assets/scss/modules",
 		"/D/Ampps/www/happy-place/wp-content/themes/happy-place/assets/scss/templates",
+		"/D/Ampps/www/happy-place/wp-content/themes/happy-place/library",
 		"/D/Ampps/www/happy-place/wp-content/themes/happy-place/pages",
 		"/D/Ampps/www/happy-place/wp-content/themes/happy-place/template-parts"
 	],
 	"file_history":
 	[
 		"/D/Ampps/www/happy-place/wp-content/themes/happy-place/assets/javascript/custom/google-map.js",
+		"/D/Ampps/www/happy-place/wp-content/themes/happy-place/header.php",
+		"/D/Ampps/www/happy-place/wp-content/themes/happy-place/functions.php",
+		"/D/Ampps/www/happy-place/wp-content/themes/happy-place/assets/scss/global/_settings.scss",
+		"/D/Ampps/www/happy-place/wp-content/themes/happy-place/pages/front.html",
+		"/D/Ampps/www/happy-place/wp-content/themes/happy-place/assets/scss/foundation.scss",
+		"/D/Ampps/www/happy-place/wp-content/themes/happy-place/library/custom-functions.php",
+		"/D/Ampps/www/happy-place/wp-content/themes/happy-place/template-parts/hc-colophon.php",
+		"/D/Ampps/www/happy-place/wp-content/themes/happy-place/library/custom-gallery-shortcodes.php",
+		"/C/Users/Casey/Desktop/wp-config.php",
 		"/D/Ampps/www/happy-place/wp-content/themes/happy-place/assets/scss/modules/_masthead.scss",
 		"/D/Ampps/www/happy-place/wp-content/themes/happy-place/assets/scss/components/_hc-colophon.scss",
 		"/D/Ampps/www/happy-place/wp-content/themes/happy-place/footer.php",
-		"/D/Ampps/www/happy-place/wp-content/themes/happy-place/template-parts/hc-colophon.php",
-		"/D/Ampps/www/happy-place/wp-content/themes/happy-place/assets/scss/global/_settings.scss",
 		"/D/Ampps/www/happy-place/wp-content/themes/happy-place/assets/javascript/custom/slick-gallery.js",
 		"/D/Ampps/www/happy-place/wp-content/themes/happy-place/assets/javascript/custom/lightbox.js",
 		"/D/Ampps/www/happy-place/wp-content/themes/happy-place/template-parts/featured-gallery.php",
 		"/D/Ampps/www/happy-place/wp-content/themes/happy-place/assets/scss/components/_slick-slider.scss",
-		"/D/Ampps/www/happy-place/wp-content/themes/happy-place/library/custom-functions.php",
-		"/C/Users/Casey/Desktop/wp-config.php",
 		"/D/Ampps/www/happy-place/wp-content/themes/happy-place/assets/scss/templates/_front.scss",
 		"/D/Ampps/www/happy-place/wp-content/themes/happy-place/assets/scss/components/_modals.scss",
-		"/D/Ampps/www/happy-place/wp-content/themes/happy-place/assets/scss/foundation.scss",
 		"/D/Ampps/www/happy-place/wp-content/themes/happy-place/assets/scss/components/_modal.scss",
 		"/D/Ampps/www/lyndale/wp-content/themes/lyndale/assets/javascript/custom/slick.js",
 		"/D/Ampps/www/happy-place/wp-content/themes/happy-place/assets/scss/modules/_footer.scss",
@@ -385,15 +371,11 @@
 		"/C/WORK/LOCAL/lp/iwpserver/htdocs/wordpress/wp-content/themes/licensing_pros/single.php",
 		"/C/Users/caseyb/Desktop/bytes/index.html",
 		"/C/WORK/LOCAL/lp/iwpserver/htdocs/wordpress/wp-content/themes/licensing_pros/css/all.css",
-		"/C/WORK/LOCAL/lp/iwpserver/htdocs/wordpress/wp-content/themes/licensing_pros/style.css",
-		"/C/WORK/LOCAL/lp/iwpserver/htdocs/wordpress/wp-content/themes/licensing_pros/index.php",
-		"/C/WORK/LOCAL/lp/iwpserver/htdocs/wordpress/wp-content/themes/licensing_pros/framework/headers/header-v4.php",
-		"/C/Users/caseyb/Desktop/default.php",
-		"/C/WORK/LOCAL/lp/iwpserver/htdocs/wordpress/wp-content/themes/licensing_pros/admin/front-end/options.php"
+		"/C/WORK/LOCAL/lp/iwpserver/htdocs/wordpress/wp-content/themes/licensing_pros/style.css"
 	],
 	"find":
 	{
-		"height": 34.0
+		"height": 27.0
 	},
 	"find_in_files":
 	{
@@ -409,6 +391,17 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"h3",
+			".accordion-title",
+			"h2",
+			"h3",
+			"h2",
+			"h3",
+			"h2",
+			"h3",
+			"<h3>",
+			"li>",
+			"li",
 			"item_description",
 			"tsc-cream",
 			"&",
@@ -550,52 +543,77 @@
 			[
 				{
 					"buffer": 0,
-					"file": "header.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1296,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1213,
-								1213
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 7,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
 					"file": "page-templates/front.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 11745,
+						"buffer_size": 18341,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								11069,
-								11069
-							],
+								17040,
+								17040
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 3682.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "library/custom-functions.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1109,
+						"regions":
+						{
+						},
+						"selection":
+						[
 							[
-								11134,
-								11134
+								1076,
+								1076
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 171.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "footer.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1045,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								458,
+								458
 							]
 						],
 						"settings":
@@ -605,36 +623,6 @@
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "pages/front.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1611,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								828,
-								828
-							]
-						],
-						"settings":
-						{
-							"auto_name": "<section class=\"intro\" role=\"main\">",
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 198.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 4,
@@ -642,27 +630,28 @@
 				},
 				{
 					"buffer": 3,
-					"file": "assets/scss/foundation.scss",
+					"file": "pages/front.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2903,
+						"buffer_size": 10147,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2249,
-								2249
+								10147,
+								10147
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
 						},
-						"translation.x": -0.0,
-						"translation.y": 1386.0,
+						"translation.x": 0.0,
+						"translation.y": 3506.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 5,
@@ -670,24 +659,26 @@
 				},
 				{
 					"buffer": 4,
-					"file": "library/custom-functions.php",
+					"file": "style.css",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 905,
+						"buffer_size": 1510,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								99,
-								99
+								725,
+								725
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax"
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -695,86 +686,28 @@
 					},
 					"stack_index": 6,
 					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "library/custom-gallery-shortcodes.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 10857,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								205,
-								205
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 9,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "functions.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1688,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								880,
-								880
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 462.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 8,
-					"type": "text"
 				}
 			]
 		},
 		{
-			"selected": 2,
+			"selected": 0,
 			"sheets":
 			[
 				{
-					"buffer": 7,
+					"buffer": 5,
 					"file": "assets/scss/templates/_front.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2261,
+						"buffer_size": 6576,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								904,
-								904
+								4453,
+								4453
 							]
 						],
 						"settings":
@@ -783,66 +716,40 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 792.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "/C/Users/Casey/Desktop/wp-config.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3645,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2928,
-								2928
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 2904.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": ".gitignore",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 141,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								141,
-								141
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 4674.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "assets/scss/global/_settings.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 14618,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1126,
+								1126
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 456.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
 					"type": "text"
 				}
 			]
@@ -850,7 +757,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 23.0
+		"height": 27.0
 	},
 	"input":
 	{
@@ -876,7 +783,7 @@
 		"cols":
 		[
 			0.0,
-			0.0,
+			0.604916067146,
 			1.0
 		],
 		"rows":
@@ -894,7 +801,7 @@
 	"project": "happy-place.sublime-project",
 	"replace":
 	{
-		"height": 42.0
+		"height": 64.0
 	},
 	"save_all_on_build": true,
 	"select_file":

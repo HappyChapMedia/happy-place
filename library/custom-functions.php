@@ -35,3 +35,9 @@
 	";
 	}
 	add_action("login_head", "change_my_wp_login_image");
+
+// Custom CF7 loading image
+add_filter('wpcf7_ajax_loader', 'my_wpcf7_ajax_loader');
+function my_wpcf7_ajax_loader () {
+return  get_bloginfo('stylesheet_directory') . '/assets/images/ajax-loader.gif';
+}

@@ -51,12 +51,14 @@ $global-lineheight: 1.5;
 
 $yellow: rgb(251, 245, 169);
 $blue: rgb(84, 194, 182);
+$red: #ec5840;
+$green: #3adb76;
 $foundation-palette: (
   primary: $blue,
   secondary: $yellow,
-  success: #3adb76,
+  success: $green,
   warning: #ffae00,
-  alert: #ec5840,
+  alert: $red,
 );
 $light-gray: #e6e6e6;
 $medium-gray: #cacaca;
