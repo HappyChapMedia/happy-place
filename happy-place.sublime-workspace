@@ -127,7 +127,7 @@
 			"file": "page-templates/front.php",
 			"settings":
 			{
-				"buffer_size": 18341,
+				"buffer_size": 19036,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -145,7 +145,16 @@
 			"file": "footer.php",
 			"settings":
 			{
-				"buffer_size": 1045,
+				"buffer_size": 4528,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "template-parts/featured-gallery.php",
+			"settings":
+			{
+				"buffer_size": 870,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -169,10 +178,22 @@
 			}
 		},
 		{
-			"file": "assets/scss/templates/_front.scss",
+			"file": "assets/scss/modules/_footer.scss",
 			"settings":
 			{
-				"buffer_size": 6576,
+				"buffer_size": 492,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "// Page header\n#front-hero {\n\tbackground: darken($yellow, 10%);\n\tdisplay: inline-block;\n\twidth: 100%;\n\t.branding-contain {\n\t\tbackground: darken($yellow, 12%);\n\t\t@include breakpoint(large) {\n\t\t\t@include grid-column(65%);\n\t\t}\n\t\t.branding {\n\t\t\ttext-align: center;\n\t\t\th1.logo {\n\t\t\t\t// font-size: \t8rem;\n\t\t\t\ttext-transform: uppercase;\n\t\t\t\tpadding: 1em 0;\n\t\t\t\tmargin: 0;\n\t\t\t\t.cls-1 {\n\t\t\t\t\tfill: $white;\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t}\n\t.address-tag-contain {\n\t\tbackground: $blue;\n\t\t@include breakpoint(large) {\n\t\t\t@include grid-column(35%);\n\t\t}\n\t\t  \n\t\t.address-tag {\n\t\t\tpadding: 0em 2.5em;\n\t\t\ttext-align: center;\n\t\t\tp {\n\t\t\t\tcolor: $white;\n\t\t\t\tmargin: 0;\n\t\t\t}\n\n\t\t\tp.tagline {\n\t\t\t\t@include breakpoint(medium) {\n\t\t\t\t\tfont-size: 5.5em;\n\t\t\t\t\t// padding: 1em;\n\t\t\t\t}\n\t\t\t\tfont-family: $sans-serif;\n\t\t\t\tpadding: 1em 0 0;\n\t\t\t\tsmall {\n\t\t\t\t\tfont-size: .35em;\n\t\t\t\t\tfont-weight: 100;\n\t\t\t\t}\n\t\t\t}\n\t\t\tp.for-lease {\n\t\t\t\tbackground: $alert-color;\n\t\t\t\tpadding: .05em .5em;\n\t\t\t\tfont-size: 2.5em;\n\t\t\t\tfont-weight: 500;\n\t\t\t\ttext-transform: uppercase;\n\t\t\t\tletter-spacing: .15em;\n\t\t\t\tdisplay: inline-block;\n\t\t\t\tborder: solid 8px $white;\n\t\t\t\t// margin-top: 50%;\n\t\t\t}\n\t\t}\n\t}\n\n}\n.featured-gallery {\n\tdisplay: block;\n\tfigure {\n\t\t// margin: 0 0 -16em;\n\t}\n\tfigcaption .title {\n\t\t.caption-contain {\n\t\ttop: -15em;\n\t\tdisplay: inline;\n\t\tposition: relative;\n\t\t\tbackground: $white;\n\t\t\tpadding: 1.5em;\n\t\t}\n\t\th3 {\n\t\t\tfont-size: 2em;\n\t\t}\n\t\tp {\n\t\t\tcolor: $black;\n\t\t}\n\t}\n}\n\n// Intro\n.entry-content {\n\tdisplay: block;\n\t// h2 {\n\t// \tfont-size: 8em;\n\t// \ttext-transform: uppercase;\n\t// \tletter-spacing: .08;\n\t// }\n\tsection {\n\t\t// min-height: 600px;\n\t\th2 {\n\t\t\tfont-size: 3em;\n\t\t\t@include breakpoint(medium) {\n\t\t\t\tfont-size: 6em;\n\t\t\t}\n\t\t\tmargin-bottom: .5em;\n\t\t\tcolor: $blue;\n\t\t\ttext-align: center;\n\t\t\tstrong {\n\t\t\t\tfont-family: $serif;\n\t\t\t\tcolor: $alert-color;\n\t\t\t}\n\t\t}\n\t\th3 {\n\t\t\t// color: $yellow;\n\t\t\t// background: $blue;\n\t\t\ttext-transform: uppercase;\n\t\t\ttext-align: center;\n\t\t\t// display: inline-block;\n\t\t\tpadding: .5em;\n\t\t\tmargin: 1em 0 .75em;\n\t\t\tstrong {\n\t\t\t\tfont-family: $serif;\n\t\t\t\tcolor: $alert-color;\n\t\t\t\tpadding: 0 .15em;\n\t\t\t\ttext-transform: none;\n\t\t\t}\n\t\t}\n\t\tul {\n\t\t\tmargin: 0;\n\t\t\tli {\n\t\t\t\tlist-style: none;\n\t\t\t\tbackground: $white;\n\t\t\t\tpadding: 1em 1.5em .75em;\n\t\t\t\tmargin: 1em 0;\n\t\t\t\tdisplay: inline-block;\n\t\t\t\twidth: 100%;\n\t\t\t\th4 {\n\t\t\t\t\tmargin: 0;\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t\t.section-contain {\n\t\t\t@include grid-row();\n\t\t\tpadding: 1em;\n\t\t\t@include breakpoint(large) {\n\t\t\t\tpadding: 4em;\n\t\t\t}\n\t\t\t  \n\t\t}\n\t\t&.intro {\n\t\t\tbackground: $success-color;\n\t\t\tcolor: $white;\n\t\t\tp {\n\t\t\t\tfont-family: $sans-serif;\n\t\t\t\tfont-size: 2em;\n\t\t\t\ttext-align: center;\n\t\t\t\t@include breakpoint(medium) {\n\t\t\t\t\tfont-size: 3.5em;\n\t\t\t\t\ttext-align: justify;\n\t\t\t\t}\n\t\t\t}\n\t\t\tem {\n\t\t\t\tfont-style: normal;\n\t\t\t\tfont-weight: 700;\n\t\t\t}\n\t\t\tstrong {\n\t\t\t\tfont-family: $serif;\n\t\t\t\tfont-weight: 500;\n\t\t\t\ttext-transform: uppercase;\n\t\t\t}\n\t\t\ta {\n\t\t\t\tcolor: darken($blue, 10%);\n\t\t\t}\n\t\t}\n\t\t&.why {\n\t\t\tbackground: $yellow;\n\t\t}\n\t}\n\t.usps {\n\t\tbackground: $blue;\n\t\th2, h3 {\n\t\t\tcolor: $white;\n\t\t}\n\t\tsection {\n\t\t\t// @include breakpoint(large) {\n\t\t\t//     @include grid-column(6);\n\t\t\t// }\n\t\t\tul {\n\t\t\t\t@include breakpoint(medium) {\n\t\t\t\t\tcolumns: 2;\n\t\t\t\t\tcolumn-gap: 5em;\n\t\t\t\t}\n\t\t\t\tli {\n\t\t\t\t\th4 {\n\t\t\t\t\t\tfont-size: 1.85em;\n\t\t\t\t\t\ttext-transform: uppercase;\n\t\t\t\t\t\tstrong {\n\n\t\t\t\t\t\t}\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t}\n\t.floor-map {\n\t\t\n\t}\n\t.uses {\n\t\tbackground: $white;\n\t\t// @include grid-column();\n\t\tul {\n\t\t\t@include breakpoint(medium) {\n\t\t\t\tcolumns: 2;\n\t\t\t\tcolumn-gap: 5em;\n\t\t\t}\n\t\t\tlist-style: inherit;\n\t\t\tli {\n\t\t\t\tcolor: $blue;\n\t\t\t\t// border-bottom: solid 2px;\n\t\t\t\tborder-bottom: solid 2px;\n\t\t\t\tpadding: 1.5em 0 0em;\n\t\t\t\tmargin: 0;\n\t\t\t\t// background: $yellow;\n\t\t\t}\n\t\t\t.cta {\n\t\t\t\tborder: none;\n\t\t\t\t.cta-button {\n\t\t\t\t\tmargin-top: 2.5em;\n\t\t\t\t\t.button {\n\t\t\t\t\t\tfont-size: 1.2em;\n\t\t\t\t\t\tbackground: $red;\n\t\t\t\t\t\tdisplay: block;\n\t\t\t\t\t\twidth: 80%;\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t}\n\t\t\tli:before {\n\t\t\t\tcolor: lighten($blue, 25%);\n\t\t\t\tcontent:\"\\f046\";\n\t\t\t\tfont-size: 2.95em;\n\t\t\t\tfont-family: FontAwesome;\n\t\t\t\tfloat: left;\n\t\t\t\tposition: relative;\n\t\t\t\ttop: -.17em;\n\t\t\t\tpadding: 0 .25em .15em 0;\n\t\t\t\tdisplay: inline-block;\n\t\t\t}\n\t\t}\n\t}\n\t.location-map {\n\t\tbackground-color: $blue;\n\t\tdisplay: block;\n\t\t.section-contain {\n\t\t\tmax-width: 100%;\n\t\t\tpadding: 0!important; \n\t\t}\n\t\t.address {\n\t\t\tmargin: 4em auto 0;\n\t\t\t@include breakpoint(large) {\n\t\t\t    @include grid-column(4);\n\t\t\t}\n\t\t\tpadding: 5em!important; \n\t\t\t.cls-1 {\n\t\t\t\tfill: $white;\n\t\t\t}\n\t\t\tp.bham {\n\t\t\t\tfont-size: 3.75em;\n\t\t\t\tfont-family: $header-font-family;\n\t\t\t\ttext-align: center;\n\t\t\t\tcolor: darken($blue, 10%);\n\t\t\t\t// letter-spacing: .25em;\n\t\t\t\t// text-transform: uppercase;\n\t\t\t}\n\t\t}\n\t\t#map {\n\t\t\t@include breakpoint(large) {\n\t\t\t    @include grid-column(8);\n\t\t\t\tmin-height: 950px;\n\t\t\t}\n\t\t\tpadding: 0!important; \n\t\t}\n\t}\n\t.proximity {\n\t\t// @include grid-row();\n\t\tul {\n\t\t\tcolumns: 3;\n\t\t}\n\t}\n\t.gallery-wanted {\n\t\tbackground-color: lighten($alert-color, 10%);\n\t\tp {\n\t\t\tfont-family: $serif;\n\t\t\tfont-weight: 100;\n\t\t\tfont-size: 3.5em;\n\t\t}\n\t\th3, p {\n\t\t\tcolor: $white;\n\t\t}\n\t}\n\t#cta {\n\t\tbackground-color: $yellow;\n\t\t.accordion {\n\t\t\tbackground: transparent;\n\t\t\ttext-align: center;\n\t\t\n\t\t\tli {\n\t\t\t\tpadding: .5em;\n\t\t\t\tbackground-color: $blue;\n\t\t\t\ta.button {\n\t\t\t\t\tcolor: $white;\n\t\t\t\t\tfont-size: 2em;\n\t\t\t\t\t@include breakpoint(large) {\n\t\t\t\t\t    font-size: 3em;\n\t\t\t\t\t}\n\t\t\t\t\tmargin: 0;\n\t\t\t\t\t// display: inline-block;\n\t\t\t\t\ti {\n\t\t\t\t\t\tcolor: lighten($blue, 15%);\n\t\t\t\t\t\tpadding-right: 1em;\n\t\t\t\t\t\tfloat: left;\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t\t.accordion-title {\n\t\t\t\t\tborder: none;\n\t\t\t\t\t&::before {\n\t\t\t\t\t\tdisplay: none;\n\t\t\t\t\t\t// color: $blue;\n\t\t\t\t\t\t// font-family: FontAwesome;\n\t\t\t\t\t\t// content: \"\\f0dd\";\n\t\t\t\t\t\t// font-size: 2em;\n\t\t\t\t\t\t// right: -2.5rem;\n\t\t\t\t\t\t// top: 0;\n\t\t\t\t\t\t// background: lighten($blue, 10%);\n\t\t\t\t\t}\n\t\t\t\t\t&:hover, &:focus {\n\t\t\t\t\t\tbackground-color: lighten($blue, 10%);\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t\t.accordion-content {\n\t\t\t\t\tborder: none;\n\t\t\t\t\tbackground: transparent;\n\t\t\t\t\tlabel {\n\t\t\t\t\t\tcolor: white;\n\t\t\t\t\t\tfont-size: 1.5em;\n\t\t\t\t\t\tfont-weight: 100;\n\t\t\t\t\t}\n\t\t\t\t\ttextarea {\n\t\t\t\t\t\tmin-height: 300px;\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\n\t\t// Form Styling\n\n\t\tselect, [type='text'], [type='password'], [type='date'], [type='datetime'], [type='datetime-local'], [type='month'], [type='week'], [type='email'], [type='number'], [type='search'], [type='tel'], [type='time'], [type='url'], [type='color'], textarea {\n\t\t\tcolor: $red;\n\t\t\tfont-family: $serif;\n\t\t\tmargin: 0;\n\t\t\t@include breakpoint(medium) {\n\t\t\t\tfont-size: 150%;\n\t\t\t\tpadding: 10px 20px;\n\t\t\t\t// text-align: center;\n\t\t\t\theight: 4rem;\n\t\t\t}\n\t\t\t  \n\t\t\t&::selection {\n\t\t\t\tbackground: $yellow;\n\t\t\t}\n\t\t}\n\n\t\tdiv.wpcf7-mail-sent-ok {\n\t\t\tcolor: $white!important;\n\t\t\tbackground: $blue;\n\t\t\tborder: none;\n\t\t}\n\n\t\t.wpcf7-not-valid-tip {\n\t\t\tbackground: $blue;\n\t\t}\n\n\t\tdiv.wpcf7-validation-errors, div.wpcf7-mail-sent-ng {\n\t\t\tcolor: $red!important;\n\t\t\tbackground: $blue;\n\t\t\tborder: none;\n\t\t}\n\n\t\t.wpcf7-submit {\n\t\t\tmargin-right: -50px;\n\t\t\tbackground: $red;\n\t\t\tfont-size: 2em;\n\t\t}\n\n\t\t.g-recaptcha {\n\t\t\tmargin: 0 auto;\n\t\t    width: 304px;\n\t\t}\n\n\t\t.ajax-loader {\n\t\t\t// display: none;\n\t\t\twidth: 50px;\n\t\t\tposition: relative;\n\t\t\tbottom: 8px;\n\t\t\tleft: 50px;\n\t\t\topacity: .50;\n\t\t}\n\t} /* #cta */\n} /* entry-content */\n\n// Section divider\n.section-divider {\n\t@include grid-row();\n\n\thr {\n\t\t@include grid-column(12);\n\t\t@extend .dotted;\n\t\tbox-sizing: border-box;\n\t}\n}",
+			"file": "assets/scss/templates/_front.scss",
+			"file_size": 7612,
+			"file_write_time": 131221000373919287,
+			"settings":
+			{
+				"buffer_size": 7220,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -391,6 +412,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"2em",
+			"!important",
 			"h3",
 			".accordion-title",
 			"h2",
@@ -516,8 +539,7 @@
 			"phone",
 			"title",
 			"transition",
-			"tagline",
-			"search"
+			"tagline"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -538,7 +560,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -547,15 +569,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 18341,
+						"buffer_size": 19036,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								17040,
-								17040
+								18715,
+								18715
 							]
 						],
 						"settings":
@@ -564,10 +586,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 3682.0,
+						"translation.y": 6116.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
@@ -583,37 +605,8 @@
 						"selection":
 						[
 							[
-								1076,
-								1076
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 171.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "footer.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1045,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								458,
-								458
+								1109,
+								1109
 							]
 						],
 						"settings":
@@ -625,11 +618,69 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "footer.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4528,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								958,
+								958
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 342.0,
+						"zoom_level": 1.0
+					},
 					"stack_index": 4,
 					"type": "text"
 				},
 				{
 					"buffer": 3,
+					"file": "template-parts/featured-gallery.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 870,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								255,
+								349
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
 					"file": "pages/front.html",
 					"semi_transient": false,
 					"settings":
@@ -654,11 +705,11 @@
 						"translation.y": 3506.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 5,
 					"file": "style.css",
 					"semi_transient": false,
 					"settings":
@@ -684,30 +735,30 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 8,
 					"type": "text"
 				}
 			]
 		},
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
-					"buffer": 5,
-					"file": "assets/scss/templates/_front.scss",
+					"buffer": 6,
+					"file": "assets/scss/modules/_footer.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6576,
+						"buffer_size": 492,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4453,
-								4453
+								489,
+								489
 							]
 						],
 						"settings":
@@ -716,14 +767,43 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 4674.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
-					"buffer": 6,
+					"buffer": 7,
+					"file": "assets/scss/templates/_front.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7220,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3295,
+								3295
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2223.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
 					"file": "assets/scss/global/_settings.scss",
 					"semi_transient": false,
 					"settings":
@@ -746,10 +826,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 456.0,
+						"translation.y": 399.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 6,
 					"type": "text"
 				}
 			]
@@ -783,7 +863,7 @@
 		"cols":
 		[
 			0.0,
-			0.604916067146,
+			0.743405275779,
 			1.0
 		],
 		"rows":
@@ -821,7 +901,7 @@
 		[
 			[
 				"",
-				"D:\\Ampps\\www\\lyndale\\wp-content\\themes\\lyndale\\lyndale.sublime-project"
+				"D:\\Ampps\\www\\c-square\\wp-content\\themes\\c-square\\c-square.sublime-project"
 			],
 			[
 				"ster",
@@ -839,7 +919,7 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 1,
+	"selected_group": 0,
 	"settings":
 	{
 	},
