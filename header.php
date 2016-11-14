@@ -17,6 +17,13 @@
 		<?php wp_head(); ?>
 		<script src="https://use.typekit.net/lje1vcb.js"></script>
 		<script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+		<link rel="icon" type="image/png" href="<?php echo get_stylesheet_directory_uri('') ?>/assets/images/icons/favicon-32x32.png" sizes="32x32">
+		<link rel="icon" type="image/png" href="<?php echo get_stylesheet_directory_uri('') ?>/assets/images/icons//favicon-16x16.png" sizes="16x16">
+		<link rel="manifest" href="<?php echo get_stylesheet_directory_uri('') ?>/assets/images/icons//manifest.json">
+		<link rel="mask-icon" href="<?php echo get_stylesheet_directory_uri('') ?>/assets/images/icons//safari-pinned-tab.svg" color="#5bbad5">
+		<meta name="theme-color" content="#fbf5a9">
 	</head>
 	<body <?php body_class(); ?>>
 	<?php do_action( 'foundationpress_after_body' ); ?>
