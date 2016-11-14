@@ -7449,6 +7449,8 @@ body.lb-disable-scrolling {
     .entry-content .usps section ul li h4 {
       font-size: 1.85em;
       text-transform: uppercase; }
+  .entry-content .floor-map figure {
+    margin: 0; }
   .entry-content .uses {
     background: #fefefe; }
     .entry-content .uses ul {
@@ -7530,16 +7532,19 @@ body.lb-disable-scrolling {
       @media screen and (min-width: 64em) {
           .entry-content .location-map #map:last-child:not(:first-child) {
             float: right; } }
-  .entry-content .proximity ul {
-    -webkit-columns: 3;
-       -moz-columns: 3;
-            columns: 3; }
+  @media screen and (min-width: 64em) {
+    .entry-content .proximity ul {
+      -webkit-columns: 3;
+         -moz-columns: 3;
+              columns: 3; } }
   .entry-content .gallery-wanted {
     background-color: #f1816e; }
     .entry-content .gallery-wanted p {
       font-family: "abril-fatface", "Garamond Bold", Times, serif;
-      font-weight: 100;
-      font-size: 3.5em; }
+      font-weight: 100; }
+      @media screen and (min-width: 40em) {
+        .entry-content .gallery-wanted p {
+          font-size: 3.5em; } }
     .entry-content .gallery-wanted h3, .entry-content .gallery-wanted p {
       color: #fefefe; }
   .entry-content #cta {
@@ -7548,7 +7553,7 @@ body.lb-disable-scrolling {
       background: transparent;
       text-align: center; }
       .entry-content #cta .accordion li {
-        padding: .5em;
+        padding: 0;
         background-color: #54c2b6; }
         .entry-content #cta .accordion li a.button {
           color: #fefefe;
@@ -7559,8 +7564,13 @@ body.lb-disable-scrolling {
               font-size: 3em; } }
           .entry-content #cta .accordion li a.button i {
             color: #8cd6ce;
-            padding-right: 1em;
-            float: left; }
+            display: block;
+            padding: 0 0 1em 0; }
+            @media screen and (min-width: 40em) {
+              .entry-content #cta .accordion li a.button i {
+                float: left;
+                display: inline-block;
+                padding: 0 1em 0 0; } }
         .entry-content #cta .accordion li .accordion-title {
           border: none; }
           .entry-content #cta .accordion li .accordion-title::before {
@@ -7569,7 +7579,8 @@ body.lb-disable-scrolling {
             background-color: #7acfc6; }
         .entry-content #cta .accordion li .accordion-content {
           border: none;
-          background: transparent; }
+          background: transparent;
+          padding: 2em; }
           .entry-content #cta .accordion li .accordion-content label {
             color: white;
             font-size: 1.5em;
@@ -7601,8 +7612,10 @@ body.lb-disable-scrolling {
       border: none; }
     .entry-content #cta .wpcf7-submit {
       margin-right: -50px;
-      background: #ec5840;
-      font-size: 2em; }
+      background: #ec5840; }
+      @media screen and (min-width: 40em) {
+        .entry-content #cta .wpcf7-submit {
+          font-size: 2em; } }
     .entry-content #cta .g-recaptcha {
       margin: 0 auto;
       width: 304px; }
