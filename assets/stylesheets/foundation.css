@@ -7290,17 +7290,17 @@ body.lb-disable-scrolling {
   width: 100%; }
   #front-hero .branding-contain {
     background: #f8ee6f; }
-    @media screen and (min-width: 64em) {
+    @media screen and (min-width: 75em) {
       #front-hero .branding-contain {
         width: 65%;
         float: left;
         padding-left: 0.625rem;
         padding-right: 0.625rem; } }
-  @media screen and (min-width: 64em) and (min-width: 40em) {
+  @media screen and (min-width: 75em) and (min-width: 40em) {
     #front-hero .branding-contain {
       padding-left: 0.9375rem;
       padding-right: 0.9375rem; } }
-    @media screen and (min-width: 64em) {
+    @media screen and (min-width: 75em) {
         #front-hero .branding-contain:last-child:not(:first-child) {
           float: right; } }
     #front-hero .branding-contain .branding {
@@ -7313,17 +7313,17 @@ body.lb-disable-scrolling {
           fill: #fefefe; }
   #front-hero .address-tag-contain {
     background: #54c2b6; }
-    @media screen and (min-width: 64em) {
+    @media screen and (min-width: 75em) {
       #front-hero .address-tag-contain {
         width: 35%;
         float: left;
         padding-left: 0.625rem;
         padding-right: 0.625rem; } }
-  @media screen and (min-width: 64em) and (min-width: 40em) {
+  @media screen and (min-width: 75em) and (min-width: 40em) {
     #front-hero .address-tag-contain {
       padding-left: 0.9375rem;
       padding-right: 0.9375rem; } }
-    @media screen and (min-width: 64em) {
+    @media screen and (min-width: 75em) {
         #front-hero .address-tag-contain:last-child:not(:first-child) {
           float: right; } }
     #front-hero .address-tag-contain .address-tag {
@@ -7333,14 +7333,24 @@ body.lb-disable-scrolling {
         color: #fefefe;
         margin: 0; }
       #front-hero .address-tag-contain .address-tag p.tagline {
+        font-size: 2.75em;
         font-family: "acumin-pro-extra-condensed", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
         padding: 1em 0 0; }
+        #front-hero .address-tag-contain .address-tag p.tagline small {
+          font-size: .65em;
+          font-weight: 100; }
         @media screen and (min-width: 40em) {
           #front-hero .address-tag-contain .address-tag p.tagline {
-            font-size: 5.5em; } }
-        #front-hero .address-tag-contain .address-tag p.tagline small {
-          font-size: .35em;
-          font-weight: 100; }
+            font-size: 3.75em; } }
+        @media screen and (min-width: 75em) {
+          #front-hero .address-tag-contain .address-tag p.tagline {
+            font-size: 4.75em; }
+            #front-hero .address-tag-contain .address-tag p.tagline small {
+              font-size: .35em;
+              font-weight: 100; } }
+        @media screen and (min-width: 90em) {
+          #front-hero .address-tag-contain .address-tag p.tagline {
+            font-size: 6.75em; } }
       #front-hero .address-tag-contain .address-tag p.for-lease {
         background: #ec5840;
         padding: .05em .5em;
