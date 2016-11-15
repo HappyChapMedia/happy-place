@@ -127,34 +127,7 @@
 			"file": "page-templates/front.php",
 			"settings":
 			{
-				"buffer_size": 19036,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "library/custom-functions.php",
-			"settings":
-			{
-				"buffer_size": 1109,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "footer.php",
-			"settings":
-			{
-				"buffer_size": 4528,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "template-parts/featured-gallery.php",
-			"settings":
-			{
-				"buffer_size": 870,
+				"buffer_size": 4316,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -163,7 +136,52 @@
 			"file": "pages/front.html",
 			"settings":
 			{
-				"buffer_size": 10147,
+				"buffer_size": 19165,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "pages/contact-form.html",
+			"settings":
+			{
+				"buffer_size": 572,
+				"encoding": "UTF-8",
+				"line_ending": "Windows",
+				"name": "<p class=\"contact-intro\">Get in touch to say <stro"
+			}
+		},
+		{
+			"file": "header.php",
+			"settings":
+			{
+				"buffer_size": 2209,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "assets/javascript/custom/PDFobject.js",
+			"settings":
+			{
+				"buffer_size": 9396,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "assets/javascript/foundation.js",
+			"settings":
+			{
+				"buffer_size": 1287465,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "assets/javascript/custom/google-map.js",
+			"settings":
+			{
+				"buffer_size": 2210,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -187,13 +205,10 @@
 			}
 		},
 		{
-			"contents": "// Page header\n#front-hero {\n\tbackground: darken($yellow, 10%);\n\tdisplay: inline-block;\n\twidth: 100%;\n\t.branding-contain {\n\t\tbackground: darken($yellow, 12%);\n\t\t@include breakpoint(large) {\n\t\t\t@include grid-column(65%);\n\t\t}\n\t\t.branding {\n\t\t\ttext-align: center;\n\t\t\th1.logo {\n\t\t\t\t// font-size: \t8rem;\n\t\t\t\ttext-transform: uppercase;\n\t\t\t\tpadding: 1em 0;\n\t\t\t\tmargin: 0;\n\t\t\t\t.cls-1 {\n\t\t\t\t\tfill: $white;\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t}\n\t.address-tag-contain {\n\t\tbackground: $blue;\n\t\t@include breakpoint(large) {\n\t\t\t@include grid-column(35%);\n\t\t}\n\t\t  \n\t\t.address-tag {\n\t\t\tpadding: 0em 2.5em;\n\t\t\ttext-align: center;\n\t\t\tp {\n\t\t\t\tcolor: $white;\n\t\t\t\tmargin: 0;\n\t\t\t}\n\n\t\t\tp.tagline {\n\t\t\t\t@include breakpoint(medium) {\n\t\t\t\t\tfont-size: 5.5em;\n\t\t\t\t\t// padding: 1em;\n\t\t\t\t}\n\t\t\t\tfont-family: $sans-serif;\n\t\t\t\tpadding: 1em 0 0;\n\t\t\t\tsmall {\n\t\t\t\t\tfont-size: .35em;\n\t\t\t\t\tfont-weight: 100;\n\t\t\t\t}\n\t\t\t}\n\t\t\tp.for-lease {\n\t\t\t\tbackground: $alert-color;\n\t\t\t\tpadding: .05em .5em;\n\t\t\t\tfont-size: 2.5em;\n\t\t\t\tfont-weight: 500;\n\t\t\t\ttext-transform: uppercase;\n\t\t\t\tletter-spacing: .15em;\n\t\t\t\tdisplay: inline-block;\n\t\t\t\tborder: solid 8px $white;\n\t\t\t\t// margin-top: 50%;\n\t\t\t}\n\t\t}\n\t}\n\n}\n.featured-gallery {\n\tdisplay: block;\n\tfigure {\n\t\t// margin: 0 0 -16em;\n\t}\n\tfigcaption .title {\n\t\t.caption-contain {\n\t\ttop: -15em;\n\t\tdisplay: inline;\n\t\tposition: relative;\n\t\t\tbackground: $white;\n\t\t\tpadding: 1.5em;\n\t\t}\n\t\th3 {\n\t\t\tfont-size: 2em;\n\t\t}\n\t\tp {\n\t\t\tcolor: $black;\n\t\t}\n\t}\n}\n\n// Intro\n.entry-content {\n\tdisplay: block;\n\t// h2 {\n\t// \tfont-size: 8em;\n\t// \ttext-transform: uppercase;\n\t// \tletter-spacing: .08;\n\t// }\n\tsection {\n\t\t// min-height: 600px;\n\t\th2 {\n\t\t\tfont-size: 3em;\n\t\t\t@include breakpoint(medium) {\n\t\t\t\tfont-size: 6em;\n\t\t\t}\n\t\t\tmargin-bottom: .5em;\n\t\t\tcolor: $blue;\n\t\t\ttext-align: center;\n\t\t\tstrong {\n\t\t\t\tfont-family: $serif;\n\t\t\t\tcolor: $alert-color;\n\t\t\t}\n\t\t}\n\t\th3 {\n\t\t\t// color: $yellow;\n\t\t\t// background: $blue;\n\t\t\ttext-transform: uppercase;\n\t\t\ttext-align: center;\n\t\t\t// display: inline-block;\n\t\t\tpadding: .5em;\n\t\t\tmargin: 1em 0 .75em;\n\t\t\tstrong {\n\t\t\t\tfont-family: $serif;\n\t\t\t\tcolor: $alert-color;\n\t\t\t\tpadding: 0 .15em;\n\t\t\t\ttext-transform: none;\n\t\t\t}\n\t\t}\n\t\tul {\n\t\t\tmargin: 0;\n\t\t\tli {\n\t\t\t\tlist-style: none;\n\t\t\t\tbackground: $white;\n\t\t\t\tpadding: 1em 1.5em .75em;\n\t\t\t\tmargin: 1em 0;\n\t\t\t\tdisplay: inline-block;\n\t\t\t\twidth: 100%;\n\t\t\t\th4 {\n\t\t\t\t\tmargin: 0;\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t\t.section-contain {\n\t\t\t@include grid-row();\n\t\t\tpadding: 1em;\n\t\t\t@include breakpoint(large) {\n\t\t\t\tpadding: 4em;\n\t\t\t}\n\t\t\t  \n\t\t}\n\t\t&.intro {\n\t\t\tbackground: $success-color;\n\t\t\tcolor: $white;\n\t\t\tp {\n\t\t\t\tfont-family: $sans-serif;\n\t\t\t\tfont-size: 2em;\n\t\t\t\ttext-align: center;\n\t\t\t\t@include breakpoint(medium) {\n\t\t\t\t\tfont-size: 3.5em;\n\t\t\t\t\ttext-align: justify;\n\t\t\t\t}\n\t\t\t}\n\t\t\tem {\n\t\t\t\tfont-style: normal;\n\t\t\t\tfont-weight: 700;\n\t\t\t}\n\t\t\tstrong {\n\t\t\t\tfont-family: $serif;\n\t\t\t\tfont-weight: 500;\n\t\t\t\ttext-transform: uppercase;\n\t\t\t}\n\t\t\ta {\n\t\t\t\tcolor: darken($blue, 10%);\n\t\t\t}\n\t\t}\n\t\t&.why {\n\t\t\tbackground: $yellow;\n\t\t}\n\t}\n\t.usps {\n\t\tbackground: $blue;\n\t\th2, h3 {\n\t\t\tcolor: $white;\n\t\t}\n\t\tsection {\n\t\t\t// @include breakpoint(large) {\n\t\t\t//     @include grid-column(6);\n\t\t\t// }\n\t\t\tul {\n\t\t\t\t@include breakpoint(medium) {\n\t\t\t\t\tcolumns: 2;\n\t\t\t\t\tcolumn-gap: 5em;\n\t\t\t\t}\n\t\t\t\tli {\n\t\t\t\t\th4 {\n\t\t\t\t\t\tfont-size: 1.85em;\n\t\t\t\t\t\ttext-transform: uppercase;\n\t\t\t\t\t\tstrong {\n\n\t\t\t\t\t\t}\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t}\n\t.floor-map {\n\t\t\n\t}\n\t.uses {\n\t\tbackground: $white;\n\t\t// @include grid-column();\n\t\tul {\n\t\t\t@include breakpoint(medium) {\n\t\t\t\tcolumns: 2;\n\t\t\t\tcolumn-gap: 5em;\n\t\t\t}\n\t\t\tlist-style: inherit;\n\t\t\tli {\n\t\t\t\tcolor: $blue;\n\t\t\t\t// border-bottom: solid 2px;\n\t\t\t\tborder-bottom: solid 2px;\n\t\t\t\tpadding: 1.5em 0 0em;\n\t\t\t\tmargin: 0;\n\t\t\t\t// background: $yellow;\n\t\t\t}\n\t\t\t.cta {\n\t\t\t\tborder: none;\n\t\t\t\t.cta-button {\n\t\t\t\t\tmargin-top: 2.5em;\n\t\t\t\t\t.button {\n\t\t\t\t\t\tfont-size: 1.2em;\n\t\t\t\t\t\tbackground: $red;\n\t\t\t\t\t\tdisplay: block;\n\t\t\t\t\t\twidth: 80%;\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t}\n\t\t\tli:before {\n\t\t\t\tcolor: lighten($blue, 25%);\n\t\t\t\tcontent:\"\\f046\";\n\t\t\t\tfont-size: 2.95em;\n\t\t\t\tfont-family: FontAwesome;\n\t\t\t\tfloat: left;\n\t\t\t\tposition: relative;\n\t\t\t\ttop: -.17em;\n\t\t\t\tpadding: 0 .25em .15em 0;\n\t\t\t\tdisplay: inline-block;\n\t\t\t}\n\t\t}\n\t}\n\t.location-map {\n\t\tbackground-color: $blue;\n\t\tdisplay: block;\n\t\t.section-contain {\n\t\t\tmax-width: 100%;\n\t\t\tpadding: 0!important; \n\t\t}\n\t\t.address {\n\t\t\tmargin: 4em auto 0;\n\t\t\t@include breakpoint(large) {\n\t\t\t    @include grid-column(4);\n\t\t\t}\n\t\t\tpadding: 5em!important; \n\t\t\t.cls-1 {\n\t\t\t\tfill: $white;\n\t\t\t}\n\t\t\tp.bham {\n\t\t\t\tfont-size: 3.75em;\n\t\t\t\tfont-family: $header-font-family;\n\t\t\t\ttext-align: center;\n\t\t\t\tcolor: darken($blue, 10%);\n\t\t\t\t// letter-spacing: .25em;\n\t\t\t\t// text-transform: uppercase;\n\t\t\t}\n\t\t}\n\t\t#map {\n\t\t\t@include breakpoint(large) {\n\t\t\t    @include grid-column(8);\n\t\t\t\tmin-height: 950px;\n\t\t\t}\n\t\t\tpadding: 0!important; \n\t\t}\n\t}\n\t.proximity {\n\t\t// @include grid-row();\n\t\tul {\n\t\t\tcolumns: 3;\n\t\t}\n\t}\n\t.gallery-wanted {\n\t\tbackground-color: lighten($alert-color, 10%);\n\t\tp {\n\t\t\tfont-family: $serif;\n\t\t\tfont-weight: 100;\n\t\t\tfont-size: 3.5em;\n\t\t}\n\t\th3, p {\n\t\t\tcolor: $white;\n\t\t}\n\t}\n\t#cta {\n\t\tbackground-color: $yellow;\n\t\t.accordion {\n\t\t\tbackground: transparent;\n\t\t\ttext-align: center;\n\t\t\n\t\t\tli {\n\t\t\t\tpadding: .5em;\n\t\t\t\tbackground-color: $blue;\n\t\t\t\ta.button {\n\t\t\t\t\tcolor: $white;\n\t\t\t\t\tfont-size: 2em;\n\t\t\t\t\t@include breakpoint(large) {\n\t\t\t\t\t    font-size: 3em;\n\t\t\t\t\t}\n\t\t\t\t\tmargin: 0;\n\t\t\t\t\t// display: inline-block;\n\t\t\t\t\ti {\n\t\t\t\t\t\tcolor: lighten($blue, 15%);\n\t\t\t\t\t\tpadding-right: 1em;\n\t\t\t\t\t\tfloat: left;\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t\t.accordion-title {\n\t\t\t\t\tborder: none;\n\t\t\t\t\t&::before {\n\t\t\t\t\t\tdisplay: none;\n\t\t\t\t\t\t// color: $blue;\n\t\t\t\t\t\t// font-family: FontAwesome;\n\t\t\t\t\t\t// content: \"\\f0dd\";\n\t\t\t\t\t\t// font-size: 2em;\n\t\t\t\t\t\t// right: -2.5rem;\n\t\t\t\t\t\t// top: 0;\n\t\t\t\t\t\t// background: lighten($blue, 10%);\n\t\t\t\t\t}\n\t\t\t\t\t&:hover, &:focus {\n\t\t\t\t\t\tbackground-color: lighten($blue, 10%);\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t\t.accordion-content {\n\t\t\t\t\tborder: none;\n\t\t\t\t\tbackground: transparent;\n\t\t\t\t\tlabel {\n\t\t\t\t\t\tcolor: white;\n\t\t\t\t\t\tfont-size: 1.5em;\n\t\t\t\t\t\tfont-weight: 100;\n\t\t\t\t\t}\n\t\t\t\t\ttextarea {\n\t\t\t\t\t\tmin-height: 300px;\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\n\t\t// Form Styling\n\n\t\tselect, [type='text'], [type='password'], [type='date'], [type='datetime'], [type='datetime-local'], [type='month'], [type='week'], [type='email'], [type='number'], [type='search'], [type='tel'], [type='time'], [type='url'], [type='color'], textarea {\n\t\t\tcolor: $red;\n\t\t\tfont-family: $serif;\n\t\t\tmargin: 0;\n\t\t\t@include breakpoint(medium) {\n\t\t\t\tfont-size: 150%;\n\t\t\t\tpadding: 10px 20px;\n\t\t\t\t// text-align: center;\n\t\t\t\theight: 4rem;\n\t\t\t}\n\t\t\t  \n\t\t\t&::selection {\n\t\t\t\tbackground: $yellow;\n\t\t\t}\n\t\t}\n\n\t\tdiv.wpcf7-mail-sent-ok {\n\t\t\tcolor: $white!important;\n\t\t\tbackground: $blue;\n\t\t\tborder: none;\n\t\t}\n\n\t\t.wpcf7-not-valid-tip {\n\t\t\tbackground: $blue;\n\t\t}\n\n\t\tdiv.wpcf7-validation-errors, div.wpcf7-mail-sent-ng {\n\t\t\tcolor: $red!important;\n\t\t\tbackground: $blue;\n\t\t\tborder: none;\n\t\t}\n\n\t\t.wpcf7-submit {\n\t\t\tmargin-right: -50px;\n\t\t\tbackground: $red;\n\t\t\tfont-size: 2em;\n\t\t}\n\n\t\t.g-recaptcha {\n\t\t\tmargin: 0 auto;\n\t\t    width: 304px;\n\t\t}\n\n\t\t.ajax-loader {\n\t\t\t// display: none;\n\t\t\twidth: 50px;\n\t\t\tposition: relative;\n\t\t\tbottom: 8px;\n\t\t\tleft: 50px;\n\t\t\topacity: .50;\n\t\t}\n\t} /* #cta */\n} /* entry-content */\n\n// Section divider\n.section-divider {\n\t@include grid-row();\n\n\thr {\n\t\t@include grid-column(12);\n\t\t@extend .dotted;\n\t\tbox-sizing: border-box;\n\t}\n}",
 			"file": "assets/scss/templates/_front.scss",
-			"file_size": 7612,
-			"file_write_time": 131221000373919287,
 			"settings":
 			{
-				"buffer_size": 7220,
+				"buffer_size": 7702,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -265,22 +280,24 @@
 	],
 	"file_history":
 	[
+		"/D/Ampps/www/happy-place/wp-content/themes/happy-place/assets/javascript/foundation.js",
+		"/D/Ampps/www/happy-place/wp-content/themes/happy-place/template-parts/featured-gallery.php",
+		"/D/Ampps/www/happy-place/wp-content/themes/happy-place/footer.php",
+		"/D/Ampps/www/happy-place/wp-content/themes/happy-place/library/custom-functions.php",
+		"/D/Ampps/www/happy-place/wp-content/themes/happy-place/assets/javascript/custom/PDFobject.js",
 		"/D/Ampps/www/happy-place/wp-content/themes/happy-place/assets/javascript/custom/google-map.js",
 		"/D/Ampps/www/happy-place/wp-content/themes/happy-place/header.php",
 		"/D/Ampps/www/happy-place/wp-content/themes/happy-place/functions.php",
 		"/D/Ampps/www/happy-place/wp-content/themes/happy-place/assets/scss/global/_settings.scss",
 		"/D/Ampps/www/happy-place/wp-content/themes/happy-place/pages/front.html",
 		"/D/Ampps/www/happy-place/wp-content/themes/happy-place/assets/scss/foundation.scss",
-		"/D/Ampps/www/happy-place/wp-content/themes/happy-place/library/custom-functions.php",
 		"/D/Ampps/www/happy-place/wp-content/themes/happy-place/template-parts/hc-colophon.php",
 		"/D/Ampps/www/happy-place/wp-content/themes/happy-place/library/custom-gallery-shortcodes.php",
 		"/C/Users/Casey/Desktop/wp-config.php",
 		"/D/Ampps/www/happy-place/wp-content/themes/happy-place/assets/scss/modules/_masthead.scss",
 		"/D/Ampps/www/happy-place/wp-content/themes/happy-place/assets/scss/components/_hc-colophon.scss",
-		"/D/Ampps/www/happy-place/wp-content/themes/happy-place/footer.php",
 		"/D/Ampps/www/happy-place/wp-content/themes/happy-place/assets/javascript/custom/slick-gallery.js",
 		"/D/Ampps/www/happy-place/wp-content/themes/happy-place/assets/javascript/custom/lightbox.js",
-		"/D/Ampps/www/happy-place/wp-content/themes/happy-place/template-parts/featured-gallery.php",
 		"/D/Ampps/www/happy-place/wp-content/themes/happy-place/assets/scss/components/_slick-slider.scss",
 		"/D/Ampps/www/happy-place/wp-content/themes/happy-place/assets/scss/templates/_front.scss",
 		"/D/Ampps/www/happy-place/wp-content/themes/happy-place/assets/scss/components/_modals.scss",
@@ -390,13 +407,11 @@
 		"/C/WORK/LOCAL/lp/iwpserver/htdocs/wordpress/wp-content/themes/licensing_pros/shortcodes.php",
 		"/C/WORK/LOCAL/lp/iwpserver/htdocs/wordpress/wp-content/themes/licensing_pros/faqs.php",
 		"/C/WORK/LOCAL/lp/iwpserver/htdocs/wordpress/wp-content/themes/licensing_pros/single.php",
-		"/C/Users/caseyb/Desktop/bytes/index.html",
-		"/C/WORK/LOCAL/lp/iwpserver/htdocs/wordpress/wp-content/themes/licensing_pros/css/all.css",
-		"/C/WORK/LOCAL/lp/iwpserver/htdocs/wordpress/wp-content/themes/licensing_pros/style.css"
+		"/C/Users/caseyb/Desktop/bytes/index.html"
 	],
 	"find":
 	{
-		"height": 27.0
+		"height": 35.0
 	},
 	"find_in_files":
 	{
@@ -560,7 +575,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -569,15 +584,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 19036,
+						"buffer_size": 4316,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								18715,
-								18715
+								3917,
+								3917
 							]
 						],
 						"settings":
@@ -586,33 +601,34 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 6116.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "library/custom-functions.php",
+					"file": "pages/front.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1109,
+						"buffer_size": 19165,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1109,
-								1109
+								7088,
+								7088
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -623,28 +639,29 @@
 				},
 				{
 					"buffer": 2,
-					"file": "footer.php",
+					"file": "pages/contact-form.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4528,
+						"buffer_size": 572,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								958,
-								958
+								572,
+								572
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"auto_name": "<p class=\"contact-intro\">Get in touch to say <stro",
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 342.0,
+						"translation.y": 247.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 4,
@@ -652,19 +669,19 @@
 				},
 				{
 					"buffer": 3,
-					"file": "template-parts/featured-gallery.php",
+					"file": "header.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 870,
+						"buffer_size": 2209,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								255,
-								349
+								1735,
+								1735
 							]
 						],
 						"settings":
@@ -673,43 +690,104 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 266.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
 					"buffer": 4,
-					"file": "pages/front.html",
+					"file": "assets/javascript/custom/PDFobject.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 10147,
+						"buffer_size": 9396,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								10147,
-								10147
+								2147,
+								2147
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 3506.0,
+						"translation.y": 798.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
 					"buffer": 5,
+					"file": "assets/javascript/foundation.js",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 1287465,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								322707,
+								322707
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 189009.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "assets/javascript/custom/google-map.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2210,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2210,
+								2210
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 855.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
 					"file": "style.css",
 					"semi_transient": false,
 					"settings":
@@ -735,7 +813,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 8,
+					"stack_index": 10,
 					"type": "text"
 				}
 			]
@@ -745,7 +823,7 @@
 			"sheets":
 			[
 				{
-					"buffer": 6,
+					"buffer": 8,
 					"file": "assets/scss/modules/_footer.scss",
 					"semi_transient": false,
 					"settings":
@@ -770,24 +848,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 8,
 					"type": "text"
 				},
 				{
-					"buffer": 7,
+					"buffer": 9,
 					"file": "assets/scss/templates/_front.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 7220,
+						"buffer_size": 7702,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3295,
-								3295
+								4471,
+								4471
 							]
 						],
 						"settings":
@@ -795,15 +873,15 @@
 							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
-						"translation.x": 0.0,
-						"translation.y": 2223.0,
+						"translation.x": 92.0,
+						"translation.y": 4529.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 8,
+					"buffer": 10,
 					"file": "assets/scss/global/_settings.scss",
 					"semi_transient": false,
 					"settings":
@@ -829,7 +907,7 @@
 						"translation.y": 399.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 9,
 					"type": "text"
 				}
 			]
@@ -863,7 +941,7 @@
 		"cols":
 		[
 			0.0,
-			0.743405275779,
+			0.662784109067,
 			1.0
 		],
 		"rows":
@@ -901,7 +979,7 @@
 		[
 			[
 				"",
-				"D:\\Ampps\\www\\c-square\\wp-content\\themes\\c-square\\c-square.sublime-project"
+				"D:\\Ampps\\www\\hq-biosciences\\wp-content\\themes\\hq-biosciences\\hq.sublime-project"
 			],
 			[
 				"ster",
@@ -927,7 +1005,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 252.0,
+	"side_bar_width": 230.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

@@ -1,0 +1,15 @@
+@mixin global-trans($speed) {
+	transition: all ease-in-out $speed;
+}
+
+@mixin box-shadow-inset($top, $left, $blur, $spread, $color) {
+  -webkit-box-shadow: inset $top $left $blur $spread $color;
+  -moz-box-shadow: inset $top $left $blur $spread $color;
+  box-shadow: inset $top $left $blur $spread $color;
+}
+
+@mixin box-shadow($top, $left, $blur, $spread, $color) {
+  -webkit-box-shadow: $top $left $blur $spread $color;
+  -moz-box-shadow:  $top $left $blur $spread $color;
+  box-shadow: $top $left $blur $spread $color;
+}

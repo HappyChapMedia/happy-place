@@ -261,6 +261,10 @@
 				padding: 5em!important; 
 				#address-illustration {
 					fill: $white;
+					@include global-trans(1500ms);
+					&:hover {
+						fill: darken($blue, 10%);
+					}
 					#text {
 						width: 400px;
 						height: 400px;
@@ -309,16 +313,32 @@
 	}
 	#cta {
 		background-color: $yellow;
+		.contact-intro {
+			color: $white;
+			font-size: 1.5em;
+		}
 		.accordion {
 			background: transparent;
 			text-align: center;
-		
+			#tour {
+				background-color: $green;
+				i {
+					color: lighten($green, 15%);
+				}
+			}
+			#message {
+				background-color: $blue;
+				i {
+					color: lighten($blue, 15%);
+				}
+			}
 			li {
 				padding: 0;
-				background-color: $blue;
+				background-color: transparent;
 				a.button {
 					color: $white;
 					font-size: 2em;
+					font-family: $serif;
 					@include breakpoint(large) {
 					    font-size: 3em;
 					}
@@ -331,7 +351,7 @@
 						@include breakpoint(medium) {
 							float: left;
 							display: inline-block;
-							padding: 0 1em 0 0;
+							padding: 0;
 						}
 						  
 					}

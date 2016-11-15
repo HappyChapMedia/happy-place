@@ -7512,7 +7512,11 @@ body.lb-disable-scrolling {
             .entry-content .location-map .section-contain .address:last-child:not(:first-child) {
               float: right; } }
         .entry-content .location-map .section-contain .address #address-illustration {
-          fill: #fefefe; }
+          fill: #fefefe;
+          -webkit-transition: all ease-in-out 1500ms;
+          transition: all ease-in-out 1500ms; }
+          .entry-content .location-map .section-contain .address #address-illustration:hover {
+            fill: #3ca79c; }
           .entry-content .location-map .section-contain .address #address-illustration #text {
             width: 400px;
             height: 400px; }
@@ -7554,15 +7558,27 @@ body.lb-disable-scrolling {
       color: #fefefe; }
   .entry-content #cta {
     background-color: #fbf5a9; }
+    .entry-content #cta .contact-intro {
+      color: #fefefe;
+      font-size: 1.5em; }
     .entry-content #cta .accordion {
       background: transparent;
       text-align: center; }
+      .entry-content #cta .accordion #tour {
+        background-color: #3adb76; }
+        .entry-content #cta .accordion #tour i {
+          color: #7be7a3; }
+      .entry-content #cta .accordion #message {
+        background-color: #54c2b6; }
+        .entry-content #cta .accordion #message i {
+          color: #8cd6ce; }
       .entry-content #cta .accordion li {
         padding: 0;
-        background-color: #54c2b6; }
+        background-color: transparent; }
         .entry-content #cta .accordion li a.button {
           color: #fefefe;
           font-size: 2em;
+          font-family: "abril-fatface", "Garamond Bold", Times, serif;
           margin: 0; }
           @media screen and (min-width: 64em) {
             .entry-content #cta .accordion li a.button {
@@ -7575,7 +7591,7 @@ body.lb-disable-scrolling {
               .entry-content #cta .accordion li a.button i {
                 float: left;
                 display: inline-block;
-                padding: 0 1em 0 0; } }
+                padding: 0; } }
         .entry-content #cta .accordion li .accordion-title {
           border: none; }
           .entry-content #cta .accordion li .accordion-title::before {
