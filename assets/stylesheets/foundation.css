@@ -7449,8 +7449,10 @@ body.lb-disable-scrolling {
     .entry-content .usps section ul li h4 {
       font-size: 1.85em;
       text-transform: uppercase; }
-  .entry-content .floor-map figure {
-    margin: 0; }
+  .entry-content #floor-map {
+    height: 400px; }
+    .entry-content #floor-map figure {
+      margin: 0; }
   .entry-content .uses {
     background: #fefefe; }
     .entry-content .uses ul {
@@ -7493,29 +7495,32 @@ body.lb-disable-scrolling {
     .entry-content .location-map .section-contain {
       max-width: 100%;
       padding: 0 !important; }
-    .entry-content .location-map .address {
-      margin: 4em auto 0;
-      padding: 5em !important; }
-      @media screen and (min-width: 64em) {
-        .entry-content .location-map .address {
-          width: 33.33333%;
-          float: left;
-          padding-left: 0.625rem;
-          padding-right: 0.625rem; } }
+      .entry-content .location-map .section-contain .address {
+        margin: 4em auto 0;
+        padding: 5em !important; }
+        @media screen and (min-width: 64em) {
+          .entry-content .location-map .section-contain .address {
+            width: 33.33333%;
+            float: left;
+            padding-left: 0.625rem;
+            padding-right: 0.625rem; } }
   @media screen and (min-width: 64em) and (min-width: 40em) {
-    .entry-content .location-map .address {
+    .entry-content .location-map .section-contain .address {
       padding-left: 0.9375rem;
       padding-right: 0.9375rem; } }
-      @media screen and (min-width: 64em) {
-          .entry-content .location-map .address:last-child:not(:first-child) {
-            float: right; } }
-      .entry-content .location-map .address .cls-1 {
-        fill: #fefefe; }
-      .entry-content .location-map .address p.bham {
-        font-size: 3.75em;
-        font-family: "acumin-pro-extra-condensed", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-        text-align: center;
-        color: #3ca79c; }
+        @media screen and (min-width: 64em) {
+            .entry-content .location-map .section-contain .address:last-child:not(:first-child) {
+              float: right; } }
+        .entry-content .location-map .section-contain .address #address-illustration {
+          fill: #fefefe; }
+          .entry-content .location-map .section-contain .address #address-illustration #text {
+            width: 400px;
+            height: 400px; }
+        .entry-content .location-map .section-contain .address p.bham {
+          font-size: 3.75em;
+          font-family: "acumin-pro-extra-condensed", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+          text-align: center;
+          color: #3ca79c; }
     .entry-content .location-map #map {
       padding: 0 !important; }
       @media screen and (min-width: 64em) {

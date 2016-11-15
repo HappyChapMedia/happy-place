@@ -199,7 +199,8 @@
 			}
 		}
 	}
-	.floor-map {
+	#floor-map {
+		height: 400px;
 		figure {
 			margin: 0;
 		}
@@ -252,23 +253,27 @@
 		.section-contain {
 			max-width: 100%;
 			padding: 0!important; 
-		}
-		.address {
-			margin: 4em auto 0;
-			@include breakpoint(large) {
-			    @include grid-column(4);
-			}
-			padding: 5em!important; 
-			.cls-1 {
-				fill: $white;
-			}
-			p.bham {
-				font-size: 3.75em;
-				font-family: $header-font-family;
-				text-align: center;
-				color: darken($blue, 10%);
-				// letter-spacing: .25em;
-				// text-transform: uppercase;
+			.address {
+				margin: 4em auto 0;
+				@include breakpoint(large) {
+				    @include grid-column(4);
+				}
+				padding: 5em!important; 
+				#address-illustration {
+					fill: $white;
+					#text {
+						width: 400px;
+						height: 400px;
+					}
+				}
+				p.bham {
+					font-size: 3.75em;
+					font-family: $header-font-family;
+					text-align: center;
+					color: darken($blue, 10%);
+					// letter-spacing: .25em;
+					// text-transform: uppercase;
+				}
 			}
 		}
 		#map {
