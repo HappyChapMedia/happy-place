@@ -3624,11 +3624,11 @@ kbd {
       background-color: #f7ec59;
       color: #000; }
   .button.success {
-    background-color: #3adb76;
-    color: #fff; }
+    background-color: #bcd85f;
+    color: #000; }
     .button.success:hover, .button.success:focus {
-      background-color: #22bb5b;
-      color: #fff; }
+      background-color: #a5c831;
+      color: #000; }
   .button.warning {
     background-color: #ffae00;
     color: #fff; }
@@ -3662,11 +3662,11 @@ kbd {
         border-color: #c9bb09;
         color: #c9bb09; }
     .button.hollow.success {
-      border: 1px solid #3adb76;
-      color: #3adb76; }
+      border: 1px solid #bcd85f;
+      color: #bcd85f; }
       .button.hollow.success:hover, .button.hollow.success:focus {
-        border-color: #157539;
-        color: #157539; }
+        border-color: #677d1e;
+        color: #677d1e; }
     .button.hollow.warning {
       border: 1px solid #ffae00;
       color: #ffae00; }
@@ -4069,8 +4069,8 @@ input[type="range"] {
     background: #fbf5a9;
     color: #0a0a0a; }
   .badge.success {
-    background: #3adb76;
-    color: #fefefe; }
+    background: #bcd85f;
+    color: #0a0a0a; }
   .badge.warning {
     background: #ffae00;
     color: #fefefe; }
@@ -4175,11 +4175,11 @@ input[type="range"] {
       background-color: #f7ec59;
       color: #000; }
   .button-group.success .button {
-    background-color: #3adb76;
-    color: #fff; }
+    background-color: #bcd85f;
+    color: #000; }
     .button-group.success .button:hover, .button-group.success .button:focus {
-      background-color: #22bb5b;
-      color: #fff; }
+      background-color: #a5c831;
+      color: #000; }
   .button-group.warning .button {
     background-color: #ffae00;
     color: #fff; }
@@ -4228,7 +4228,7 @@ input[type="range"] {
   .callout.secondary {
     background-color: #fefef2; }
   .callout.success {
-    background-color: #e1faea; }
+    background-color: #f5f9e7; }
   .callout.warning {
     background-color: #fff3d9; }
   .callout.alert {
@@ -4610,8 +4610,8 @@ input[type="range"] {
     background: #fbf5a9;
     color: #0a0a0a; }
   .label.success {
-    background: #3adb76;
-    color: #fefefe; }
+    background: #bcd85f;
+    color: #0a0a0a; }
   .label.warning {
     background: #ffae00;
     color: #fefefe; }
@@ -4982,7 +4982,7 @@ body {
   .progress.secondary .progress-meter {
     background-color: #fbf5a9; }
   .progress.success .progress-meter {
-    background-color: #3adb76; }
+    background-color: #bcd85f; }
   .progress.warning .progress-meter {
     background-color: #ffae00; }
   .progress.alert .progress-meter {
@@ -5041,11 +5041,11 @@ progress {
     progress.secondary::-moz-progress-bar {
       background: #fbf5a9; }
   progress.success {
-    color: #3adb76; }
+    color: #bcd85f; }
     progress.success::-webkit-progress-value {
-      background: #3adb76; }
+      background: #bcd85f; }
     progress.success::-moz-progress-bar {
-      background: #3adb76; }
+      background: #bcd85f; }
   progress.warning {
     color: #ffae00; }
     progress.warning::-webkit-progress-value {
@@ -5071,7 +5071,7 @@ meter {
   meter::-webkit-meter-bar {
     background: #cacaca; }
   meter::-webkit-meter-optimum-value {
-    background: #3adb76; }
+    background: #bcd85f; }
   meter::-webkit-meter-suboptimum-value {
     background: #ffae00; }
   meter::-webkit-meter-even-less-good-value {
@@ -5079,7 +5079,7 @@ meter {
   meter::-moz-meter-bar {
     background: #54c2b6; }
   meter:-moz-meter-optimum::-moz-meter-bar {
-    background: #3adb76; }
+    background: #bcd85f; }
   meter:-moz-meter-sub-optimum::-moz-meter-bar {
     background: #ffae00; }
   meter:-moz-meter-sub-sub-optimum::-moz-meter-bar {
@@ -7423,7 +7423,7 @@ body.lb-disable-scrolling {
       .entry-content section .section-contain {
         padding: 4em; } }
   .entry-content section.intro {
-    background: #3adb76;
+    background: #bcd85f;
     color: #fefefe; }
     .entry-content section.intro p {
       font-family: "acumin-pro-extra-condensed", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
@@ -7575,9 +7575,9 @@ body.lb-disable-scrolling {
       background: transparent;
       text-align: center; }
       .entry-content #cta .accordion #tour {
-        background-color: #3adb76; }
+        background-color: #bcd85f; }
         .entry-content #cta .accordion #tour i {
-          color: #7be7a3; }
+          color: #d6e79d; }
       .entry-content #cta .accordion #message {
         background-color: #54c2b6; }
         .entry-content #cta .accordion #message i {
