@@ -7560,6 +7560,10 @@ body.lb-disable-scrolling {
         background-color: #54c2b6; }
         .entry-content #cta .accordion #message i {
           color: #8cd6ce; }
+      .entry-content #cta .accordion #raptor a {
+        background-color: #ec5840; }
+        .entry-content #cta .accordion #raptor a i {
+          color: #f39586; }
       .entry-content #cta .accordion li {
         padding: 0;
         background-color: transparent; }

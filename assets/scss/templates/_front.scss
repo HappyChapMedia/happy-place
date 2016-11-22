@@ -314,16 +314,22 @@
 		.accordion {
 			background: transparent;
 			text-align: center;
-			#tour {
+			#tour  {
 				background-color: $green;
 				i {
 					color: lighten($green, 15%);
 				}
 			}
-			#message {
+			#message  {
 				background-color: $blue;
 				i {
 					color: lighten($blue, 15%);
+				}
+			}
+			#raptor a {
+				background-color: $red;
+				i {
+					color: lighten($red, 15%);
 				}
 			}
 			li {
