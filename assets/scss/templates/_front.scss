@@ -21,56 +21,27 @@
 			}
 		}
 	}
-	.address-tag-contain {
+	.tag-contain {
 		background: $blue;
 		@include breakpoint(xlarge) {
 			@include grid-column(35%);
 		}
 		  
-		.address-tag {
-			padding: 0em 2.5em;
+		.tag {
+			padding: 6em 2.5em 0;
 			text-align: center;
-			p {
-				color: $white;
-				margin: 0;
-			}
 
-			p.tagline {
-				font-size: 2.75em;
-				small {
-					font-size: .65em;
-					font-weight: 100;
-				}
-				@include breakpoint(medium) {
-					font-size: 3.75em;
-					// padding: 1em;
-				}
-				@include breakpoint(xlarge) {
-					font-size: 4.75em;
-					// padding: 1em;
-					small {
-						font-size: .35em;
-						font-weight: 100;
-					}
-				}
-				@include breakpoint(xxlarge) {
-					font-size: 6.75em;
-					// padding: 1em;
-				}
-				font-family: $sans-serif;
-				padding: 1em 0 0;
-			}
-			p.for-lease {
-				background: $alert-color;
-				padding: .05em .5em;
-				font-size: 2.5em;
-				font-weight: 500;
-				text-transform: uppercase;
-				letter-spacing: .15em;
-				display: inline-block;
-				border: solid 8px $white;
-				// margin-top: 50%;
-			}
+			// p.for-lease {
+			// 	background: $alert-color;
+			// 	padding: .05em .5em;
+			// 	font-size: 2.5em;
+			// 	font-weight: 500;
+			// 	text-transform: uppercase;
+			// 	letter-spacing: .15em;
+			// 	display: inline-block;
+			// 	border: solid 8px $white;
+			// 	// margin-top: 50%;
+			// }
 		}
 	}
 
@@ -120,12 +91,11 @@
 				color: $alert-color;
 			}
 		}
-		h3 {
-			// color: $yellow;
-			// background: $blue;
+		p.subhead {
+			font-size: 2.5em;
+			font-family: $sans-serif;
 			text-transform: uppercase;
 			text-align: center;
-			// display: inline-block;
 			padding: .5em;
 			margin: 1em 0 .75em;
 			strong {
@@ -212,8 +182,19 @@
 			}
 		}
 	}
-	#floor-map {
-		height: 400px;
+	.map {
+		h2,p {
+			color: $white;
+		}
+		background-color: rgb(82, 86, 89);
+		padding: 3em 0;
+		#floor-map {
+			@include breakpoint(large) {
+				height: 550px;
+			}
+			
+		}
+		border-bottom: solid 20px rgb(82, 86, 89);
 		figure {
 			margin: 0;
 		}

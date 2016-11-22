@@ -42,6 +42,14 @@
 <script async defer
 	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCn8GawuwjU1ktKiCH8RjNdGCofp32Fczo&callback=initialize">
 </script>
+<script src="<?php echo get_stylesheet_directory_uri('') ?>/assets/javascript/custom/pdfobject.js"></script>
+<script>
+	var options = {
+	   pdfOpenParams: { view: 'FitH' }
+	}
+
+	PDFObject.embed("<?php echo get_stylesheet_directory_uri('') ?>/assets/images/happy-place-floor-map.pdf", "#floor-map", false, options);
+</script>
 <?php do_action( 'foundationpress_before_closing_body' ); ?>
 </body>
 </html>

@@ -24,8 +24,6 @@
 		<link rel="manifest" href="<?php echo get_stylesheet_directory_uri('') ?>/assets/images/icons//manifest.json">
 		<link rel="mask-icon" href="<?php echo get_stylesheet_directory_uri('') ?>/assets/images/icons//safari-pinned-tab.svg" color="#5bbad5">
 		<meta name="theme-color" content="#fbf5a9">
-		<script src="<?php echo get_stylesheet_directory_uri('') ?>/assets/javascript/custom/pdfobject.js"></script>
-		<script>PDFObject.embed("<?php echo get_stylesheet_directory_uri('') ?>/assets/images/happy-place-floor-map.pdf", "#floor-map");</script>
 	</head>
 	<body <?php body_class(); ?>>
 	<?php do_action( 'foundationpress_after_body' ); ?>
