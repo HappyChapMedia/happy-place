@@ -217,6 +217,34 @@ get_header(); ?>
 		</div>
 	</div>  <!-- tag-contain -->
 </header>
+
+<div id="test-contain">
+	<div id="nav-contain" data-sticky-container>
+	  <div class="sticky" id="front-page-nav" data-sticky style="width:100%;" data-margin-top="0" data-margin-bottom="0" data-top-anchor="nav-contain:top" >
+	    <nav data-magellan data-magellan-expedition="fixed">
+	      <ul class="horizontal menu expanded">
+			<li><a href="#intro">Intro</a></li>
+			<li><a href="#usps">Why Here?</a></li>
+			<li><a href="#floor-map">Floor Map</a></li>
+			<li><a href="#uses">Potential Uses</a></li>
+			<li><a href="#location-map">Location</a></li>
+			<li><a href="#proximity">Proximity</a></li>
+			<li><a href="#cta">Contact</a></li>
+			<li><a href="#gallery-wanted">Gallery</a></li>
+	      </ul>
+	    </nav>
+	  </div>
+	</div> <!-- nav-contain -->
+</div>
+<div class="off-canvas-wrapper">
+	<div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+	<?php get_template_part( 'template-parts/mobile-off-canvas' ); ?>
+	<header id="masthead" class="site-header" role="banner">
+		<div class="title-bar" data-responsive-toggle="site-navigation">
+			<button class="menu-icon" type="button" data-toggle="mobile-menu"></button>
+		</div>
+	</header>
+
 <?php get_template_part( 'template-parts/featured-gallery' ); ?>
 
 <?php do_action( 'foundationpress_before_content' ); ?>
