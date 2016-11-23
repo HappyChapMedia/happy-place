@@ -81,6 +81,15 @@
 }
 .featured-gallery {
 	display: block;
+	.slick-prev, .slick-next {
+	    z-index: 100;
+	}
+	.slick-next {
+		right: 40px;
+	}
+	.slick-prev {
+		left: 40px;
+	}
 	figure {
 		margin: 0;
 		z-index: -1;
