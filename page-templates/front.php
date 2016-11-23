@@ -236,14 +236,6 @@ get_header(); ?>
 	  </div>
 	</div> <!-- nav-contain -->
 </div>
-<div class="off-canvas-wrapper">
-	<div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
-	<?php get_template_part( 'template-parts/mobile-off-canvas' ); ?>
-	<header id="masthead" class="site-header" role="banner">
-		<div class="title-bar" data-responsive-toggle="site-navigation">
-			<button class="menu-icon" type="button" data-toggle="mobile-menu"></button>
-		</div>
-	</header>
 
 <?php get_template_part( 'template-parts/featured-gallery' ); ?>
 

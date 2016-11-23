@@ -7284,9 +7284,6 @@ body.lb-disable-scrolling {
       -webkit-transition: all ease-in-out 800ms;
       transition: all ease-in-out 800ms; }
 
-#wpadminbar {
-  display: none; }
-
 #test-contain {
   margin-top: -10px; }
   @media screen and (max-width: 63.9375em) {

@@ -47,5 +47,16 @@
 		</div>
 	</header> -->
 
+<div class="off-canvas-wrapper">
+	<div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+	<?php get_template_part( 'template-parts/mobile-off-canvas' ); ?>
+	<header id="masthead" class="site-header" role="banner" data-sticky-container>
+		<div>
+			<div class="title-bar" data-responsive-toggle="site-navigation" data-sticky data-margin-top="0">
+				<button class="menu-icon" type="button" data-toggle="mobile-menu"></button>
+			</div>
+		</div>
+	</header>
+
 	<section class="container">
 		<?php do_action( 'foundationpress_after_header' );
