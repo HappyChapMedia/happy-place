@@ -11,7 +11,7 @@
 <nav class="off-canvas position-left" id="mobile-menu" data-off-canvas data-position="left" role="navigation">
 	<ul class="vertical menu" data-accordion-menu>
 		<li><a href="#intro">Intro</a></li>
-		<li><a href="#usps">Why Here?</a></li>
+		<li><a href="#usps">The Place</a></li>
 		<li><a href="#floor-map">Floor Map</a></li>
 		<li><a href="#uses">Potential Uses</a></li>
 		<li><a href="#location-map">Location</a></li>

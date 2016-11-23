@@ -82,21 +82,30 @@
 .featured-gallery {
 	display: block;
 	figure {
-		// margin: 0 0 -16em;
+		margin: 0;
+		z-index: -1;
 	}
-	figcaption .title {
+	figcaption.title {
 		.caption-contain {
-		top: -15em;
-		display: inline;
-		position: relative;
-			background: $white;
+			display: block;
+			min-height: 250px;
 			padding: 1.5em;
 		}
 		h3 {
 			font-size: 2em;
+			@include breakpoint(medium) {
+			    font-size: 3.5em;
+			    line-height: 1em;
+			}
+			  
 		}
 		p {
 			color: $black;
+		}
+	}
+	figure:nth-child(2n+1) {
+		figcaption.title {
+			background-color: $light-gray;
 		}
 	}
 }
@@ -343,7 +352,7 @@
 			min-height: 500px;
 			@include breakpoint(large) {
 			    @include grid-column(8);
-				min-height: 950px;
+				min-height: 750px;
 			}
 			padding: 0!important; 
 		}
