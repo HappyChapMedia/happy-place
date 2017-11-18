@@ -34,7 +34,7 @@
         var iconBase = '../wp-content/themes/happy-place/assets/images/';
         var icons = {
           hplogo: {
-            title:"The Happy Place - shared office & retail space!",
+            title:"The Happy Place - shared creative office & event space!",
             icon: iconBase + 'happy-place-map-marker.png'
           }
         };

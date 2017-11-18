@@ -26,29 +26,34 @@
 
 /* Tablet and desktop menu */
 .top-bar {
+  font-family: $sans-serif;
+  text-transform: uppercase;
 
   .menu .home a {
     font-size: 1rem;
-    color: #B9B9B9;
-  }
-
-  .menu a {
-    height: 45px;
-    line-height: 45px;
-    color: #e6e6e6;
-    padding-top: 0;
-    padding-bottom: 0;
-    font-weight: bold;
-    font-size: 0.8rem;
-    line-height: 1;
-
-    &:hover:not(.button) {
-      background-color: #2a2a2a;
+    #happy-place-horiz {
+      fill: $white;
+      height: 50px;
     }
   }
 
-  .menu>li:not(.menu-text)>a { padding: 1rem; }
-  .menu li:not(:last-child) { border-right: 1px solid #4e4e4e; }
+  .menu a {
+    color: $white;
+    // height: 45px;
+    // line-height: 45px;
+    padding-top: 0;
+    padding-bottom: 0;
+    font-weight: bold;
+    font-size: 1.75rem;
+    line-height: 1;
+
+    &:hover:not(.button) {
+      background-color: darken($green, 10%);
+    }
+  }
+
+  .menu>li:not(.menu-text)>a { padding: 1rem 1.5rem; }
+  .menu li:not(:last-child) { border-right: 1px solid darken($green, 10%); }
 
   .dropdown.menu .submenu {
     background-color: #121212;

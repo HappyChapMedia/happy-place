@@ -1,0 +1,39 @@
+.featured-gallery {
+	display: block;
+	.slick-prev, .slick-next {
+	    z-index: 100;
+	}
+	.slick-next {
+		right: 40px;
+	}
+	.slick-prev {
+		left: 40px;
+	}
+	figure {
+		margin: 0;
+		z-index: -1;
+	}
+	figcaption.title {
+		.caption-contain {
+			display: block;
+			min-height: 250px;
+			padding: 1.5em;
+		}
+		h3 {
+			font-size: 2em;
+			@include breakpoint(medium) {
+			    font-size: 3.5em;
+			    line-height: 1em;
+			}
+			  
+		}
+		p {
+			color: $black;
+		}
+	}
+	figure:nth-child(2n+1) {
+		figcaption.title {
+			background-color: $light-gray;
+		}
+	}
+}
