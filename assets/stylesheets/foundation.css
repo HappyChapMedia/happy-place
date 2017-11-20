@@ -7336,6 +7336,90 @@ body.lb-disable-scrolling {
       -webkit-transition: all ease-in-out 800ms;
       transition: all ease-in-out 800ms; }
 
+.page-template-front {
+  /* #front-hero */
+  /* section */
+  /* events-lead */
+  /* membership-lead */
+  /* events-lead */ }
+  .page-template-front #front-hero {
+    background: #f9ef78;
+    display: inline-block;
+    width: 100%;
+    /* tag-contain */ }
+    .page-template-front #front-hero .branding-contain {
+      background: #f8ee6f; }
+      .page-template-front #front-hero .branding-contain .branding {
+        text-align: center; }
+        .page-template-front #front-hero .branding-contain .branding h1.logo {
+          text-transform: uppercase;
+          padding: 1em 0;
+          margin: 0; }
+          .page-template-front #front-hero .branding-contain .branding h1.logo #happy-place-logo-circle {
+            height: 300px;
+            /* the,happy,place */ }
+            .page-template-front #front-hero .branding-contain .branding h1.logo #happy-place-logo-circle #the .st1, .page-template-front #front-hero .branding-contain .branding h1.logo #happy-place-logo-circle #happy .st1, .page-template-front #front-hero .branding-contain .branding h1.logo #happy-place-logo-circle #place .st1 {
+              fill: #54c2b6; }
+            .page-template-front #front-hero .branding-contain .branding h1.logo #happy-place-logo-circle #circle {
+              fill: #fefefe; }
+    .page-template-front #front-hero .tag-contain {
+      background: #54c2b6;
+      padding: 4em 2em;
+      /* tag */ }
+      .page-template-front #front-hero .tag-contain .tag p {
+        font-size: 3em;
+        text-align: center;
+        color: #fefefe;
+        font-family: "acumin-pro-extra-condensed", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; }
+        @media screen and (min-width: 64em) {
+          .page-template-front #front-hero .tag-contain .tag p {
+            font-size: 4em;
+            line-height: 1em; } }
+        @media screen and (min-width: 75em) {
+          .page-template-front #front-hero .tag-contain .tag p {
+            font-size: 4em;
+            line-height: 1.2em; } }
+        .page-template-front #front-hero .tag-contain .tag p .amp {
+          font-family: "abril-fatface", "Garamond Bold", Times, serif;
+          font-weight: 900;
+          color: #ec5840; }
+      .page-template-front #front-hero .tag-contain .section-divider {
+        width: 80%; }
+        .page-template-front #front-hero .tag-contain .section-divider hr {
+          border-color: #fefefe; }
+      .page-template-front #front-hero .tag-contain .location p {
+        margin: 0;
+        font-weight: 100;
+        color: #fefefe;
+        text-align: center; }
+        .page-template-front #front-hero .tag-contain .location p #hp-address {
+          max-width: 250px;
+          fill: #fefefe; }
+  .page-template-front section {
+    text-align: center;
+    padding: 4em 0; }
+  .page-template-front #events-lead {
+    background-color: #bcd85f; }
+    .page-template-front #events-lead h2, .page-template-front #events-lead p {
+      color: #fefefe;
+      text-align: center; }
+    .page-template-front #events-lead p.cta {
+      margin-top: 2em; }
+  .page-template-front #membership-lead {
+    background-color: #ec5840; }
+    .page-template-front #membership-lead h2, .page-template-front #membership-lead p {
+      color: #fefefe;
+      text-align: center; }
+    .page-template-front #membership-lead p.cta {
+      margin-top: 2em; }
+  .page-template-front #desk-lead {
+    background-color: #f8ed60; }
+    .page-template-front #desk-lead h2, .page-template-front #desk-lead p {
+      color: #54c2b6;
+      text-align: center; }
+    .page-template-front #desk-lead p.cta {
+      margin-top: 2em; }
+
 #test-contain {
   margin-top: -10px; }
   @media screen and (max-width: 63.9375em) {
@@ -7358,107 +7442,63 @@ body.lb-disable-scrolling {
     #test-contain ul li .active {
       background-color: #8a8a8a; }
 
-#front-hero {
-  background: #f9ef78;
-  display: inline-block;
-  width: 100%; }
-  #front-hero .branding-contain {
-    background: #f8ee6f; }
-    @media screen and (min-width: 75em) {
-      #front-hero .branding-contain {
-        width: 65%;
-        float: left;
-        padding-left: 0.625rem;
-        padding-right: 0.625rem; } }
-  @media screen and (min-width: 75em) and (min-width: 40em) {
-    #front-hero .branding-contain {
+#location-map {
+  background-color: #54c2b6;
+  display: block;
+  padding: 0 !important; }
+  #location-map .section-contain {
+    max-width: 100%;
+    padding: 0 !important; }
+    #location-map .section-contain .address-contain {
+      margin: 4em auto 0;
+      padding: 5em !important; }
+      @media screen and (min-width: 64em) {
+        #location-map .section-contain .address-contain {
+          width: 33.33333%;
+          float: left;
+          padding-left: 0.625rem;
+          padding-right: 0.625rem; } }
+  @media screen and (min-width: 64em) and (min-width: 40em) {
+    #location-map .section-contain .address-contain {
       padding-left: 0.9375rem;
       padding-right: 0.9375rem; } }
-    @media screen and (min-width: 75em) {
-        #front-hero .branding-contain:last-child:not(:first-child) {
-          float: right; } }
-    #front-hero .branding-contain .branding {
-      text-align: center; }
-      #front-hero .branding-contain .branding h1.logo {
-        text-transform: uppercase;
-        padding: 1em 0;
-        margin: 0; }
-        #front-hero .branding-contain .branding h1.logo .cls-1 {
-          fill: #fefefe; }
-  #front-hero .tag-contain {
-    background: #54c2b6; }
-    @media screen and (min-width: 75em) {
-      #front-hero .tag-contain {
-        width: 35%;
+      @media screen and (min-width: 64em) {
+          #location-map .section-contain .address-contain:last-child:not(:first-child) {
+            float: right; } }
+      #location-map .section-contain .address-contain #hp-address {
+        fill: #fefefe;
+        -webkit-transition: all ease-in-out 1500ms;
+        transition: all ease-in-out 1500ms; }
+        #location-map .section-contain .address-contain #hp-address:hover {
+          fill: #3ca79c; }
+        #location-map .section-contain .address-contain #hp-address #text {
+          width: 400px;
+          height: 400px; }
+      #location-map .section-contain .address-contain p.bham {
+        font-size: 3.75em;
+        font-family: "acumin-pro-extra-condensed", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+        text-align: center;
+        color: #3ca79c; }
+  #location-map #map {
+    min-height: 500px;
+    padding: 0 !important; }
+    @media screen and (min-width: 64em) {
+      #location-map #map {
+        width: 66.66667%;
         float: left;
         padding-left: 0.625rem;
-        padding-right: 0.625rem; } }
-  @media screen and (min-width: 75em) and (min-width: 40em) {
-    #front-hero .tag-contain {
+        padding-right: 0.625rem;
+        min-height: 750px; } }
+  @media screen and (min-width: 64em) and (min-width: 40em) {
+    #location-map #map {
       padding-left: 0.9375rem;
       padding-right: 0.9375rem; } }
-    @media screen and (min-width: 75em) {
-        #front-hero .tag-contain:last-child:not(:first-child) {
+    @media screen and (min-width: 64em) {
+        #location-map #map:last-child:not(:first-child) {
           float: right; } }
-    #front-hero .tag-contain .tag {
-      padding: 6em 2.5em 0;
-      text-align: center; }
 
 .entry-content {
   display: block; }
-  .entry-content #location-map {
-    background-color: #54c2b6;
-    display: block; }
-    .entry-content #location-map .section-contain {
-      max-width: 100%;
-      padding: 0 !important; }
-      .entry-content #location-map .section-contain .address {
-        margin: 4em auto 0;
-        padding: 5em !important; }
-        @media screen and (min-width: 64em) {
-          .entry-content #location-map .section-contain .address {
-            width: 33.33333%;
-            float: left;
-            padding-left: 0.625rem;
-            padding-right: 0.625rem; } }
-  @media screen and (min-width: 64em) and (min-width: 40em) {
-    .entry-content #location-map .section-contain .address {
-      padding-left: 0.9375rem;
-      padding-right: 0.9375rem; } }
-        @media screen and (min-width: 64em) {
-            .entry-content #location-map .section-contain .address:last-child:not(:first-child) {
-              float: right; } }
-        .entry-content #location-map .section-contain .address #address-illustration {
-          fill: #fefefe;
-          -webkit-transition: all ease-in-out 1500ms;
-          transition: all ease-in-out 1500ms; }
-          .entry-content #location-map .section-contain .address #address-illustration:hover {
-            fill: #3ca79c; }
-          .entry-content #location-map .section-contain .address #address-illustration #text {
-            width: 400px;
-            height: 400px; }
-        .entry-content #location-map .section-contain .address p.bham {
-          font-size: 3.75em;
-          font-family: "acumin-pro-extra-condensed", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-          text-align: center;
-          color: #3ca79c; }
-    .entry-content #location-map #map {
-      min-height: 500px;
-      padding: 0 !important; }
-      @media screen and (min-width: 64em) {
-        .entry-content #location-map #map {
-          width: 66.66667%;
-          float: left;
-          padding-left: 0.625rem;
-          padding-right: 0.625rem;
-          min-height: 750px; } }
-  @media screen and (min-width: 64em) and (min-width: 40em) {
-    .entry-content #location-map #map {
-      padding-left: 0.9375rem;
-      padding-right: 0.9375rem; } }
-      @media screen and (min-width: 64em) {
-          .entry-content #location-map #map:last-child:not(:first-child) {
-            float: right; } }
   @media screen and (min-width: 64em) {
     .entry-content #proximity ul {
       -webkit-columns: 3;

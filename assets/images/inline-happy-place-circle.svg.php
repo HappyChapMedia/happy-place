@@ -1,9 +1,5 @@
 <svg version="1.1" id="happy-place-logo-circle" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
 	 y="0px" viewBox="0 0 720 720" style="enable-background:new 0 0 720 720;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:#54C1B5;}
-	.st1{fill:#FFFFFF;}
-</style>
 <path id="circle" class="st0" d="M360.3,697c186.3,0,337.3-151,337.3-337.3S546.5,22.5,360.3,22.5S23,173.5,23,359.8
 	S174,697,360.3,697"/>
 <g id="place">

@@ -1,8 +1,5 @@
 <svg version="1.1" id="happy-place-horiz" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
 	 y="0px" viewBox="0 0 777.7 204" style="enable-background:new 0 0 777.7 204;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:#54C2B6;}
-</style>
 <g id="place">
 	<path class="st0" d="M411.3,61.6c21.3,0.1,34,4.9,33.9,22.7c-0.1,19.3-15,24.3-37,24.2h-0.9l-0.1,30.4l14.2,0.1v2.1l-43.7-0.2v-2.1
 		h7.4l0.2-75.2h-7.4v-2.1L411.3,61.6z M407.3,106.3h2.4c9.5,0.1,12.1-6.5,12.1-19.7v-5.5c0.1-12.8-2.6-17.4-11.3-17.4h-3
