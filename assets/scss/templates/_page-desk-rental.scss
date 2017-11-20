@@ -1,4 +1,7 @@
 .page-template-page-desk-rental {
+	.menu .active > a {
+		color: darken($green, 10%);
+	}
 	#intro {
 		h1 {
 			@include breakpoint(large){
@@ -56,6 +59,9 @@
 			margin: 0;
 		}
 	} /* floor-map */
+
+
+
 	#uses {
 		background: $white;
 		// @include grid-column();

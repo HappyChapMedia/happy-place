@@ -4757,7 +4757,7 @@ input[type="range"] {
     margin-left: 1rem; }
   .menu .active > a {
     color: #fefefe;
-    background: #121212; }
+    background: transparent; }
 
 .menu-text {
   font-weight: bold;
@@ -6676,7 +6676,7 @@ table.hover tbody tr:nth-of-type(even):hover {
     font-size: 1rem; }
     .top-bar .menu .home a #happy-place-horiz {
       fill: #fefefe;
-      height: 50px; }
+      height: 35px; }
   .top-bar .menu a {
     color: #fefefe;
     padding-top: 0;
@@ -6685,7 +6685,7 @@ table.hover tbody tr:nth-of-type(even):hover {
     font-size: 1.75rem;
     line-height: 1; }
     .top-bar .menu a:hover:not(.button) {
-      background-color: #abce36; }
+      color: #deecb1; }
   .top-bar .menu > li:not(.menu-text) > a {
     padding: 1rem 1.5rem; }
   .top-bar .menu li:not(:last-child) {
@@ -7348,7 +7348,10 @@ body.lb-disable-scrolling {
     width: 100%;
     /* tag-contain */ }
     .page-template-front #front-hero .branding-contain {
-      background: #f8ee6f; }
+      background: #f8ee6f;
+      -webkit-background-size: cover;
+              background-size: cover;
+      background-repeat: no-repeat; }
       .page-template-front #front-hero .branding-contain .branding {
         text-align: center; }
         .page-template-front #front-hero .branding-contain .branding h1.logo {
@@ -7356,7 +7359,7 @@ body.lb-disable-scrolling {
           padding: 1em 0;
           margin: 0; }
           .page-template-front #front-hero .branding-contain .branding h1.logo #happy-place-logo-circle {
-            height: 300px;
+            max-height: 400px;
             /* the,happy,place */ }
             .page-template-front #front-hero .branding-contain .branding h1.logo #happy-place-logo-circle #the .st1, .page-template-front #front-hero .branding-contain .branding h1.logo #happy-place-logo-circle #happy .st1, .page-template-front #front-hero .branding-contain .branding h1.logo #happy-place-logo-circle #place .st1 {
               fill: #54c2b6; }
@@ -7398,27 +7401,59 @@ body.lb-disable-scrolling {
   .page-template-front section {
     text-align: center;
     padding: 4em 0; }
+    @media screen and (min-width: 64em) {
+      .page-template-front section .section-contain .section-text {
+        width: 66.66667%;
+        float: left;
+        padding-left: 0.625rem;
+        padding-right: 0.625rem; } }
+  @media screen and (min-width: 64em) and (min-width: 40em) {
+    .page-template-front section .section-contain .section-text {
+      padding-left: 0.9375rem;
+      padding-right: 0.9375rem; } }
+    @media screen and (min-width: 64em) {
+        .page-template-front section .section-contain .section-text:last-child:not(:first-child) {
+          float: right; } }
+    @media screen and (min-width: 64em) {
+      .page-template-front section .section-contain .section-img {
+        width: 33.33333%;
+        float: left;
+        padding-left: 0.625rem;
+        padding-right: 0.625rem; } }
+  @media screen and (min-width: 64em) and (min-width: 40em) {
+    .page-template-front section .section-contain .section-img {
+      padding-left: 0.9375rem;
+      padding-right: 0.9375rem; } }
+    @media screen and (min-width: 64em) {
+        .page-template-front section .section-contain .section-img:last-child:not(:first-child) {
+          float: right; } }
   .page-template-front #events-lead {
-    background-color: #bcd85f; }
-    .page-template-front #events-lead h2, .page-template-front #events-lead p {
-      color: #fefefe;
+    border-bottom: solid 5em #bcd85f; }
+    .page-template-front #events-lead h2 {
+      color: #bcd85f;
       text-align: center; }
     .page-template-front #events-lead p.cta {
       margin-top: 2em; }
+      .page-template-front #events-lead p.cta .button {
+        background-color: #bcd85f; }
   .page-template-front #membership-lead {
-    background-color: #ec5840; }
-    .page-template-front #membership-lead h2, .page-template-front #membership-lead p {
-      color: #fefefe;
+    border-bottom: solid 5em #ec5840; }
+    .page-template-front #membership-lead h2 {
+      color: #ec5840;
       text-align: center; }
     .page-template-front #membership-lead p.cta {
       margin-top: 2em; }
+      .page-template-front #membership-lead p.cta .button {
+        background-color: #ec5840; }
   .page-template-front #desk-lead {
-    background-color: #f8ed60; }
-    .page-template-front #desk-lead h2, .page-template-front #desk-lead p {
-      color: #54c2b6;
+    border-bottom: solid 5em #f8ed60; }
+    .page-template-front #desk-lead h2 {
+      color: #f8ed60;
       text-align: center; }
     .page-template-front #desk-lead p.cta {
       margin-top: 2em; }
+      .page-template-front #desk-lead p.cta .button {
+        background-color: #f8ed60; }
 
 #test-contain {
   margin-top: -10px; }
@@ -7682,8 +7717,7 @@ section.why {
     font-size: 1.5em; }
   #cta .accordion {
     background: transparent;
-    text-align: center;
-    /* li */ }
+    text-align: center; }
     #cta .accordion #tour {
       background-color: #bcd85f; }
       #cta .accordion #tour i {
@@ -7696,42 +7730,6 @@ section.why {
       background-color: #ec5840; }
       #cta .accordion #raptor a i {
         color: #f39586; }
-    #cta .accordion ul {
-      padding: 0;
-      background-color: transparent; }
-      #cta .accordion ul a.button {
-        color: #fefefe;
-        font-size: 2em;
-        font-family: "abril-fatface", "Garamond Bold", Times, serif;
-        margin: 0; }
-        @media screen and (min-width: 64em) {
-          #cta .accordion ul a.button {
-            font-size: 3em; } }
-        #cta .accordion ul a.button i {
-          color: #8cd6ce;
-          display: block;
-          padding: 0 0 1em 0; }
-          @media screen and (min-width: 40em) {
-            #cta .accordion ul a.button i {
-              float: left;
-              display: inline-block;
-              padding: 0; } }
-      #cta .accordion ul .accordion-title {
-        border: none; }
-        #cta .accordion ul .accordion-title::before {
-          display: none; }
-        #cta .accordion ul .accordion-title:hover, #cta .accordion ul .accordion-title:focus {
-          background-color: #7acfc6; }
-      #cta .accordion ul .accordion-content {
-        border: none;
-        background: transparent;
-        padding: 2em; }
-        #cta .accordion ul .accordion-content label {
-          color: white;
-          font-size: 1.5em;
-          font-weight: 100; }
-        #cta .accordion ul .accordion-content textarea {
-          min-height: 300px; }
   #cta select, #cta [type='text'], #cta [type='password'], #cta [type='date'], #cta [type='datetime'], #cta [type='datetime-local'], #cta [type='month'], #cta [type='week'], #cta [type='email'], #cta [type='number'], #cta [type='search'], #cta [type='tel'], #cta [type='time'], #cta [type='url'], #cta [type='color'], #cta textarea {
     color: #ec5840;
     font-family: "abril-fatface", "Garamond Bold", Times, serif;
@@ -7772,10 +7770,59 @@ section.why {
     opacity: .50; }
 
 /* #cta */
+ul.accordion {
+  /* li */ }
+  ul.accordion li {
+    padding: 0;
+    background-color: transparent;
+    /* a.button */
+    /* accordion-title */
+    /* accordion-content */ }
+    ul.accordion li a.button {
+      color: #fefefe;
+      font-size: 2em;
+      font-family: "abril-fatface", "Garamond Bold", Times, serif;
+      margin: 0;
+      /* i */ }
+      @media screen and (min-width: 64em) {
+        ul.accordion li a.button {
+          font-size: 3em; } }
+      ul.accordion li a.button i {
+        color: #8cd6ce;
+        display: block;
+        padding: 0 0 1em 0; }
+        @media screen and (min-width: 40em) {
+          ul.accordion li a.button i {
+            float: left;
+            display: inline-block;
+            padding: 0; } }
+    ul.accordion li .accordion-title {
+      border: none; }
+      ul.accordion li .accordion-title::before {
+        display: none; }
+      ul.accordion li .accordion-title:hover, ul.accordion li .accordion-title:focus {
+        background-color: #7acfc6; }
+    ul.accordion li .accordion-content {
+      border: none;
+      background: transparent;
+      padding: 2em; }
+      ul.accordion li .accordion-content label {
+        color: white;
+        font-size: 1.5em;
+        font-weight: 100; }
+      ul.accordion li .accordion-content textarea {
+        min-height: 300px; }
+
+/* ul */
 .page-template-page-events {
   /* amenities */
   /* floor-map */
-  /* uses */ }
+  /* uses */
+  /* cta */ }
+  .page-template-page-events .menu .active > a {
+    color: #9cbd2e; }
+    .page-template-page-events .menu .active > a:hover {
+      color: #8ba829; }
   @media screen and (min-width: 64em) {
     .page-template-page-events #intro h1 {
       font-size: 8em; } }
@@ -7820,6 +7867,82 @@ section.why {
           height: 550px; } }
     .page-template-page-events #floor-map figure {
       margin: 0; }
+  .page-template-page-events #rates ul {
+    max-width: 75rem;
+    margin-left: auto;
+    margin-right: auto; }
+    .page-template-page-events #rates ul::before, .page-template-page-events #rates ul::after {
+      content: ' ';
+      display: table; }
+    .page-template-page-events #rates ul::after {
+      clear: both; }
+    @media screen and (min-width: 40em) {
+      .page-template-page-events #rates ul li {
+        width: 33.33333%;
+        float: left;
+        padding-left: 0.625rem;
+        padding-right: 0.625rem; } }
+  @media screen and (min-width: 40em) and (min-width: 40em) {
+    .page-template-page-events #rates ul li {
+      padding-left: 0.9375rem;
+      padding-right: 0.9375rem; } }
+    @media screen and (min-width: 40em) {
+        .page-template-page-events #rates ul li:last-child:not(:first-child) {
+          float: right; } }
+  .page-template-page-events #rates .rate-extras {
+    width: 100%;
+    float: left;
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
+    padding: 2em 0; }
+    @media screen and (min-width: 40em) {
+      .page-template-page-events #rates .rate-extras {
+        padding-left: 0.9375rem;
+        padding-right: 0.9375rem; } }
+    .page-template-page-events #rates .rate-extras:last-child:not(:first-child) {
+      float: right; }
+    .page-template-page-events #rates .rate-extras .discount {
+      background-color: #54c2b6;
+      color: #fefefe; }
+      @media screen and (min-width: 40em) {
+        .page-template-page-events #rates .rate-extras .discount {
+          width: 50%;
+          float: left;
+          padding-left: 0.625rem;
+          padding-right: 0.625rem; } }
+  @media screen and (min-width: 40em) and (min-width: 40em) {
+    .page-template-page-events #rates .rate-extras .discount {
+      padding-left: 0.9375rem;
+      padding-right: 0.9375rem; } }
+      @media screen and (min-width: 40em) {
+          .page-template-page-events #rates .rate-extras .discount:last-child:not(:first-child) {
+            float: right; } }
+    .page-template-page-events #rates .rate-extras .partner {
+      background-color: #bcd85f;
+      color: #fefefe; }
+      @media screen and (min-width: 40em) {
+        .page-template-page-events #rates .rate-extras .partner {
+          width: 50%;
+          float: left;
+          padding-left: 0.625rem;
+          padding-right: 0.625rem; } }
+  @media screen and (min-width: 40em) and (min-width: 40em) {
+    .page-template-page-events #rates .rate-extras .partner {
+      padding-left: 0.9375rem;
+      padding-right: 0.9375rem; } }
+      @media screen and (min-width: 40em) {
+          .page-template-page-events #rates .rate-extras .partner:last-child:not(:first-child) {
+            float: right; } }
+  .page-template-page-events #rates .cta {
+    max-width: 75rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center; }
+    .page-template-page-events #rates .cta::before, .page-template-page-events #rates .cta::after {
+      content: ' ';
+      display: table; }
+    .page-template-page-events #rates .cta::after {
+      clear: both; }
   .page-template-page-events #uses {
     background: #fefefe; }
     .page-template-page-events #uses ul {
@@ -7854,11 +7977,24 @@ section.why {
         top: -.17em;
         padding: 0 .25em .15em 0;
         display: inline-block; }
+  .page-template-page-events #cta {
+    background-color: #ec5840;
+    color: #fefefe;
+    text-align: center; }
+    .page-template-page-events #cta h2 {
+      color: #fefefe; }
+    .page-template-page-events #cta .accordion-title {
+      background-color: #42baad; }
+    .page-template-page-events #cta .accordion-content {
+      background-color: #3ca79c; }
 
+/* page-template-page-events */
 .page-template-page-desk-rental {
   /* amenities */
   /* floor-map */
   /* uses */ }
+  .page-template-page-desk-rental .menu .active > a {
+    color: #abce36; }
   @media screen and (min-width: 64em) {
     .page-template-page-desk-rental #intro h1 {
       font-size: 8em; } }

@@ -8,8 +8,12 @@
 		background: darken($yellow, 10%);
 		display: inline-block;
 		width: 100%;
+
 		.branding-contain {
 			background: darken($yellow, 12%);
+			background-size: cover;
+			background-repeat: no-repeat;
+			// opacity: .8;
 			// @include breakpoint(large) {
 			// 	@include grid-column(40%);
 			// }
@@ -21,7 +25,7 @@
 					padding: 1em 0;
 					margin: 0;
 					#happy-place-logo-circle {
-						height: 300px;
+						max-height: 400px;
 						#the ,#happy, #place {
 							.st1 {
 								fill: $blue;
@@ -91,39 +95,58 @@
 		text-align: center;
 		padding: 4em 0;
 		.section-contain {
+			.section-text {
+				@include breakpoint(large){
+					@include grid-column(8);
+				}
+			}
+			.section-img {
+				@include breakpoint(large){
+					@include grid-column(4);
+				}
+			}
 		}
 	} /* section */
 
 	#events-lead {
-		background-color: lighten($green, 0%);
-		h2, p {
-			color: $white;
+		border-bottom: solid 5em lighten($green, 0%);
+		h2 {
+			color: $green;
 			text-align: center;
 		}
 		p.cta {
 			margin-top: 2em;
+			.button {
+				background-color: lighten($green, 0%);
+			}
 		}
 	} /* events-lead */
 
 	#membership-lead {
-		background-color: lighten($red, 0%);
-		h2, p {
-			color: $white;
+		border-bottom: solid 5em lighten($red, 0%);
+		h2 {
+			color: $red;
 			text-align: center;
 		}
 		p.cta {
 			margin-top: 2em;
+			.button {
+				background-color: lighten($red, 0%);
+			}
 		}
 	} /* membership-lead */	
 
 	#desk-lead {
-		background-color: darken($yellow, 15%);
-		h2, p {
-			color: $blue;
+		border-bottom: solid 5em darken($yellow, 15%);
+		h2 {
+			color: darken($yellow, 15%);
 			text-align: center;
 		}
 		p.cta {
 			margin-top: 2em;
+			.button {
+				background-color: darken($yellow, 15%);
+			}
 		}
 	} /* events-lead */
 }

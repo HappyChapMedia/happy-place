@@ -1,4 +1,10 @@
 .page-template-page-events {
+	.menu .active > a {
+		color: darken($green, 15%);
+		&:hover {
+			color: darken($green, 20%);
+		}
+	}
 	#intro {
 		h1 {
 			@include breakpoint(large){
@@ -49,13 +55,46 @@
 			@include breakpoint(large) {
 				height: 550px;
 			}
-			
 		}
 		border-bottom: solid 20px rgb(82, 86, 89);
 		figure {
 			margin: 0;
 		}
 	} /* floor-map */
+
+	#rates {
+		ul {
+			@include grid-row();
+			li {
+				@include breakpoint(medium) {
+					@include grid-column(4);
+				}
+			}
+		}
+		.rate-extras {
+			@include grid-column(12);
+			padding: 2em 0;
+			.discount {
+				background-color: $blue;
+				color: $white;
+				@include breakpoint(medium){
+					@include grid-column(6);
+				}
+			}
+			.partner {
+				background-color: $green;
+				color: $white;
+				@include breakpoint(medium){
+					@include grid-column(6);
+				}
+			}
+		}
+		.cta {
+			@include grid-row();
+			text-align: center;
+		}
+	}
+
 	#uses {
 		background: $white;
 		// @include grid-column();
@@ -98,4 +137,20 @@
 			}
 		}
 	} /* uses */
-}
+
+	#cta {
+		background-color: $red;
+		color: $white;
+		text-align: center;
+		h2 {
+			color: $white;
+		}
+		.accordion-title {
+			background-color: darken($blue, 5%);
+		}
+		.accordion-content {
+			background-color: darken($blue, 10%);
+		}
+	} /* cta */
+} /* page-template-page-events */
+

@@ -33,7 +33,7 @@
     font-size: 1rem;
     #happy-place-horiz {
       fill: $white;
-      height: 50px;
+      height: 35px;
     }
   }
 
@@ -48,7 +48,7 @@
     line-height: 1;
 
     &:hover:not(.button) {
-      background-color: darken($green, 10%);
+      color: lighten($green, 20%);
     }
   }
 

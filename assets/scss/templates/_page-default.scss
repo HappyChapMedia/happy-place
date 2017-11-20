@@ -148,63 +148,6 @@ section {
         color: lighten($red, 15%);
       }
     }
-    ul {
-      li {
-    }
-      padding: 0;
-      background-color: transparent;
-      a.button {
-        color: $white;
-        font-size: 2em;
-        font-family: $serif;
-        @include breakpoint(large) {
-            font-size: 3em;
-        }
-        margin: 0;
-        // display: inline-block;
-        i {
-          color: lighten($blue, 15%);
-          display: block;
-          padding: 0 0 1em 0;
-          @include breakpoint(medium) {
-            float: left;
-            display: inline-block;
-            padding: 0;
-          }
-            
-        }
-      }
-      .accordion-title {
-        border: none;
-          
-        &::before {
-          display: none;
-          // color: $blue;
-          // font-family: FontAwesome;
-          // content: "\f0dd";
-          // font-size: 2em;
-          // right: -2.5rem;
-          // top: 0;
-          // background: lighten($blue, 10%);
-        }
-        &:hover, &:focus {
-          background-color: lighten($blue, 10%);
-        }
-      }
-      .accordion-content {
-        border: none;
-        background: transparent;
-        padding: 2em;
-        label {
-          color: white;
-          font-size: 1.5em;
-          font-weight: 100;
-        }
-        textarea {
-          min-height: 300px;
-        }
-      }
-    } /* li */
   } /* cta */
 
   // Form Styling
@@ -264,3 +207,60 @@ section {
     opacity: .50;
   }
 } /* #cta */
+
+ul.accordion {
+  li {
+    padding: 0;
+    background-color: transparent;
+    a.button {
+      color: $white;
+      font-size: 2em;
+      font-family: $serif;
+      @include breakpoint(large) {
+          font-size: 3em;
+      }
+      margin: 0;
+      // display: inline-block;
+      i {
+        color: lighten($blue, 15%);
+        display: block;
+        padding: 0 0 1em 0;
+        @include breakpoint(medium) {
+          float: left;
+          display: inline-block;
+          padding: 0;
+        }
+      } /* i */
+    } /* a.button */
+    .accordion-title {
+      border: none;
+      
+      &::before {
+        display: none;
+        // color: $blue;
+        // font-family: FontAwesome;
+        // content: "\f0dd";
+        // font-size: 2em;
+        // right: -2.5rem;
+        // top: 0;
+        // background: lighten($blue, 10%);
+      }
+      &:hover, &:focus {
+        background-color: lighten($blue, 10%);
+      }
+    } /* accordion-title */
+    .accordion-content {
+      border: none;
+      background: transparent;
+      padding: 2em;
+      label {
+        color: white;
+        font-size: 1.5em;
+        font-weight: 100;
+      }
+      textarea {
+        min-height: 300px;
+      }
+    } /* accordion-content */
+  } /* li */
+} /* ul */
