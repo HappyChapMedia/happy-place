@@ -138,6 +138,13 @@
 		}
 	} /* uses */
 
+	#availability {
+		background-color: $blue;
+		h2 {
+			color: $white;
+		}
+	}
+
 	#cta {
 		background-color: $red;
 		color: $white;
@@ -153,4 +160,3 @@
 		}
 	} /* cta */
 } /* page-template-page-events */
-

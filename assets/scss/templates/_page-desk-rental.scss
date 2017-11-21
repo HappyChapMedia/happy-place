@@ -3,6 +3,7 @@
 		color: darken($green, 10%);
 	}
 	#intro {
+		background-color: $blue;
 		h1 {
 			@include breakpoint(large){
 				font-size: 8em;

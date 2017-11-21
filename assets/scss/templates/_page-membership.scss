@@ -1,101 +1,84 @@
 .page-template-page-membership {
+	.entry-content {
+		text-align: center;
+	}
 	#intro {
+		background: $red;
 		h1 {
 			@include breakpoint(large){
 				font-size: 8em;
 			}
 		}
 	}
-	#amenities {
-		background: $blue;
-		h2, h3 {
+	#vision {
+		color: $white;
+		h2 {
 			color: $white;
 		}
-		ul {
-			@include breakpoint(medium) {
-				columns: 2;
-				column-gap: 5em;
+		p {
+			font-size: 1.5em;
+			@include breakpoint(medium){
+				padding: 0 4em;
 			}
-			li {
-				h4 {
-					font-size: 1.85em;
-					text-transform: uppercase;
-					strong {
+		}
+		background: $blue;
+	} /* vision */
 
-					}
+	#stay-tuned {
+		background: $white;
+		// @include grid-column();
+		#mc_embed_signup {
+			background-color: $light-gray;
+			padding: 2em;
+			.indicates-required {
+				font-style: italic;
+				color: $dark-gray;
+				margin-bottom: 1em;
+				font-size: .8em;
+			}
+			.mc-email {
+				@include breakpoint(large){
+					@include grid-column(12);
 				}
-			} /* li */
-		} /* ul */
-	} /* amenities */
+			}
+			.mc-first, .mc-last {
+				@include breakpoint(large){
+					@include grid-column(6);
+				}
+			}
+			input:not([type="submit"]) {
+				font-size: 1.75em;
+				font-family: $serif;
+				padding: 1.25em 1em;
+			}
+			.button {
+				margin-top: 2em;
+				font-size: 1.25em;
+			}
+		}
+	} /* stay-tuned */
 
-	#floor-map {
+	#levels {
+		background-color: $red;
+		ul {
+			li {
+				@include breakpoint(large){
+					@include grid-column(6);
+				}
+			}
+		}
+	} /* levels */
+	#cta {
+		background-color: $blue;
 		h2,p {
 			color: $white;
 		}
-		background-color: rgb(82, 86, 89);
-		padding: 3em 0;
-		.overlay {
-		   background:transparent; 
-		   position:relative; 
-		   width:100%;
-		   @include breakpoint(large) {
-			   height:550px; /* your iframe height */
-			   top:550px;  /* your iframe height */
-			   margin-top:-550px;  /* your iframe height */
-		   }
+		.accordion-title {
+			background-color: darken($red, 5%);
 		}
-		#map-embed {
-			height: 350px;
-			@include breakpoint(large) {
-				height: 550px;
-			}
-			
+		.accordion-content {
+			background-color: darken($red, 10%);
 		}
-		border-bottom: solid 20px rgb(82, 86, 89);
-		figure {
-			margin: 0;
-		}
-	} /* floor-map */
-	#uses {
-		background: $white;
-		// @include grid-column();
-		ul {
-			@include breakpoint(medium) {
-				columns: 2;
-				column-gap: 5em;
-			}
-			list-style: inherit;
-			li {
-				color: $blue;
-				// border-bottom: solid 2px;
-				border-bottom: solid 2px;
-				padding: 1.5em 0 0em;
-				margin: 0;
-				// background: $yellow;
-			}
-			.cta {
-				border: none;
-				.cta-button {
-					margin-top: 2.5em;
-					.button {
-						font-size: 1.2em;
-						background: $red;
-						display: block;
-						width: 80%;
-					}
-				}
-			}
-			li:before {
-				color: lighten($blue, 25%);
-				content:"\f046";
-				font-size: 2.95em;
-				font-family: FontAwesome;
-				float: left;
-				position: relative;
-				top: -.17em;
-				padding: 0 .25em .15em 0;
-				display: inline-block;
-			}
-		}
-	} /* uses */
-}
+	} /* cta */
+
+} /* page-template-page-membership */

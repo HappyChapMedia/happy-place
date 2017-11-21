@@ -7977,6 +7977,10 @@ ul.accordion {
         top: -.17em;
         padding: 0 .25em .15em 0;
         display: inline-block; }
+  .page-template-page-events #availability {
+    background-color: #54c2b6; }
+    .page-template-page-events #availability h2 {
+      color: #fefefe; }
   .page-template-page-events #cta {
     background-color: #ec5840;
     color: #fefefe;
@@ -7995,9 +7999,11 @@ ul.accordion {
   /* uses */ }
   .page-template-page-desk-rental .menu .active > a {
     color: #abce36; }
-  @media screen and (min-width: 64em) {
-    .page-template-page-desk-rental #intro h1 {
-      font-size: 8em; } }
+  .page-template-page-desk-rental #intro {
+    background-color: #54c2b6; }
+    @media screen and (min-width: 64em) {
+      .page-template-page-desk-rental #intro h1 {
+        font-size: 8em; } }
   .page-template-page-desk-rental #amenities {
     background: #54c2b6;
     /* ul */ }
@@ -8075,88 +8081,95 @@ ul.accordion {
         display: inline-block; }
 
 .page-template-page-membership {
-  /* amenities */
-  /* floor-map */
-  /* uses */ }
-  @media screen and (min-width: 64em) {
-    .page-template-page-membership #intro h1 {
-      font-size: 8em; } }
-  .page-template-page-membership #amenities {
-    background: #54c2b6;
-    /* ul */ }
-    .page-template-page-membership #amenities h2, .page-template-page-membership #amenities h3 {
+  /* vision */
+  /* stay-tuned */
+  /* levels */
+  /* cta */ }
+  .page-template-page-membership .entry-content {
+    text-align: center; }
+  .page-template-page-membership #intro {
+    background: #ec5840; }
+    @media screen and (min-width: 64em) {
+      .page-template-page-membership #intro h1 {
+        font-size: 8em; } }
+  .page-template-page-membership #vision {
+    color: #fefefe;
+    background: #54c2b6; }
+    .page-template-page-membership #vision h2 {
       color: #fefefe; }
-    .page-template-page-membership #amenities ul {
-      /* li */ }
+    .page-template-page-membership #vision p {
+      font-size: 1.5em; }
       @media screen and (min-width: 40em) {
-        .page-template-page-membership #amenities ul {
-          -webkit-columns: 2;
-                  columns: 2;
-          -webkit-column-gap: 5em;
-                  column-gap: 5em; } }
-      .page-template-page-membership #amenities ul li h4 {
-        font-size: 1.85em;
-        text-transform: uppercase; }
-  .page-template-page-membership #floor-map {
-    background-color: #525659;
-    padding: 3em 0;
-    border-bottom: solid 20px #525659; }
-    .page-template-page-membership #floor-map h2, .page-template-page-membership #floor-map p {
-      color: #fefefe; }
-    .page-template-page-membership #floor-map .overlay {
-      background: transparent;
-      position: relative;
-      width: 100%; }
-      @media screen and (min-width: 64em) {
-        .page-template-page-membership #floor-map .overlay {
-          height: 550px;
-          /* your iframe height */
-          top: 550px;
-          /* your iframe height */
-          margin-top: -550px;
-          /* your iframe height */ } }
-    .page-template-page-membership #floor-map #map-embed {
-      height: 350px; }
-      @media screen and (min-width: 64em) {
-        .page-template-page-membership #floor-map #map-embed {
-          height: 550px; } }
-    .page-template-page-membership #floor-map figure {
-      margin: 0; }
-  .page-template-page-membership #uses {
+        .page-template-page-membership #vision p {
+          padding: 0 4em; } }
+  .page-template-page-membership #stay-tuned {
     background: #fefefe; }
-    .page-template-page-membership #uses ul {
-      list-style: inherit; }
-      @media screen and (min-width: 40em) {
-        .page-template-page-membership #uses ul {
-          -webkit-columns: 2;
-                  columns: 2;
-          -webkit-column-gap: 5em;
-                  column-gap: 5em; } }
-      .page-template-page-membership #uses ul li {
-        color: #54c2b6;
-        border-bottom: solid 2px;
-        padding: 1.5em 0 0em;
-        margin: 0; }
-      .page-template-page-membership #uses ul .cta {
-        border: none; }
-        .page-template-page-membership #uses ul .cta .cta-button {
-          margin-top: 2.5em; }
-          .page-template-page-membership #uses ul .cta .cta-button .button {
-            font-size: 1.2em;
-            background: #ec5840;
-            display: block;
-            width: 80%; }
-      .page-template-page-membership #uses ul li:before {
-        color: #b2e4de;
-        content: "\f046";
-        font-size: 2.95em;
-        font-family: FontAwesome;
+    .page-template-page-membership #stay-tuned #mc_embed_signup {
+      background-color: #e6e6e6;
+      padding: 2em; }
+      .page-template-page-membership #stay-tuned #mc_embed_signup .indicates-required {
+        font-style: italic;
+        color: #8a8a8a;
+        margin-bottom: 1em;
+        font-size: .8em; }
+      @media screen and (min-width: 64em) {
+        .page-template-page-membership #stay-tuned #mc_embed_signup .mc-email {
+          width: 100%;
+          float: left;
+          padding-left: 0.625rem;
+          padding-right: 0.625rem; } }
+  @media screen and (min-width: 64em) and (min-width: 40em) {
+    .page-template-page-membership #stay-tuned #mc_embed_signup .mc-email {
+      padding-left: 0.9375rem;
+      padding-right: 0.9375rem; } }
+      @media screen and (min-width: 64em) {
+          .page-template-page-membership #stay-tuned #mc_embed_signup .mc-email:last-child:not(:first-child) {
+            float: right; } }
+      @media screen and (min-width: 64em) {
+        .page-template-page-membership #stay-tuned #mc_embed_signup .mc-first, .page-template-page-membership #stay-tuned #mc_embed_signup .mc-last {
+          width: 50%;
+          float: left;
+          padding-left: 0.625rem;
+          padding-right: 0.625rem; } }
+  @media screen and (min-width: 64em) and (min-width: 40em) {
+    .page-template-page-membership #stay-tuned #mc_embed_signup .mc-first, .page-template-page-membership #stay-tuned #mc_embed_signup .mc-last {
+      padding-left: 0.9375rem;
+      padding-right: 0.9375rem; } }
+      @media screen and (min-width: 64em) {
+          .page-template-page-membership #stay-tuned #mc_embed_signup .mc-first:last-child:not(:first-child), .page-template-page-membership #stay-tuned #mc_embed_signup .mc-last:last-child:not(:first-child) {
+            float: right; } }
+      .page-template-page-membership #stay-tuned #mc_embed_signup input:not([type="submit"]) {
+        font-size: 1.75em;
+        font-family: "abril-fatface", "Garamond Bold", Times, serif;
+        padding: 1.25em 1em; }
+      .page-template-page-membership #stay-tuned #mc_embed_signup .button {
+        margin-top: 2em;
+        font-size: 1.25em; }
+  .page-template-page-membership #levels {
+    background-color: #ec5840; }
+    @media screen and (min-width: 64em) {
+      .page-template-page-membership #levels ul li {
+        width: 50%;
         float: left;
-        position: relative;
-        top: -.17em;
-        padding: 0 .25em .15em 0;
-        display: inline-block; }
+        padding-left: 0.625rem;
+        padding-right: 0.625rem; } }
+  @media screen and (min-width: 64em) and (min-width: 40em) {
+    .page-template-page-membership #levels ul li {
+      padding-left: 0.9375rem;
+      padding-right: 0.9375rem; } }
+    @media screen and (min-width: 64em) {
+        .page-template-page-membership #levels ul li:last-child:not(:first-child) {
+          float: right; } }
+  .page-template-page-membership #cta {
+    background-color: #54c2b6; }
+    .page-template-page-membership #cta h2, .page-template-page-membership #cta p {
+      color: #fefefe; }
+    .page-template-page-membership #cta .accordion-title {
+      background-color: #ea4429; }
+    .page-template-page-membership #cta .accordion-content {
+      background-color: #e23317; }
 
+/* page-template-page-membership */
 #single-post {
   max-width: 75rem;
   margin-left: auto;
