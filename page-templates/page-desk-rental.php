@@ -7,8 +7,12 @@ get_header(); ?>
 
 <section id="intro" role="banner">
 	<div class="section-contain">
-		<h1>Desk Rental</h1>
-		<p>Use our space for your thing!</p>
+		<?php if( get_field('headline') ): ?>
+            <h1><?php the_field('headline'); ?></h1>
+        <?php endif; ?>
+        <?php if( get_field('tagline') ): ?>
+            <p><?php the_field('tagline'); ?></p>
+        <?php endif; ?>
 	</div>
 </section>
 
