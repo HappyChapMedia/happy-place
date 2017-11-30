@@ -1,4 +1,13 @@
 .page-template-page-membership {
+	.top-bar, .top-bar ul {
+		background-color: $red;
+	}
+	.top-bar .menu li:not(:last-child) {
+		border-color: darken($red, 10%);
+	}
+	.top-bar .menu li a:hover:not(.button), .top-bar .menu li.active a {
+		color: darken($red, 10%);
+	}
 	.entry-content {
 		text-align: center;
 	}

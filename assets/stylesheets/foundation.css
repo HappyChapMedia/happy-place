@@ -7826,6 +7826,10 @@ ul.accordion {
   @media screen and (min-width: 64em) {
     .page-template-page-events #intro h1 {
       font-size: 8em; } }
+  .page-template-page-events .featured-gallery figure {
+    border-right: solid 10px #fefefe; }
+  .page-template-page-events .featured-gallery figcaption.title .caption-contain {
+    display: none; }
   .page-template-page-events #amenities {
     background: #54c2b6;
     /* ul */ }
@@ -7997,8 +8001,12 @@ ul.accordion {
   /* amenities */
   /* floor-map */
   /* uses */ }
-  .page-template-page-desk-rental .menu .active > a {
-    color: #abce36; }
+  .page-template-page-desk-rental .top-bar, .page-template-page-desk-rental .top-bar ul {
+    background-color: #54c2b6; }
+  .page-template-page-desk-rental .top-bar .menu li:not(:last-child) {
+    border-color: #3ca79c; }
+  .page-template-page-desk-rental .top-bar .menu li a:hover:not(.button), .page-template-page-desk-rental .top-bar .menu li.active a {
+    color: #3ca79c; }
   .page-template-page-desk-rental #intro {
     background-color: #54c2b6; }
     @media screen and (min-width: 64em) {
@@ -8085,6 +8093,12 @@ ul.accordion {
   /* stay-tuned */
   /* levels */
   /* cta */ }
+  .page-template-page-membership .top-bar, .page-template-page-membership .top-bar ul {
+    background-color: #ec5840; }
+  .page-template-page-membership .top-bar .menu li:not(:last-child) {
+    border-color: #e23317; }
+  .page-template-page-membership .top-bar .menu li a:hover:not(.button), .page-template-page-membership .top-bar .menu li.active a {
+    color: #e23317; }
   .page-template-page-membership .entry-content {
     text-align: center; }
   .page-template-page-membership #intro {

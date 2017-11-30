@@ -1,6 +1,12 @@
 .page-template-page-desk-rental {
-	.menu .active > a {
-		color: darken($green, 10%);
+	.top-bar, .top-bar ul {
+		background-color: $blue;
+	}
+	.top-bar .menu li:not(:last-child) {
+		border-color: darken($blue, 10%);
+	}
+	.top-bar .menu li a:hover:not(.button), .top-bar .menu li.active a {
+		color: darken($blue, 10%);
 	}
 	#intro {
 		background-color: $blue;

@@ -12,6 +12,14 @@
 			}
 		}
 	}
+	.featured-gallery {
+		figure {
+			border-right: solid 10px $white;
+		}
+		figcaption.title .caption-contain {
+			display: none;
+		}
+	}
 	#amenities {
 		background: $blue;
 		h2, h3 {
