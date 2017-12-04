@@ -20,28 +20,37 @@
 		}
 	}
 	#vision {
-		color: $white;
+		background: $blue;
+		background-color: $white;
+		// color: $white;
 		h2 {
-			color: $white;
+			// color: $white;
 		}
 		p {
-			font-size: 1.5em;
+			color: $blue;
 			@include breakpoint(medium){
 				padding: 0 4em;
+				font-size: 1.75em;
 			}
 		}
-		background: $blue;
 	} /* vision */
 
 	#stay-tuned {
-		background: $white;
+		color: $white;
+		background: $blue;
 		// @include grid-column();
+		h2 {
+			color: $white;
+		}
 		#mc_embed_signup {
-			background-color: $light-gray;
+			// background-color: $light-gray;
 			padding: 2em;
+			label {
+				color: $white;
+			}
 			.indicates-required {
 				font-style: italic;
-				color: $dark-gray;
+				// color: $dark-gray;
 				margin-bottom: 1em;
 				font-size: .8em;
 			}
@@ -61,9 +70,14 @@
 				padding: 1.25em 1em;
 			}
 			.button {
+				background-color: $red;
 				margin-top: 2em;
 				font-size: 1.25em;
 			}
+		}
+		.contact-disclaim {
+			margin-top: 1.5em;
+			font-size: .8em;
 		}
 	} /* stay-tuned */
 

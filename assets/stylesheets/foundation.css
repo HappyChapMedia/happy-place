@@ -7893,20 +7893,30 @@ ul.accordion {
     @media screen and (min-width: 40em) {
         .page-template-page-events #rates ul li:last-child:not(:first-child) {
           float: right; } }
+    .page-template-page-events #rates ul li .contain {
+      text-align: center;
+      border: solid 1px #e6e6e6;
+      padding: 1em 0; }
+      .page-template-page-events #rates ul li .contain h4 {
+        text-transform: uppercase; }
+        @media screen and (min-width: 64em) {
+          .page-template-page-events #rates ul li .contain h4 {
+            font-size: 2em; } }
+      .page-template-page-events #rates ul li .contain .cost {
+        color: #ec5840;
+        font-family: "abril-fatface", "Garamond Bold", Times, serif;
+        font-size: 2em; }
   .page-template-page-events #rates .rate-extras {
-    width: 100%;
-    float: left;
-    padding-left: 0.625rem;
-    padding-right: 0.625rem;
+    max-width: 75rem;
+    margin-left: auto;
+    margin-right: auto;
     padding: 2em 0; }
-    @media screen and (min-width: 40em) {
-      .page-template-page-events #rates .rate-extras {
-        padding-left: 0.9375rem;
-        padding-right: 0.9375rem; } }
-    .page-template-page-events #rates .rate-extras:last-child:not(:first-child) {
-      float: right; }
+    .page-template-page-events #rates .rate-extras::before, .page-template-page-events #rates .rate-extras::after {
+      content: ' ';
+      display: table; }
+    .page-template-page-events #rates .rate-extras::after {
+      clear: both; }
     .page-template-page-events #rates .rate-extras .discount {
-      background-color: #54c2b6;
       color: #fefefe; }
       @media screen and (min-width: 40em) {
         .page-template-page-events #rates .rate-extras .discount {
@@ -7921,8 +7931,10 @@ ul.accordion {
       @media screen and (min-width: 40em) {
           .page-template-page-events #rates .rate-extras .discount:last-child:not(:first-child) {
             float: right; } }
+      .page-template-page-events #rates .rate-extras .discount .rate-contain {
+        padding: 1em;
+        background-color: #54c2b6; }
     .page-template-page-events #rates .rate-extras .partner {
-      background-color: #bcd85f;
       color: #fefefe; }
       @media screen and (min-width: 40em) {
         .page-template-page-events #rates .rate-extras .partner {
@@ -7937,6 +7949,9 @@ ul.accordion {
       @media screen and (min-width: 40em) {
           .page-template-page-events #rates .rate-extras .partner:last-child:not(:first-child) {
             float: right; } }
+      .page-template-page-events #rates .rate-extras .partner .rate-contain {
+        padding: 1em;
+        background-color: #bcd85f; }
   .page-template-page-events #rates .cta {
     max-width: 75rem;
     margin-left: auto;
@@ -7995,6 +8010,8 @@ ul.accordion {
       background-color: #42baad; }
     .page-template-page-events #cta .accordion-content {
       background-color: #3ca79c; }
+    .page-template-page-events #cta select {
+      height: auto; }
 
 /* page-template-page-events */
 .page-template-page-desk-rental {
@@ -8107,23 +8124,25 @@ ul.accordion {
       .page-template-page-membership #intro h1 {
         font-size: 8em; } }
   .page-template-page-membership #vision {
-    color: #fefefe;
-    background: #54c2b6; }
-    .page-template-page-membership #vision h2 {
-      color: #fefefe; }
+    background: #54c2b6;
+    background-color: #fefefe; }
     .page-template-page-membership #vision p {
-      font-size: 1.5em; }
+      color: #54c2b6; }
       @media screen and (min-width: 40em) {
         .page-template-page-membership #vision p {
-          padding: 0 4em; } }
+          padding: 0 4em;
+          font-size: 1.75em; } }
   .page-template-page-membership #stay-tuned {
-    background: #fefefe; }
+    color: #fefefe;
+    background: #54c2b6; }
+    .page-template-page-membership #stay-tuned h2 {
+      color: #fefefe; }
     .page-template-page-membership #stay-tuned #mc_embed_signup {
-      background-color: #e6e6e6;
       padding: 2em; }
+      .page-template-page-membership #stay-tuned #mc_embed_signup label {
+        color: #fefefe; }
       .page-template-page-membership #stay-tuned #mc_embed_signup .indicates-required {
         font-style: italic;
-        color: #8a8a8a;
         margin-bottom: 1em;
         font-size: .8em; }
       @media screen and (min-width: 64em) {
@@ -8157,8 +8176,12 @@ ul.accordion {
         font-family: "abril-fatface", "Garamond Bold", Times, serif;
         padding: 1.25em 1em; }
       .page-template-page-membership #stay-tuned #mc_embed_signup .button {
+        background-color: #ec5840;
         margin-top: 2em;
         font-size: 1.25em; }
+    .page-template-page-membership #stay-tuned .contact-disclaim {
+      margin-top: 1.5em;
+      font-size: .8em; }
   .page-template-page-membership #levels {
     background-color: #ec5840; }
     @media screen and (min-width: 64em) {

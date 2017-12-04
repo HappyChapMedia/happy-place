@@ -77,23 +77,48 @@
 				@include breakpoint(medium) {
 					@include grid-column(4);
 				}
+				.contain {
+					text-align: center;
+					border: solid 1px $light-gray;
+					padding: 1em 0;
+					h4 {
+						text-transform: uppercase;
+						@include breakpoint(large){
+							font-size: 2em;
+						}
+					}
+					.cost {
+						color: $red;
+						font-family: $serif;
+						font-size: 2em;
+					}
+				}
 			}
 		}
 		.rate-extras {
-			@include grid-column(12);
+			// @include grid-column(12);
+			@include grid-row();
 			padding: 2em 0;
+			.rate-contain {
+			}
 			.discount {
-				background-color: $blue;
 				color: $white;
 				@include breakpoint(medium){
 					@include grid-column(6);
 				}
+				.rate-contain {
+					padding: 1em;
+					background-color: $blue;
+				}
 			}
 			.partner {
-				background-color: $green;
 				color: $white;
 				@include breakpoint(medium){
 					@include grid-column(6);
+				}
+				.rate-contain {
+					padding: 1em;
+					background-color: $green;
 				}
 			}
 		}
@@ -165,6 +190,9 @@
 		}
 		.accordion-content {
 			background-color: darken($blue, 10%);
+		}
+		select {
+			height: auto;
 		}
 	} /* cta */
 } /* page-template-page-events */
