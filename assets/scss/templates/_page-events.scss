@@ -7,9 +7,6 @@
 	}
 	#intro {
 		h1 {
-			@include breakpoint(large){
-				font-size: 8em;
-			}
 		}
 	}
 	.featured-gallery {
@@ -83,8 +80,8 @@
 					padding: 1em 0;
 					h4 {
 						text-transform: uppercase;
-						@include breakpoint(large){
 							font-size: 2em;
+						@include breakpoint(large){
 						}
 					}
 					.cost {
@@ -100,6 +97,7 @@
 			@include grid-row();
 			padding: 2em 0;
 			.rate-contain {
+				margin: 1em 0;
 			}
 			.discount {
 				color: $white;

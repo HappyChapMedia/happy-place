@@ -20,7 +20,7 @@ get_header(); ?>
 
 	<div class="tag-contain">
 		<div class="tag">
-			<p>A Members only creative office <span class="amp">&amp;</span> flexible event space.</p>
+			<p>A flexible event space <span class="amp">&amp;</span> members-only creative office.</p>
 		</div>
 		<div class="section-divider"><hr></div>
 		<div class="location">

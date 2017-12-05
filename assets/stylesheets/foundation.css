@@ -6655,18 +6655,36 @@ table.hover tbody tr:nth-of-type(even):hover {
   Add your scss files below to structure your project styles
 */
 /* Navigation breakpoints */
-@media screen and (max-width: 39.9375em) {
-  .desktop-menu, .top-bar-left {
-    display: none !important; } }
-
 /* Mobile menu */
 .off-canvas > ul.menu {
-  height: 100vh;
-  padding: 1rem; }
+  background-color: #bcd85f;
+  height: 100vh; }
+  .off-canvas > ul.menu li {
+    padding: 1rem; }
+    .off-canvas > ul.menu li a {
+      color: #fefefe;
+      font-family: "acumin-pro-extra-condensed", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+      font-size: 2em; }
+
+#menu-main-nav-1 {
+  display: none; }
+  @media screen and (min-width: 59.375em) {
+    #menu-main-nav-1 {
+      display: inherit; } }
+
+.menu-icon {
+  margin: 1em; }
+  @media screen and (min-width: 59.375em) {
+    .menu-icon {
+      display: none; } }
 
 .title-bar-title a {
   font-size: 1rem;
   color: #B9B9B9; }
+
+@media screen and (max-width: 63.9375em) {
+  .top-bar .top-bar-left, .top-bar .top-bar-right {
+    width: auto; } }
 
 /* Tablet and desktop menu */
 .top-bar {
@@ -6676,7 +6694,10 @@ table.hover tbody tr:nth-of-type(even):hover {
     font-size: 1rem; }
     .top-bar .menu .home a #happy-place-horiz {
       fill: #fefefe;
-      height: 35px; }
+      height: 25px; }
+      @media screen and (min-width: 64em) {
+        .top-bar .menu .home a #happy-place-horiz {
+          height: 35px; } }
   .top-bar .menu a {
     color: #fefefe;
     padding-top: 0;
@@ -6757,19 +6778,17 @@ a::after {
     max-width: 75rem;
     margin-left: auto;
     margin-right: auto;
-    padding: 8em 0; }
+    padding: 8em 1em; }
     #footer-container #footer::before, #footer-container #footer::after {
       content: ' ';
       display: table; }
     #footer-container #footer::after {
       clear: both; }
-    #footer-container #footer .branding {
-      font-family: "acumin-pro-extra-condensed", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-      font-size: 4em; }
-      #footer-container #footer .branding .cls-1 {
-        fill: #54c2b6; }
-      #footer-container #footer .branding #happy_place {
-        width: 300px; }
+    #footer-container #footer .branding #happy-place-logo-circle {
+      width: 350px;
+      fill: #54c2b6; }
+      #footer-container #footer .branding #happy-place-logo-circle #circle {
+        display: none; }
     #footer-container #footer .address {
       text-transform: uppercase; }
       #footer-container #footer .address a {
@@ -7305,9 +7324,11 @@ body.lb-disable-scrolling {
         transition: all ease-in-out 200ms; }
     .hc-colophon .colophon-container .hc-credit {
       color: #bebebe;
-      font-size: 1.5em;
       -webkit-transition: all ease-in-out 800ms;
       transition: all ease-in-out 800ms; }
+      @media screen and (min-width: 64em) {
+        .hc-colophon .colophon-container .hc-credit {
+          font-size: 1.5em; } }
       .hc-colophon .colophon-container .hc-credit a {
         color: #cbcbcb;
         font-weight: 700;
@@ -7670,6 +7691,16 @@ section#intro {
   background: #bcd85f;
   color: #fefefe;
   padding: 4em 0; }
+  section#intro h1 {
+    text-align: center;
+    font-size: 4em; }
+    @media screen and (min-width: 40em) {
+      section#intro h1 {
+        text-align: left;
+        font-size: 6em; } }
+    @media screen and (min-width: 64em) {
+      section#intro h1 {
+        font-size: 8em; } }
   section#intro .icon-contain {
     text-align: center; }
     section#intro .icon-contain #hc-icon {
@@ -7823,9 +7854,6 @@ ul.accordion {
     color: #9cbd2e; }
     .page-template-page-events .menu .active > a:hover {
       color: #8ba829; }
-  @media screen and (min-width: 64em) {
-    .page-template-page-events #intro h1 {
-      font-size: 8em; } }
   .page-template-page-events .featured-gallery figure {
     border-right: solid 10px #fefefe; }
   .page-template-page-events .featured-gallery figcaption.title .caption-contain {
@@ -7898,10 +7926,8 @@ ul.accordion {
       border: solid 1px #e6e6e6;
       padding: 1em 0; }
       .page-template-page-events #rates ul li .contain h4 {
-        text-transform: uppercase; }
-        @media screen and (min-width: 64em) {
-          .page-template-page-events #rates ul li .contain h4 {
-            font-size: 2em; } }
+        text-transform: uppercase;
+        font-size: 2em; }
       .page-template-page-events #rates ul li .contain .cost {
         color: #ec5840;
         font-family: "abril-fatface", "Garamond Bold", Times, serif;
@@ -7916,6 +7942,8 @@ ul.accordion {
       display: table; }
     .page-template-page-events #rates .rate-extras::after {
       clear: both; }
+    .page-template-page-events #rates .rate-extras .rate-contain {
+      margin: 1em 0; }
     .page-template-page-events #rates .rate-extras .discount {
       color: #fefefe; }
       @media screen and (min-width: 40em) {
@@ -8026,9 +8054,6 @@ ul.accordion {
     color: #3ca79c; }
   .page-template-page-desk-rental #intro {
     background-color: #54c2b6; }
-    @media screen and (min-width: 64em) {
-      .page-template-page-desk-rental #intro h1 {
-        font-size: 8em; } }
   .page-template-page-desk-rental #amenities {
     background: #54c2b6;
     /* ul */ }
@@ -8120,9 +8145,6 @@ ul.accordion {
     text-align: center; }
   .page-template-page-membership #intro {
     background: #ec5840; }
-    @media screen and (min-width: 64em) {
-      .page-template-page-membership #intro h1 {
-        font-size: 8em; } }
   .page-template-page-membership #vision {
     background: #54c2b6;
     background-color: #fefefe; }

@@ -14,9 +14,6 @@
 	#intro {
 		background: $red;
 		h1 {
-			@include breakpoint(large){
-				font-size: 8em;
-			}
 		}
 	}
 	#vision {

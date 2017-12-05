@@ -78,6 +78,17 @@ section {
     background: $success-color;
     color: $white;
     padding: 4em 0;
+    h1 {
+      text-align: center;
+      font-size: 4em;
+      @include breakpoint(medium){
+          text-align: left;
+          font-size: 6em;
+      }
+      @include breakpoint(large){
+        font-size: 8em;
+      }
+    }
     .icon-contain {
       text-align:center;
       #hc-icon {
