@@ -12,7 +12,10 @@
 		.branding {
 			#happy-place-logo-circle {
 				width: 350px;
-				fill: $blue;
+				// fill: $blue;
+				#text {
+					fill: $blue;
+				}
 				#circle {
 					display: none;
 				}

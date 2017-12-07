@@ -21,6 +21,7 @@ section {
     font-size: 3.5em;
     @include breakpoint(medium) {
       font-size: 6em;
+      line-height: 1em;
       margin-bottom: .5em;
     }
     color: $blue;

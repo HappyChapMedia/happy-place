@@ -4,11 +4,15 @@ Template Name: Front
 */
 get_header(); ?>
 
-
-
-
 <header id="front-hero" role="banner">
-	<div class="branding-contain" style="background-image: url('wp-content/themes/happy-place/assets/images/happy-place-header-event-speaker.jpg');">
+	<?php
+		// If a feature image is set, get the id, so it can be injected as a css background property
+		if ( has_post_thumbnail( $post->ID ) ) :
+			$image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
+			$image = $image[0];
+	?>
+	<div class="branding-contain" style="background-image: url('<?php echo $image ?>');">
+	<?php endif; ?>
 		<div class="branding">
 			<h1 class="logo">
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">

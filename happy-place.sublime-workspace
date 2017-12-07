@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"top-bar",
+				"top-bar-right\t(header.php)"
+			],
+			[
+				"indicate",
+				"indicates-required\t(membership.html)"
+			],
+			[
 				"font-",
 				"font-size"
 			],
@@ -132,11 +140,20 @@
 	"buffers":
 	[
 		{
-			"file": "page-templates/page-membership.php",
+			"file": "pages/event-rental.html",
 			"settings":
 			{
-				"buffer_size": 5575,
+				"buffer_size": 7880,
 				"encoding": "UTF-8",
+				"line_ending": "Windows",
+				"name": "<div id=\"test-contain\">"
+			}
+		},
+		{
+			"file": "pages/contact-form-events.html",
+			"settings":
+			{
+				"buffer_size": 803,
 				"line_ending": "Windows"
 			}
 		},
@@ -144,16 +161,17 @@
 			"file": "header.php",
 			"settings":
 			{
-				"buffer_size": 2293,
+				"buffer_size": 2344,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "template-parts/mobile-off-canvas.php",
+			"file": "pages/membership.html",
 			"settings":
 			{
-				"buffer_size": 337,
+				"buffer_size": 4902,
+				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
@@ -161,28 +179,61 @@
 			"file": "page-templates/front.php",
 			"settings":
 			{
-				"buffer_size": 19182,
+				"buffer_size": 2002,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"contents": "// #wpadminbar {\n// \tdisplay: none;\n// }\n\n#test-contain {\n\t// @include grid-row();\n    margin-top: -10px;\n    @include show-for(large);\n\t.sticky {\n\t\tbackground: $black;\n\t}\n\tul {\n\t\tli {\n\t\t\ttext-align: center;\n\t\t\tfont-family: $sans-serif;\n\t\t\tfont-size: 1.75em;\n\t\t\tfont-weight: 700;\n\t\t\ttext-transform: uppercase;\n\t\t\tmargin: 0;\n\t\t\ta {\n\t\t\t\tpadding: .75em 0;\n\t\t\t\tcolor: $white;\n\t\t\t\t&:hover {\n\t\t\t\t\tbackground-color: lighten($black, 10%);\n\t\t\t\t}\n\t\t\t}\n\t\t\t.active {\n\t\t\t\tbackground-color: $dark-gray;\n\t\t\t}\n\t\t}\n\t}\n}\n\n// Page header\n#front-hero {\n\tbackground: darken($yellow, 10%);\n\tdisplay: inline-block;\n\twidth: 100%;\n\t.branding-contain {\n\t\tbackground: darken($yellow, 12%);\n\t\t@include breakpoint(xlarge) {\n\t\t\t@include grid-column(65%);\n\t\t}\n\t\t.branding {\n\t\t\ttext-align: center;\n\t\t\th1.logo {\n\t\t\t\t// font-size: \t8rem;\n\t\t\t\ttext-transform: uppercase;\n\t\t\t\tpadding: 1em 0;\n\t\t\t\tmargin: 0;\n\t\t\t\t.cls-1 {\n\t\t\t\t\tfill: $white;\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t}\n\t.tag-contain {\n\t\tbackground: $blue;\n\t\t@include breakpoint(xlarge) {\n\t\t\t@include grid-column(35%);\n\t\t}\n\t\t  \n\t\t.tag {\n\t\t\tpadding: 6em 2.5em 0;\n\t\t\ttext-align: center;\n\n\t\t\t// p.for-lease {\n\t\t\t// \tbackground: $alert-color;\n\t\t\t// \tpadding: .05em .5em;\n\t\t\t// \tfont-size: 2.5em;\n\t\t\t// \tfont-weight: 500;\n\t\t\t// \ttext-transform: uppercase;\n\t\t\t// \tletter-spacing: .15em;\n\t\t\t// \tdisplay: inline-block;\n\t\t\t// \tborder: solid 8px $white;\n\t\t\t// \t// margin-top: 50%;\n\t\t\t// }\n\t\t}\n\t} /*  */\n} /* #front-hero */\n\n\n\n\n\n// Intro\n.entry-content {\n\tdisplay: block;\n\n\t#location-map {\n\t\tbackground-color: $blue;\n\t\tdisplay: block;\n\t\t.section-contain {\n\t\t\tmax-width: 100%;\n\t\t\tpadding: 0!important; \n\t\t\t.address {\n\t\t\t\tmargin: 4em auto 0;\n\t\t\t\t@include breakpoint(large) {\n\t\t\t\t    @include grid-column(4);\n\t\t\t\t}\n\t\t\t\tpadding: 5em!important; \n\t\t\t\t#address-illustration {\n\t\t\t\t\tfill: $white;\n\t\t\t\t\t@include global-trans(1500ms);\n\t\t\t\t\t&:hover {\n\t\t\t\t\t\tfill: darken($blue, 10%);\n\t\t\t\t\t}\n\t\t\t\t\t#text {\n\t\t\t\t\t\twidth: 400px;\n\t\t\t\t\t\theight: 400px;\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t\tp.bham {\n\t\t\t\t\tfont-size: 3.75em;\n\t\t\t\t\tfont-family: $header-font-family;\n\t\t\t\t\ttext-align: center;\n\t\t\t\t\tcolor: darken($blue, 10%);\n\t\t\t\t\t// letter-spacing: .25em;\n\t\t\t\t\t// text-transform: uppercase;\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t\t#map {\n\t\t\tmin-height: 500px;\n\t\t\t@include breakpoint(large) {\n\t\t\t    @include grid-column(8);\n\t\t\t\tmin-height: 750px;\n\t\t\t}\n\t\t\tpadding: 0!important; \n\t\t}\n\t}\n\t#proximity {\n\t\t// @include grid-row();\n\t\tul {\n\t\t\t@include breakpoint(large) {\n\t\t\t\tcolumns: 3;\n\t\t\t}\n\t\t\t  \n\t\t}\n\t}\n\t#gallery-wanted {\n\t\tbackground-color: lighten($alert-color, 10%);\n\t\tp {\n\t\t\tfont-family: $serif;\n\t\t\tfont-weight: 100;\n\t\t\tfont-size: 2.25em;\n\t\t\t@include breakpoint(medium) {\n\t\t\t\tfont-size: 3.5em;\n\t\t\t}\n\t\t\t  \n\t\t}\n\t\th3, p {\n\t\t\tcolor: $white;\n\t\t}\n\t}\n} /* entry-content */\n\n// Section divider\n.section-divider {\n\t@include grid-row();\n\n\thr {\n\t\t@include grid-column(12);\n\t\t@extend .dotted;\n\t\tbox-sizing: border-box;\n\t}\n}",
-			"file": "assets/scss/templates/_front.scss",
-			"file_size": 2972,
-			"file_write_time": 131551812391540369,
+			"file": "pages/front.html",
 			"settings":
 			{
-				"buffer_size": 2829,
+				"buffer_size": 1857,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "assets/scss/templates/_page-membership.scss",
+			"file": "assets/javascript/custom/stickyfooter.js",
 			"settings":
 			{
-				"buffer_size": 1751,
+				"buffer_size": 395,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "footer.php",
+			"settings":
+			{
+				"buffer_size": 1929,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "pages/desk-rental.html",
+			"settings":
+			{
+				"buffer_size": 3458,
+				"encoding": "UTF-8",
+				"line_ending": "Windows",
+				"name": "<div id=\"test-contain\">"
+			}
+		},
+		{
+			"file": "assets/scss/modules/_footer.scss",
+			"settings":
+			{
+				"buffer_size": 481,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "assets/scss/components/_hc-colophon.scss",
+			"settings":
+			{
+				"buffer_size": 1954,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -191,7 +242,43 @@
 			"file": "assets/scss/modules/_navigation.scss",
 			"settings":
 			{
-				"buffer_size": 2290,
+				"buffer_size": 2795,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "assets/scss/templates/_page-desk-rental.scss",
+			"settings":
+			{
+				"buffer_size": 1961,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "assets/scss/templates/_page-membership.scss",
+			"settings":
+			{
+				"buffer_size": 1807,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "assets/scss/templates/_page-events.scss",
+			"settings":
+			{
+				"buffer_size": 3498,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "assets/scss/templates/_page-default.scss",
+			"settings":
+			{
+				"buffer_size": 5255,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -242,30 +329,50 @@
 		"/C/Program Files (x86)/Ampps/www/happy-place/wp-content/themes/happy-place/assets",
 		"/C/Program Files (x86)/Ampps/www/happy-place/wp-content/themes/happy-place/assets/images",
 		"/C/Program Files (x86)/Ampps/www/happy-place/wp-content/themes/happy-place/assets/javascript",
+		"/C/Program Files (x86)/Ampps/www/happy-place/wp-content/themes/happy-place/assets/javascript/custom",
 		"/C/Program Files (x86)/Ampps/www/happy-place/wp-content/themes/happy-place/assets/scss",
 		"/C/Program Files (x86)/Ampps/www/happy-place/wp-content/themes/happy-place/assets/scss/components",
 		"/C/Program Files (x86)/Ampps/www/happy-place/wp-content/themes/happy-place/assets/scss/global",
 		"/C/Program Files (x86)/Ampps/www/happy-place/wp-content/themes/happy-place/assets/scss/modules",
 		"/C/Program Files (x86)/Ampps/www/happy-place/wp-content/themes/happy-place/assets/scss/templates",
+		"/C/Program Files (x86)/Ampps/www/happy-place/wp-content/themes/happy-place/library",
 		"/C/Program Files (x86)/Ampps/www/happy-place/wp-content/themes/happy-place/page-templates",
+		"/C/Program Files (x86)/Ampps/www/happy-place/wp-content/themes/happy-place/pages",
 		"/C/Program Files (x86)/Ampps/www/happy-place/wp-content/themes/happy-place/template-parts"
 	],
 	"file_history":
 	[
+		"/C/Program Files (x86)/Ampps/www/happy-place/wp-content/themes/happy-place/assets/javascript/custom/gif-autoplay.js",
+		"/C/Program Files (x86)/Ampps/www/happy-place/wp-content/themes/happy-place/pages/contact-form-events.html",
+		"/C/Program Files (x86)/Ampps/www/happy-place/wp-content/themes/happy-place/template-parts/mobile-off-canvas.php",
 		"/C/Program Files (x86)/Ampps/www/happy-place/wp-content/themes/happy-place/assets/images/inline-happy-place-circle.svg.php",
+		"/C/Program Files (x86)/Ampps/www/happy-place/wp-content/themes/happy-place/page-templates/page-events.php",
+		"/C/Program Files (x86)/Ampps/www/happy-place/wp-content/themes/happy-place/page-templates/page-desk-rental.php",
+		"/C/Program Files (x86)/Ampps/www/happy-place/wp-content/themes/happy-place/functions.php",
+		"/C/Program Files (x86)/Ampps/www/happy-place/wp-content/themes/happy-place/library/custom-events-shortcode.php",
+		"/C/Program Files (x86)/Ampps/www/happy-place/wp-content/themes/happy-place/assets/scss/templates/_page-events.scss",
+		"/C/Program Files (x86)/Ampps/www/happy-place/wp-content/themes/happy-place/page-templates/page-membership.php",
+		"/C/Program Files (x86)/Ampps/www/happy-place/wp-content/themes/happy-place/header.php",
+		"/C/Program Files (x86)/Ampps/www/happy-place/wp-content/themes/happy-place/page-templates/front.php",
+		"/C/Program Files (x86)/Ampps/www/happy-place/wp-content/themes/happy-place/library/custom-functions.php",
+		"/C/Program Files (x86)/Ampps/www/happy-place/wp-content/themes/happy-place/pages/membership.html",
+		"/C/Program Files (x86)/Ampps/www/happy-place/wp-content/themes/happy-place/assets/scss/templates/_page-desk-rental.scss",
+		"/C/Program Files (x86)/Ampps/www/happy-place/wp-content/themes/happy-place/assets/scss/modules/_navigation.scss",
+		"/C/Program Files (x86)/Ampps/www/happy-place/wp-content/themes/happy-place/assets/scss/templates/_front.scss",
+		"/C/Program Files (x86)/Ampps/www/happy-place/wp-content/themes/happy-place/assets/scss/templates/_page-membership.scss",
+		"/C/Program Files (x86)/Ampps/www/happy-place/wp-content/themes/happy-place/assets/scss/global/_settings.scss",
+		"/C/Program Files (x86)/Ampps/www/happy-place/wp-content/themes/happy-place/assets/images/inline-happy-place-horiz.svg.php",
+		"/C/Program Files (x86)/Ampps/www/happy-place/wp-content/themes/happy-place/assets/images/inline-happy-place-address.svg.php",
 		"/C/Program Files (x86)/Ampps/www/happy-place/wp-content/themes/happy-place/pages/front.html",
 		"/C/Program Files (x86)/Ampps/www/happy-place/wp-content/themes/happy-place/assets/scss/foundation.scss",
-		"/C/Program Files (x86)/Ampps/www/happy-place/wp-content/themes/happy-place/assets/scss/global/_settings.scss",
 		"/C/Program Files (x86)/Ampps/www/happy-place/wp-content/themes/happy-place/assets/scss/modules/_footer.scss",
 		"/C/Program Files (x86)/Ampps/www/happy-place/wp-content/themes/happy-place/assets/scss/modules/_masthead.scss",
-		"/C/Program Files (x86)/Ampps/www/happy-place/wp-content/themes/happy-place/assets/scss/modules/_navigation.scss",
 		"/C/Program Files (x86)/Ampps/www/happy-place/wp-content/themes/happy-place/assets/scss/templates/_page-default.scss",
 		"/C/Program Files (x86)/Ampps/www/happy-place/wp-content/themes/happy-place/assets/scss/components/_featured-gallery.scss",
 		"/C/Program Files (x86)/Ampps/www/happy-place/wp-content/themes/happy-place/style.css",
 		"/C/Program Files (x86)/Ampps/www/happy-place/wp-content/themes/happy-place/footer.php",
 		"/C/Program Files (x86)/Ampps/www/happy-place/wp-content/themes/happy-place/assets/javascript/custom/google-map.js",
 		"/C/Program Files (x86)/Ampps/www/happy-place/wp-content/themes/happy-place/assets/javascript/custom/PDFobject.js",
-		"/C/Program Files (x86)/Ampps/www/happy-place/wp-content/themes/happy-place/template-parts/mobile-off-canvas.php",
 		"/C/Program Files (x86)/Ampps/www/happy-place/wp-content/themes/happy-place/assets/javascript/custom/jquery.raptorize.1.0.js",
 		"/C/Users/Casey/AppData/Local/Temp/7zE3428.tmp/jquery.raptorize.1.0.js",
 		"/D/Ampps/www/happy-place/wp-content/themes/happy-place/pages/contact-form.html",
@@ -362,24 +469,7 @@
 		"/D/Ampps/www/skagitfoodcoop/wp-content/themes/eat-beets/template-home-local.php",
 		"/D/Ampps/www/skagitfoodcoop/wp-content/themes/eat-beets/page.php",
 		"/D/Ampps/www/skagitfoodcoop/wp-content/themes/eat-beets/page.php.bak.php",
-		"/D/Ampps/www/skagitfoodcoop/wp-content/themes/eat-beets/js/custom.js",
-		"/D/Ampps/www/skagitfoodcoop/wp-content/themes/eat-beets/pages/sales-specials",
-		"/D/Ampps/www/skagitfoodcoop/wp-content/themes/eat-beets/parts/shop-sales-specials.php",
-		"/D/Ampps/www/skagitfoodcoop/wp-content/themes/eat-beets/parts/natural-enquirer.php",
-		"/D/Ampps/www/skagitfoodcoop/wp-content/themes/eat-beets/template-sales-specials-OLD.php",
-		"/D/Ampps/www/skagitfoodcoop/wp-config.php",
-		"/D/Ampps/www/licensing-pros/wp-content/themes/licensing_pros/style.css",
-		"/D/Ampps/www/licensing-pros/wp-content/themes/licensing_pros/css/all.css",
-		"/D/Ampps/www/licensing-pros/wp-content/themes/licensing_pros/pages/licensing.html",
-		"/D/Ampps/www/licensing-pros/wp-content/themes/licensing_pros/js/main.js",
-		"/D/Ampps/www/licensing-pros/wp-content/themes/licensing_pros/header.php",
-		"/D/Ampps/www/licensing-pros/wp-content/themes/licensing_pros/framework/headers/header-v4.php",
-		"/D/Ampps/www/licensing-pros/wp-content/themes/licensing_pros/pages/home.html",
-		"/D/Ampps/www/licensing-pros/wp-content/themes/licensing_pros/css/media.css",
-		"/D/Ampps/www/licensing-pros/wp-content/themes/licensing_pros/footer.php",
-		"/D/Ampps/www/licensing-pros/wp-content/themes/licensing_pros/pages/faq.html",
-		"/D/Ampps/www/licensing-pros/wp-content/themes/licensing_pros/pages/contact.html",
-		"/D/Ampps/www/licensing-pros/wp-content/themes/licensing_pros/pages/aviation.html"
+		"/D/Ampps/www/skagitfoodcoop/wp-content/themes/eat-beets/js/custom.js"
 	],
 	"find":
 	{
@@ -387,7 +477,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 90.0,
+		"height": 104.0,
 		"where_history":
 		[
 			"D:\\Ampps\\www\\skagitfoodcoop\\wp-content\\themes\\eat-beets",
@@ -399,6 +489,42 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"=\"true\"",
+			"<h4>Morning Rental</h4>\n                    <p class=\"hours\">6am – 9am</p>\n                    <p class=\"cost\">$150</p>",
+			"data-equalizer-watch=\"rate-extras\"",
+			"<small></small>",
+			" <p>",
+			" ",
+			"'",
+			"green",
+			"red",
+			"gutter",
+			"rates",
+			"amenities",
+			"Amenities",
+			"amenities",
+			"red",
+			"li",
+			"tagline",
+			"<p",
+			"p",
+			"field_name",
+			"<section",
+			"section",
+			"p.cta {\n\t\t\tmargin-top: 2em;",
+			"border-top",
+			"menu",
+			"h2, p",
+			"background-color",
+			"hover",
+			"events",
+			"membership",
+			"style=\"fill:none;",
+			".8em",
+			"medium",
+			"1;",
+			"1",
+			"xlarge",
 			"rates",
 			"floor-map",
 			"contain",
@@ -490,43 +616,7 @@
 			"logo",
 			"Aviation Insurance Association",
 			"Here are some commonly asked questions answered by our insurance licensing professionals. Feel free to <strong><a title=\"Contact Us\" href=\"http://127.0.0.1/licensing-pros/contact/\">contact us </a></strong>with any additional questions you may have!Here are some commonly asked questions answered by our insurance licensing professionals. Feel free to <strong><a title=\"Contact Us\" href=\"http://127.0.0.1/licensing-pros/contact/\">contact us </a></strong>with any additional questions you may have!",
-			"h5.toggle",
-			"including",
-			"toggle",
-			"person",
-			"wordpress",
-			"image-extras",
-			"call",
-			"post-content h3",
-			"post-content",
-			"h2",
-			"page-title-conta",
-			"post-content h2",
-			".page-title h1",
-			"page-title",
-			"(151,176,76, 1)",
-			"rgba(151,176,76, 1);",
-			");",
-			"#97b04c",
-			"a0ce4e",
-			"hr",
-			"-webkit-margin",
-			"hr",
-			"column",
-			"2col",
-			"col",
-			"footer-area h3",
-			"footer",
-			"toggle",
-			"nav",
-			"slide",
-			"slider",
-			"slide",
-			"holder",
-			"linked",
-			"cleints",
-			"comment-submit",
-			"toggle"
+			"h5.toggle"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -547,29 +637,30 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 5,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "page-templates/page-membership.php",
+					"file": "pages/event-rental.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5575,
+						"buffer_size": 7880,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1051,
-								1051
+								2173,
+								2173
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"auto_name": "<div id=\"test-contain\">",
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
@@ -582,145 +673,24 @@
 				},
 				{
 					"buffer": 1,
-					"file": "header.php",
+					"file": "pages/contact-form-events.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2293,
+						"buffer_size": 803,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2031,
-								2107
+								803,
+								803
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "template-parts/mobile-off-canvas.php",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 337,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								337,
-								337
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "page-templates/front.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 19182,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								546,
-								546
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 109.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 0,
-			"sheets":
-			[
-				{
-					"buffer": 4,
-					"file": "assets/scss/templates/_front.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2829,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1389,
-								1389
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 330.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "assets/scss/templates/_page-membership.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1751,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								30,
-								30
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
@@ -731,20 +701,292 @@
 					"type": "text"
 				},
 				{
-					"buffer": 6,
-					"file": "assets/scss/modules/_navigation.scss",
+					"buffer": 2,
+					"file": "header.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2290,
+						"buffer_size": 2344,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								706,
-								706
+								1600,
+								1600
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "pages/membership.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4902,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								4902
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 315.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "page-templates/front.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2002,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								634,
+								634
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 90.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "pages/front.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1857,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1651,
+								1651
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "assets/javascript/custom/stickyfooter.js",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 395,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "footer.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1929,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								987,
+								987
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 13,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "pages/desk-rental.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3458,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1562,
+								1562
+							]
+						],
+						"settings":
+						{
+							"auto_name": "<div id=\"test-contain\">",
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 405.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 14,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 5,
+			"sheets":
+			[
+				{
+					"buffer": 9,
+					"file": "assets/scss/modules/_footer.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 481,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								481,
+								481
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "assets/scss/components/_hc-colophon.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1954,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								258,
+								258
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "assets/scss/modules/_navigation.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2795,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								258,
+								258
 							]
 						],
 						"settings":
@@ -757,7 +999,124 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "assets/scss/templates/_page-desk-rental.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1961,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1353,
+								1353
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 675.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "assets/scss/templates/_page-membership.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1807,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								344,
+								344
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "assets/scss/templates/_page-events.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3498,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3447,
+								3447
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 900.0,
+						"zoom_level": 1.0
+					},
 					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 15,
+					"file": "assets/scss/templates/_page-default.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5255,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1283,
+								1283
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 765.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 15,
 					"type": "text"
 				}
 			]
@@ -791,7 +1150,7 @@
 		"cols":
 		[
 			0.0,
-			0.631707095941,
+			0.562484605842,
 			1.0
 		],
 		"rows":
@@ -829,7 +1188,7 @@
 		[
 			[
 				"",
-				"C:\\Program Files (x86)\\Ampps\\www\\happychap\\wp-content\\themes\\happychapcreative\\happychapcreative.sublime-workspace"
+				"C:\\Program Files (x86)\\Ampps\\www\\lyndale\\wp-content\\themes\\lyndale\\lyndale.sublime-project"
 			],
 			[
 				"ster",
@@ -847,7 +1206,7 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 1,
+	"selected_group": 0,
 	"settings":
 	{
 	},
@@ -855,7 +1214,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 207.0,
+	"side_bar_width": 223.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

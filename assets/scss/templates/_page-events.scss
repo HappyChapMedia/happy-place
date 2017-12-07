@@ -192,5 +192,18 @@
 		select {
 			height: auto;
 		}
+		.event-date {
+			input {
+				text-align: center;
+				padding-left: 95px;
+			}
+		}
+		.wpcf7-select {
+			text-align: center;
+			padding: 0;
+			option {
+				padding: .5em 0;
+			}
+		}
 	} /* cta */
 } /* page-template-page-events */

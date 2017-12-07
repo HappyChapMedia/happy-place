@@ -11,9 +11,11 @@
 
 		.branding-contain {
 			background: darken($yellow, 12%);
+			background-position: center;
 			background-size: cover;
 			background-repeat: no-repeat;
-			// opacity: .8;
+			// background-blend-mode: lighten;
+			opacity: .8;
 			// @include breakpoint(large) {
 			// 	@include grid-column(40%);
 			// }
@@ -22,17 +24,15 @@
 				h1.logo {
 					// font-size: 	8rem;
 					text-transform: uppercase;
-					padding: 1em 0;
+					padding: 5em 0;
 					margin: 0;
 					#happy-place-logo-circle {
 						max-height: 400px;
-						#the ,#happy, #place {
-							.st1 {
-								fill: $blue;
-							}
-						} /* the,happy,place */
+						#text {
+							fill: transparent;
+						} /* text */
 						#circle {
-							fill: $white;
+							fill: $yellow;
 						}
 					}
 
@@ -93,37 +93,90 @@
 
 	section {
 		text-align: center;
-		padding: 4em 0;
+		// padding: 4em 0;
 		.section-contain {
+			padding: 0;
+			max-width: 100%;
 			.section-text {
+				padding: 4em!important;
 				@include breakpoint(large){
-					@include grid-column(8);
+					@include grid-column(7);
+					padding: 4em!important;
+					p {
+						font-size: 1.5em;
+					}
 				}
-			}
+			} 
 			.section-img {
+				@include breakpoint(medium down){
+					height: 300px!important;
+				}
+				display: block;
 				@include breakpoint(large){
 					@include grid-column(4);
 				}
+				padding: 0!important;
+				background-size: cover;
 			}
 		}
 	} /* section */
 
 	#events-lead {
-		border-bottom: solid 5em lighten($green, 0%);
-		h2 {
-			color: $green;
-			text-align: center;
-		}
-		p.cta {
-			margin-top: 2em;
-			.button {
-				background-color: lighten($green, 0%);
+		padding: 0;
+		// border-bottom: solid 5em lighten($green, 0%);
+		background-color: lighten($green, 0%);
+		color: $white;
+		.section-contain {
+			.section-text {
+				h2 {
+					color: $white;
+					text-align: center;
+				}
+				p.cta {
+					margin-top: 2em;
+					.button {
+						color: darken($green, 5%);
+						background-color: $white;
+					}
+				}
+			}
+			.section-img {
+				// box-shadow: inset 3em 0 3em $green;
+				background-size: contain;
+				background-repeat: no-repeat;
+				background-position: center;
+				background-blend-mode: darken;
+				background-color: $green;
+				opacity: .5;
+				// padding: 4em;
+				// background-blend-mode: overlay;
+				// transform: scaleX(-1);
 			}
 		}
 	} /* events-lead */
 
 	#membership-lead {
 		border-bottom: solid 5em lighten($red, 0%);
+		text-align: center;
+		.section-contain {f
+			.section-img {
+				height: 400px;
+				width: 400px;
+				// overflow: hidden;
+				margin: 2em auto;
+				.img-container {
+			     // -webkit-animation: flipX 2s linear infinite;
+				}
+			}
+			// @-webkit-keyframes flipX
+			// {  
+			// 	0%   {-webkit-transform: rotate(0deg); } 
+			// 	25% {-webkit-transform: rotate(5deg);} 
+			// 	50% {-webkit-transform: rotate(-5deg);}  
+			// 	75% {-webkit-transform: rotate(5deg);} 
+			// 	100% {-webkit-transform: rotate(0deg);}  
+			// }
+		}
 		h2 {
 			color: $red;
 			text-align: center;
@@ -137,47 +190,65 @@
 	} /* membership-lead */	
 
 	#desk-lead {
-		border-bottom: solid 5em darken($yellow, 15%);
-		h2 {
-			color: darken($yellow, 15%);
-			text-align: center;
-		}
-		p.cta {
-			margin-top: 2em;
-			.button {
-				background-color: darken($yellow, 15%);
-			}
-		}
-	} /* events-lead */
-}
-
-#test-contain {
-	// @include grid-row();
-    margin-top: -10px;
-    @include show-for(large);
-	.sticky {
-		background: $black;
-	}
-	ul {
-		li {
-			text-align: center;
-			font-family: $sans-serif;
-			font-size: 1.75em;
-			font-weight: 700;
-			text-transform: uppercase;
-			margin: 0;
-			a {
-				padding: .75em 0;
-				color: $white;
-				&:hover {
-					background-color: lighten($black, 10%);
+		background-color: darken($yellow, 15%);
+		// border-bottom: solid 5em darken($yellow, 15%);
+		.section-contain {
+			padding: 4em 0;
+			.section-text {
+				h2 {
+					color: $blue;
+					text-align: center;
 				}
-			}
-			.active {
-				background-color: $dark-gray;
-			}
-		}
-	}
+				p.cta {
+					margin-top: 2em;
+					.button {
+						color: darken($yellow, 15%);
+					}
+				}
+			} /* section-text */
+			.section-img {
+				height: 300px!important;
+				width: 300px;
+				@include breakpoint(medium){
+					height: 400px!important;
+					width: 400px;
+				}
+				overflow: hidden;
+				border-radius: 100%;
+				margin: 2em auto;
+				position: relative;
+				@include breakpoint(large){
+					right: 5%;
+				}
+				@include breakpoint(xlarge){
+					right: 10%;
+				}
+				text-align: center;
+				.img-container {
+				    animation: spinX 3s linear infinite;
+				    content: '';
+				    background: url("../images/outerspace-desk-chair-spinning.jpg") no-repeat center center;
+				    background-size: cover;
+				    // position: relative;
+				    // left: 0;
+				    // top: 0;
+				    display: block;
+				    width: 100%;
+				    height: 100%;
+				    @include breakpoint(large){
+					    width: 100%;
+					    height: 100%;
+				    }
+				    -webkit-animation: rotatedesk 15s linear infinite;
+				}
+    			@-webkit-keyframes rotatedesk
+				{  
+					0%   {-webkit-transform: rotate(0deg); }  
+					100% {-webkit-transform: rotate(360deg);}  
+				}
+			} /* section-img */
+		} /* section-contain */
+	} /* events-lead */
 }
 
 // Page header
