@@ -80,9 +80,7 @@
 					padding: 1em 0;
 					h4 {
 						text-transform: uppercase;
-							font-size: 2em;
-						@include breakpoint(large){
-						}
+						font-size: 2em;
 					}
 					.cost {
 						color: $red;
@@ -98,6 +96,12 @@
 			padding: 2em 0;
 			.rate-contain {
 				margin: 1em 0;
+				@include breakpoint(small only){
+					text-align: center;
+				}
+				h4 {
+					font-size: 2em;
+				}
 			}
 			.discount {
 				color: $white;

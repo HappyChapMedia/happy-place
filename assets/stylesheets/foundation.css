@@ -7479,6 +7479,7 @@ body.lb-disable-scrolling {
         color: #b3d34a;
         background-color: #fefefe; }
     .page-template-front #events-lead .section-contain .section-img {
+      background-image: url("..images/happy-place-events-happy-dance-1.gif");
       -webkit-background-size: contain;
               background-size: contain;
       background-repeat: no-repeat;
@@ -7513,7 +7514,7 @@ body.lb-disable-scrolling {
       .page-template-front #desk-lead .section-contain .section-text p.cta {
         margin-top: 2em; }
         .page-template-front #desk-lead .section-contain .section-text p.cta .button {
-          color: #f8ed60; }
+          color: #fefefe; }
       .page-template-front #desk-lead .section-contain .section-img {
         height: 300px !important;
         width: 300px;
@@ -7587,10 +7588,13 @@ body.lb-disable-scrolling {
           width: 400px;
           height: 400px; }
       #location-map .section-contain .address-contain p.bham {
-        font-size: 3.75em;
+        font-size: 1.5em;
         font-family: "acumin-pro-extra-condensed", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
         text-align: center;
-        color: #3ca79c; }
+        color: #35958a; }
+        @media screen and (min-width: 64em) {
+          #location-map .section-contain .address-contain p.bham {
+            font-size: 3.75em; } }
   #location-map #map {
     min-height: 500px;
     padding: 0 !important; }
@@ -7686,14 +7690,29 @@ body.lb-disable-scrolling {
         #page .main-content:last-child:not(:first-child) {
           float: right; } }
 
+.entry-content #test-contain {
+  text-align: center;
+  text-transform: uppercase; }
+  .entry-content #test-contain li:not(:last-child) {
+    border-right: solid 1px #8a8a8a; }
+  .entry-content #test-contain li {
+    background-color: #717171; }
+    @media screen and (max-width: 39.9375em) {
+      .entry-content #test-contain li {
+        font-size: .6em; } }
+    .entry-content #test-contain li:hover {
+      background-color: #575757; }
+  .entry-content #test-contain a {
+    color: #fefefe; }
+
 section h2 {
   font-size: 3.5em;
+  line-height: 1em;
   color: #54c2b6;
   text-align: center; }
   @media screen and (min-width: 40em) {
     section h2 {
       font-size: 6em;
-      line-height: 1em;
       margin-bottom: .5em; } }
   section h2 strong {
     font-family: "abril-fatface", "Garamond Bold", Times, serif;
@@ -7734,7 +7753,7 @@ section .section-contain {
   max-width: 75rem;
   margin-left: auto;
   margin-right: auto;
-  padding: 1em; }
+  padding: 4em 1em; }
   section .section-contain::before, section .section-contain::after {
     content: ' ';
     display: table; }
@@ -7797,12 +7816,19 @@ section.why {
   .contain::after {
     clear: both; }
 
+.cost {
+  color: #ec5840;
+  font-family: "abril-fatface", "Garamond Bold", Times, serif;
+  font-size: 2em; }
+
 #cta {
   background-color: #fbf5a9;
   /* cta */ }
   #cta .contact-intro {
-    color: #fefefe;
-    font-size: 1.5em; }
+    color: #fefefe; }
+    @media screen and (min-width: 64em) {
+      #cta .contact-intro {
+        font-size: 1.5em; } }
   #cta .accordion {
     background: transparent;
     text-align: center; }
@@ -7869,21 +7895,25 @@ ul.accordion {
     ul.accordion li a.button {
       color: #fefefe;
       font-size: 2em;
-      font-family: "abril-fatface", "Garamond Bold", Times, serif;
+      font-family: "acumin-pro-extra-condensed", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+      text-transform: uppercase;
+      font-weight: 700;
       margin: 0;
       /* i */ }
+      @media screen and (min-width: 40em) {
+        ul.accordion li a.button {
+          font-family: "abril-fatface", "Garamond Bold", Times, serif;
+          text-transform: none; } }
       @media screen and (min-width: 64em) {
         ul.accordion li a.button {
           font-size: 3em; } }
       ul.accordion li a.button i {
         color: #8cd6ce;
         display: block;
-        padding: 0 0 1em 0; }
-        @media screen and (min-width: 40em) {
-          ul.accordion li a.button i {
-            float: left;
-            display: inline-block;
-            padding: 0; } }
+        padding: 0 0 1em 0;
+        float: left;
+        display: inline-block;
+        padding: 0; }
     ul.accordion li .accordion-title {
       border: none; }
       ul.accordion li .accordion-title::before {
@@ -7892,8 +7922,10 @@ ul.accordion {
         background-color: #7acfc6; }
     ul.accordion li .accordion-content {
       border: none;
-      background: transparent;
-      padding: 2em; }
+      background: transparent; }
+      @media screen and (min-width: 64em) {
+        ul.accordion li .accordion-content {
+          padding: 2em; } }
       ul.accordion li .accordion-content label {
         color: white;
         font-size: 1.5em;
@@ -8001,6 +8033,11 @@ ul.accordion {
       clear: both; }
     .page-template-page-events #rates .rate-extras .rate-contain {
       margin: 1em 0; }
+      @media screen and (max-width: 39.9375em) {
+        .page-template-page-events #rates .rate-extras .rate-contain {
+          text-align: center; } }
+      .page-template-page-events #rates .rate-extras .rate-contain h4 {
+        font-size: 2em; }
     .page-template-page-events #rates .rate-extras .discount {
       color: #fefefe; }
       @media screen and (min-width: 40em) {
@@ -8110,6 +8147,7 @@ ul.accordion {
 .page-template-page-desk-rental {
   /* amenities */
   /* floor-map */
+  /* rates */
   /* uses */ }
   .page-template-page-desk-rental .top-bar, .page-template-page-desk-rental .top-bar ul {
     background-color: #54c2b6; }
@@ -8120,10 +8158,11 @@ ul.accordion {
   .page-template-page-desk-rental #intro {
     background-color: #54c2b6; }
   .page-template-page-desk-rental #amenities {
-    background: #54c2b6;
+    color: #54c2b6;
+    background: #f8ed60;
     /* ul */ }
     .page-template-page-desk-rental #amenities h2, .page-template-page-desk-rental #amenities h3 {
-      color: #fefefe; }
+      color: #54c2b6; }
     .page-template-page-desk-rental #amenities ul {
       /* li */ }
       @media screen and (min-width: 40em) {
@@ -8160,6 +8199,37 @@ ul.accordion {
           height: 550px; } }
     .page-template-page-desk-rental #floor-map figure {
       margin: 0; }
+  .page-template-page-desk-rental #rates ul {
+    text-align: center; }
+    .page-template-page-desk-rental #rates ul li {
+      padding: 2em 4em;
+      border: solid 1px #e6e6e6; }
+      .page-template-page-desk-rental #rates ul li h4 {
+        font-size: 2em;
+        text-transform: uppercase; }
+  .page-template-page-desk-rental #availability {
+    background-color: #bcd85f;
+    color: #fefefe; }
+    .page-template-page-desk-rental #availability h2 {
+      color: #fefefe; }
+  .page-template-page-desk-rental #cta {
+    background-color: #ec5840; }
+    .page-template-page-desk-rental #cta h2 {
+      color: #f5a99d; }
+    .page-template-page-desk-rental #cta .accordion #tour {
+      background-color: #54c2b6; }
+      @media screen and (max-width: 39.9375em) {
+        .page-template-page-desk-rental #cta .accordion #tour {
+          font-size: 1.5em; } }
+      .page-template-page-desk-rental #cta .accordion #tour i {
+        color: #3ca79c; }
+        @media screen and (min-width: 64em) {
+          .page-template-page-desk-rental #cta .accordion #tour i {
+            margin-right: 1em; } }
+      @media screen and (max-width: 39.9375em) {
+        .page-template-page-desk-rental #cta .accordion #tour .accordion-title {
+          font-family: "acumin-pro-extra-condensed", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+          text-transform: uppercase; } }
   .page-template-page-desk-rental #uses {
     background: #fefefe; }
     .page-template-page-desk-rental #uses ul {

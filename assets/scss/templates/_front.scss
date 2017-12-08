@@ -142,6 +142,7 @@
 			}
 			.section-img {
 				// box-shadow: inset 3em 0 3em $green;
+				background-image: url('..images/happy-place-events-happy-dance-1.gif');
 				background-size: contain;
 				background-repeat: no-repeat;
 				background-position: center;
@@ -202,7 +203,7 @@
 				p.cta {
 					margin-top: 2em;
 					.button {
-						color: darken($yellow, 15%);
+						color: $white;
 					}
 				}
 			} /* section-text */
@@ -279,10 +280,13 @@
 				}
 			}
 			p.bham {
-				font-size: 3.75em;
+				font-size: 1.5em;
 				font-family: $header-font-family;
 				text-align: center;
-				color: darken($blue, 10%);
+				color: darken($blue, 15%);
+				@include breakpoint(large){
+					font-size: 3.75em;
+				}
 				// letter-spacing: .25em;
 				// text-transform: uppercase;
 			}

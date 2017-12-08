@@ -15,9 +15,10 @@
 		}
 	}
 	#amenities {
-		background: $blue;
+		color: $blue;
+		background: darken($yellow, 15%);
 		h2, h3 {
-			color: $white;
+			color: $blue;
 		}
 		ul {
 			@include breakpoint(medium) {
@@ -65,7 +66,52 @@
 		}
 	} /* floor-map */
 
+	#rates {
+		ul {
+			text-align: center;
+			li {
+				h4 {
+					font-size: 2em;
+					text-transform: uppercase;
+				}
+				padding: 2em 4em;
+				border: solid 1px $light-gray;
+			}
+		}
+	} /* rates */
+	
+	#availability {
+		background-color: $green;
+		color: $white;
+		h2 {
+			color: $white;
+		}
+	}
 
+	#cta {
+		background-color: $red;
+		h2 {
+			color: lighten($red, 20%);
+		}
+		.accordion #tour {
+			background-color: $blue;
+			@include breakpoint(small only){
+				font-size: 1.5em;
+			}
+			i {
+				color: darken($blue, 10%);
+				@include breakpoint(large){
+					margin-right: 1em;
+				}
+			}
+			.accordion-title {
+				@include breakpoint(small only){
+					font-family: $sans-serif;
+					text-transform: uppercase;
+				}
+			}
+		}
+	}
 
 	#uses {
 		background: $white;
