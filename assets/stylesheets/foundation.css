@@ -7479,7 +7479,7 @@ body.lb-disable-scrolling {
         color: #b3d34a;
         background-color: #fefefe; }
     .page-template-front #events-lead .section-contain .section-img {
-      background-image: url("..images/happy-place-events-happy-dance-1.gif");
+      background-image: url("../images/happy-place-events-happy-dance-1.gif");
       -webkit-background-size: contain;
               background-size: contain;
       background-repeat: no-repeat;
@@ -7490,10 +7490,32 @@ body.lb-disable-scrolling {
   .page-template-front #membership-lead {
     border-bottom: solid 5em #ec5840;
     text-align: center; }
-    .page-template-front #membership-lead .section-contain f .section-img {
-      height: 400px;
-      width: 400px;
-      margin: 2em auto; }
+    .page-template-front #membership-lead .section-contain .section-img {
+      background-image: url("../images/happy-place-coworking-membership-mr-rodgers.jpg");
+      background-repeat: no-repeat;
+      background-position: top center;
+      display: block; }
+      @media screen and (min-width: 64em) {
+        .page-template-front #membership-lead .section-contain .section-img {
+          width: 41.66667%;
+          float: left;
+          padding-left: 0.625rem;
+          padding-right: 0.625rem;
+          -webkit-background-size: cover;
+                  background-size: cover;
+          min-height: 600px; } }
+  @media screen and (min-width: 64em) and (min-width: 40em) {
+    .page-template-front #membership-lead .section-contain .section-img {
+      padding-left: 0.9375rem;
+      padding-right: 0.9375rem; } }
+      @media screen and (min-width: 64em) {
+          .page-template-front #membership-lead .section-contain .section-img:last-child:not(:first-child) {
+            float: right; } }
+      @media screen and (min-width: 90em) {
+        .page-template-front #membership-lead .section-contain .section-img {
+          min-height: 500px; } }
+      .page-template-front #membership-lead .section-contain .section-img .img-container {
+        height: 100%; }
     .page-template-front #membership-lead h2 {
       color: #ec5840;
       text-align: center; }
