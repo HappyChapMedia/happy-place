@@ -2,370 +2,327 @@
 // 	display: none;
 // }
 
-#test-contain {
-	// @include grid-row();
-    margin-top: -10px;
-    @include show-for(large);
-	.sticky {
-		background: $black;
-	}
-	ul {
-		li {
-			text-align: center;
-			font-family: $sans-serif;
-			font-size: 1.75em;
-			font-weight: 700;
-			text-transform: uppercase;
-			margin: 0;
-			a {
-				padding: .75em 0;
-				color: $white;
-				&:hover {
-					background-color: lighten($black, 10%);
+.page-template-front {
+	
+	#front-hero {
+		background: darken($yellow, 10%);
+		display: inline-block;
+		width: 100%;
+
+		.branding-contain {
+			background: darken($yellow, 12%);
+			background-position: center;
+			background-size: cover;
+			background-repeat: no-repeat;
+			// background-blend-mode: lighten;
+			opacity: .8;
+			// @include breakpoint(large) {
+			// 	@include grid-column(40%);
+			// }
+			.branding {
+				text-align: center;
+				h1.logo {
+					// font-size: 	8rem;
+					text-transform: uppercase;
+					padding: 5em 0;
+					margin: 0;
+					#happy-place-logo-circle {
+						max-height: 400px;
+						#text {
+							fill: transparent;
+						} /* text */
+						#circle {
+							fill: $yellow;
+						}
+					}
+
 				}
 			}
-			.active {
-				background-color: $dark-gray;
+		}
+		.tag-contain {
+			background: $blue;
+			// @include breakpoint(large) {
+			// 	@include grid-column(60%);
+			// }
+			 
+			padding: 4em 2em;
+			.tag {
+				p {
+					font-size: 3em;
+					@include breakpoint(large){
+						font-size: 4em;
+						line-height: 1em;
+						// padding: 1em .5em;
+					}
+					@include breakpoint(xlarge){
+						font-size: 4em;
+						line-height: 1.2em;
+						// padding: 1em .5em;
+					}
+					text-align: center;
+					color: $white;
+					font-family: $sans-serif;
+					.amp {
+						font-family: $serif;
+						font-weight: 900;
+						color: $red;
+					}
+				}
+			} /* tag */
+			.section-divider {
+				width: 80%;
+				hr {
+					border-color: $white;
+				}
+			}
+			.location {
+				p {
+					margin: 0;
+					font-weight: 100;
+					color: $white;
+					text-align: center;
+					& #hp-address {
+						max-width: 250px;
+						fill: $white;
+					}
+					
+				}
+			}
+		} /* tag-contain */
+	} /* #front-hero */
+
+	section {
+		text-align: center;
+		// padding: 4em 0;
+		.section-contain {
+			padding: 0;
+			max-width: 100%;
+			.section-text {
+				padding: 4em!important;
+				@include breakpoint(large){
+					@include grid-column(7);
+					padding: 4em!important;
+					p {
+						font-size: 1.5em;
+					}
+				}
+			} 
+			.section-img {
+				@include breakpoint(medium down){
+					height: 300px!important;
+				}
+				display: block;
+				@include breakpoint(large){
+					@include grid-column(4);
+				}
+				padding: 0!important;
+				background-size: cover;
 			}
 		}
-	}
+	} /* section */
+
+	#events-lead {
+		padding: 0;
+		// border-bottom: solid 5em lighten($green, 0%);
+		background-color: lighten($green, 0%);
+		color: $white;
+		.section-contain {
+			.section-text {
+				h2 {
+					color: $white;
+					text-align: center;
+				}
+				p.cta {
+					margin-top: 2em;
+					.button {
+						color: darken($green, 5%);
+						background-color: $white;
+					}
+				}
+			}
+			.section-img {
+				// box-shadow: inset 3em 0 3em $green;
+				background-image: url("../images/happy-place-events-happy-dance-1.gif");
+				background-size: contain;
+				background-repeat: no-repeat;
+				background-position: center;
+				background-blend-mode: darken;
+				background-color: $green;
+				opacity: .5;
+				// padding: 4em;
+				// background-blend-mode: overlay;
+				// transform: scaleX(-1);
+			}
+		}
+	} /* events-lead */
+
+	#membership-lead {
+		border-bottom: solid 5em lighten($red, 0%);
+		text-align: center;
+		.section-contain {
+			.section-text {
+				// color: $white;
+				// h2 {
+				// 	color: $white;
+				// }
+			}	
+			.section-img {
+				background-image: url("../images/happy-place-coworking-membership-mr-rodgers.jpg");
+				background-repeat: no-repeat;
+				background-position: top center;
+				display: block;
+				@include breakpoint(large){
+					@include grid-column(5);
+					background-size: cover;
+					min-height: 600px;
+				}
+				@include breakpoint(xxlarge){
+					min-height: 500px;
+				}
+				.img-container {
+				height: 100%;
+				// min-width: 400px;
+				// overflow: hidden;
+				// margin: 2em auto;
+					
+				}
+			}
+			// @-webkit-keyframes flipX
+			// {  
+			// 	0%   {-webkit-transform: rotate(0deg); } 
+			// 	25% {-webkit-transform: rotate(5deg);} 
+			// 	50% {-webkit-transform: rotate(-5deg);}  
+			// 	75% {-webkit-transform: rotate(5deg);} 
+			// 	100% {-webkit-transform: rotate(0deg);}  
+			// }
+		}
+		h2 {
+			color: $red;
+			text-align: center;
+		}
+		p.cta {
+			margin-top: 2em;
+			.button {
+				background-color: lighten($red, 0%);
+			}
+		}
+	} /* membership-lead */	
+
+	#desk-lead {
+		background-color: darken($yellow, 15%);
+		// border-bottom: solid 5em darken($yellow, 15%);
+		.section-contain {
+			padding: 4em 0;
+			.section-text {
+				h2 {
+					color: $blue;
+					text-align: center;
+				}
+				p.cta {
+					margin-top: 2em;
+					.button {
+						color: $white;
+					}
+				}
+			} /* section-text */
+			.section-img {
+				height: 300px!important;
+				width: 300px;
+				@include breakpoint(medium){
+					height: 400px!important;
+					width: 400px;
+				}
+				overflow: hidden;
+				border-radius: 100%;
+				margin: 2em auto;
+				position: relative;
+				@include breakpoint(large){
+					right: 5%;
+				}
+				@include breakpoint(xlarge){
+					right: 10%;
+				}
+				text-align: center;
+				.img-container {
+				    animation: spinX 3s linear infinite;
+				    content: '';
+				    background: url("../images/outerspace-desk-chair-spinning.jpg") no-repeat center center;
+				    background-size: cover;
+				    // position: relative;
+				    // left: 0;
+				    // top: 0;
+				    display: block;
+				    width: 100%;
+				    height: 100%;
+				    @include breakpoint(large){
+					    width: 100%;
+					    height: 100%;
+				    }
+				    -webkit-animation: rotatedesk 15s linear infinite;
+				}
+    			@-webkit-keyframes rotatedesk
+				{  
+					0%   {-webkit-transform: rotate(0deg); }  
+					100% {-webkit-transform: rotate(360deg);}  
+				}
+			} /* section-img */
+		} /* section-contain */
+	} /* events-lead */
 }
 
 // Page header
-#front-hero {
-	background: darken($yellow, 10%);
-	display: inline-block;
-	width: 100%;
-	.branding-contain {
-		background: darken($yellow, 12%);
-		@include breakpoint(xlarge) {
-			@include grid-column(65%);
-		}
-		.branding {
-			text-align: center;
-			h1.logo {
-				// font-size: 	8rem;
-				text-transform: uppercase;
-				padding: 1em 0;
-				margin: 0;
-				.cls-1 {
-					fill: $white;
+
+
+#location-map {
+	background-color: $blue;
+	display: block;
+	padding: 0!important; 
+	.section-contain {
+		max-width: 100%;
+		padding: 0!important; 
+		.address-contain {
+			margin: 4em auto 0;
+			@include breakpoint(large) {
+			    @include grid-column(4);
+			}
+			padding: 5em!important; 
+			#hp-address {
+				fill: $white;
+				@include global-trans(1500ms);
+				&:hover {
+					fill: darken($blue, 10%);
+				}
+				#text {
+					width: 400px;
+					height: 400px;
 				}
 			}
-		}
-	}
-	.tag-contain {
-		background: $blue;
-		@include breakpoint(xlarge) {
-			@include grid-column(35%);
-		}
-		  
-		.tag {
-			padding: 6em 2.5em 0;
-			text-align: center;
-
-			// p.for-lease {
-			// 	background: $alert-color;
-			// 	padding: .05em .5em;
-			// 	font-size: 2.5em;
-			// 	font-weight: 500;
-			// 	text-transform: uppercase;
-			// 	letter-spacing: .15em;
-			// 	display: inline-block;
-			// 	border: solid 8px $white;
-			// 	// margin-top: 50%;
-			// }
-		}
-	}
-
-}
-.featured-gallery {
-	display: block;
-	.slick-prev, .slick-next {
-	    z-index: 100;
-	}
-	.slick-next {
-		right: 40px;
-	}
-	.slick-prev {
-		left: 40px;
-	}
-	figure {
-		margin: 0;
-		z-index: -1;
-	}
-	figcaption.title {
-		.caption-contain {
-			display: block;
-			min-height: 250px;
-			padding: 1.5em;
-		}
-		h3 {
-			font-size: 2em;
-			@include breakpoint(medium) {
-			    font-size: 3.5em;
-			    line-height: 1em;
+			p.bham {
+				font-size: 1.5em;
+				font-family: $header-font-family;
+				text-align: center;
+				color: darken($blue, 15%);
+				@include breakpoint(large){
+					font-size: 3.75em;
+				}
+				// letter-spacing: .25em;
+				// text-transform: uppercase;
 			}
-			  
-		}
-		p {
-			color: $black;
 		}
 	}
-	figure:nth-child(2n+1) {
-		figcaption.title {
-			background-color: $light-gray;
+	#map {
+		min-height: 500px;
+		@include breakpoint(large) {
+		    @include grid-column(8);
+			min-height: 750px;
 		}
+		padding: 0!important; 
 	}
 }
-
 // Intro
 .entry-content {
 	display: block;
-	// h2 {
-	// 	font-size: 8em;
-	// 	text-transform: uppercase;
-	// 	letter-spacing: .08;
-	// }
-	section {
-		// min-height: 75vh;
-		h2 {
-			font-size: 3.5em;
-			@include breakpoint(medium) {
-				font-size: 6em;
-				margin-bottom: .5em;
-			}
-			color: $blue;
-			text-align: center;
-			strong {
-				font-family: $serif;
-				color: $alert-color;
-			}
-		}
-		p.subhead {
-			font-family: $sans-serif;
-			text-transform: uppercase;
-			text-align: center;
-			padding: .5em;
-			font-size: 1.5em;
-			@include breakpoint(medium) {
-				font-size: 2.5em;
-				margin: 1em 0 .75em;
-			}
-			  
-			strong {
-				font-family: $serif;
-				color: $alert-color;
-				padding: 0 .15em;
-				text-transform: none;
-			}
-		}
-		ul {
-			margin: 0;
-			li {
-				list-style: none;
-				background: $white;
-				padding: 1em 1.5em .75em;
-				display: inline-block;
-				width: 100%;
-				margin: .5em 0;
-				@include breakpoint(medium) {
-					margin: 1em 0;
-				}
-				  
-				h4 {
-					margin: 0;
-				}
-			}
-		}
-		.section-contain {
-			@include grid-row();
-			padding: 1em;
-			@include breakpoint(large) {
-				padding: 4em;
-			}
-			  
-		}
-		&#intro {
-			background: $success-color;
-			color: $white;
-			padding: 4em 0;
-			.icon-contain {
-				text-align:center;
-				#hc-icon {
-					width: 200px;
-					height: 200px;
-					.hc-icon-fill {
-						fill: $white;
-					}
-				}
-			}
-			p {
-				font-family: $sans-serif;
-				font-size: 2em;
-				text-align: center;
-				@include breakpoint(medium) {
-					font-size: 3em;
-					text-align: justify;
-				}
-			}
-			em {
-				font-style: normal;
-				font-weight: 700;
-			}
-			strong {
-				color: darken($green, 20%);
-				font-weight: 700;
-				// text-transform: uppercase;
-			}
-			a {
-				font-size: .75em;
-				font-family: $serif;
-				color: darken($blue, 10%);
-			}
-		}
-		&.why {
-			background: $yellow;
-		}
-	}
-	#usps {
-		background: $blue;
-		h2, h3 {
-			color: $white;
-		}
-		section {
-			// @include breakpoint(large) {
-			//     @include grid-column(6);
-			// }
-			ul {
-				@include breakpoint(medium) {
-					columns: 2;
-					column-gap: 5em;
-				}
-				li {
-					h4 {
-						font-size: 1.85em;
-						text-transform: uppercase;
-						strong {
 
-						}
-					}
-				}
-			}
-		}
-	}
-	#floor-map {
-		h2,p {
-			color: $white;
-		}
-		background-color: rgb(82, 86, 89);
-		padding: 3em 0;
-		.overlay {
-		   background:transparent; 
-		   position:relative; 
-		   width:100%;
-		   @include breakpoint(large) {
-			   height:550px; /* your iframe height */
-			   top:550px;  /* your iframe height */
-			   margin-top:-550px;  /* your iframe height */
-		   }
-		}
-		#map-embed {
-			height: 350px;
-			@include breakpoint(large) {
-				height: 550px;
-			}
-			
-		}
-		border-bottom: solid 20px rgb(82, 86, 89);
-		figure {
-			margin: 0;
-		}
-	}
-	#uses {
-		background: $white;
-		// @include grid-column();
-		ul {
-			@include breakpoint(medium) {
-				columns: 2;
-				column-gap: 5em;
-			}
-			list-style: inherit;
-			li {
-				color: $blue;
-				// border-bottom: solid 2px;
-				border-bottom: solid 2px;
-				padding: 1.5em 0 0em;
-				margin: 0;
-				// background: $yellow;
-			}
-			.cta {
-				border: none;
-				.cta-button {
-					margin-top: 2.5em;
-					.button {
-						font-size: 1.2em;
-						background: $red;
-						display: block;
-						width: 80%;
-					}
-				}
-			}
-			li:before {
-				color: lighten($blue, 25%);
-				content:"\f046";
-				font-size: 2.95em;
-				font-family: FontAwesome;
-				float: left;
-				position: relative;
-				top: -.17em;
-				padding: 0 .25em .15em 0;
-				display: inline-block;
-			}
-		}
-	}
-	#location-map {
-		background-color: $blue;
-		display: block;
-		.section-contain {
-			max-width: 100%;
-			padding: 0!important; 
-			.address {
-				margin: 4em auto 0;
-				@include breakpoint(large) {
-				    @include grid-column(4);
-				}
-				padding: 5em!important; 
-				#address-illustration {
-					fill: $white;
-					@include global-trans(1500ms);
-					&:hover {
-						fill: darken($blue, 10%);
-					}
-					#text {
-						width: 400px;
-						height: 400px;
-					}
-				}
-				p.bham {
-					font-size: 3.75em;
-					font-family: $header-font-family;
-					text-align: center;
-					color: darken($blue, 10%);
-					// letter-spacing: .25em;
-					// text-transform: uppercase;
-				}
-			}
-		}
-		#map {
-			min-height: 500px;
-			@include breakpoint(large) {
-			    @include grid-column(8);
-				min-height: 750px;
-			}
-			padding: 0!important; 
-		}
-	}
 	#proximity {
 		// @include grid-row();
 		ul {
@@ -390,147 +347,6 @@
 			color: $white;
 		}
 	}
-	#cta {
-		background-color: $yellow;
-		.contact-intro {
-			color: $white;
-			font-size: 1.5em;
-		}
-		.accordion {
-			background: transparent;
-			text-align: center;
-			#tour  {
-				background-color: $green;
-				i {
-					color: lighten($green, 15%);
-				}
-			}
-			#message  {
-				background-color: $blue;
-				i {
-					color: lighten($blue, 15%);
-				}
-			}
-			#raptor a {
-				background-color: $red;
-				i {
-					color: lighten($red, 15%);
-				}
-			}
-			li {
-				padding: 0;
-				background-color: transparent;
-				a.button {
-					color: $white;
-					font-size: 2em;
-					font-family: $serif;
-					@include breakpoint(large) {
-					    font-size: 3em;
-					}
-					margin: 0;
-					// display: inline-block;
-					i {
-						color: lighten($blue, 15%);
-						display: block;
-						padding: 0 0 1em 0;
-						@include breakpoint(medium) {
-							float: left;
-							display: inline-block;
-							padding: 0;
-						}
-						  
-					}
-				}
-				.accordion-title {
-					border: none;
-					  
-					&::before {
-						display: none;
-						// color: $blue;
-						// font-family: FontAwesome;
-						// content: "\f0dd";
-						// font-size: 2em;
-						// right: -2.5rem;
-						// top: 0;
-						// background: lighten($blue, 10%);
-					}
-					&:hover, &:focus {
-						background-color: lighten($blue, 10%);
-					}
-				}
-				.accordion-content {
-					border: none;
-					background: transparent;
-					padding: 2em;
-					label {
-						color: white;
-						font-size: 1.5em;
-						font-weight: 100;
-					}
-					textarea {
-						min-height: 300px;
-					}
-				}
-			}
-		}
-
-		// Form Styling
-
-		select, [type='text'], [type='password'], [type='date'], [type='datetime'], [type='datetime-local'], [type='month'], [type='week'], [type='email'], [type='number'], [type='search'], [type='tel'], [type='time'], [type='url'], [type='color'], textarea {
-			color: $red;
-			font-family: $serif;
-			margin: 0;
-			@include breakpoint(medium) {
-				font-size: 150%;
-				padding: 10px 20px;
-				// text-align: center;
-				height: 4rem;
-			}
-			  
-			&::selection {
-				background: $yellow;
-			}
-		}
-
-		div.wpcf7-mail-sent-ok {
-			color: $white!important;
-			background: $blue;
-			border: none;
-		}
-
-		.wpcf7-not-valid-tip {
-			background: $blue;
-		}
-
-		div.wpcf7-validation-errors, div.wpcf7-mail-sent-ng {
-			color: $red!important;
-			background: $blue;
-			border: none;
-		}
-
-		.wpcf7-submit {
-			margin-right: -50px;
-			background: $red;
-			@include breakpoint(medium) {
-				font-size: 2em;
-			}
-			  
-		}
-
-		.g-recaptcha {
-			margin: 0 auto;
-		    width: 304px;
-		}
-
-		.ajax-loader {
-			// display: none;
-			width: 50px;
-			position: relative;
-			bottom: 8px;
-			left: 50px;
-			opacity: .50;
-		}
-	} /* #cta */
 } /* entry-content */
 
 // Section divider

@@ -1,7 +1,7 @@
 /* Navigation breakpoints */
 
 .desktop-menu, .top-bar-left {
-  @include show-for(medium);
+  // @include show-for(medium);
 }
 
 // #mobile-menu, .title-bar {
@@ -12,9 +12,31 @@
 
 .off-canvas {
  > ul.menu {
+    background-color: $green;
     height: 100vh;
-    padding: 1rem;
+    li {
+      padding: 1rem;
+      a {
+        color: $white;
+        font-family: $sans-serif;
+        font-size: 2em;
+      }
+    }
   }
+}
+
+#menu-main-nav-1 {
+  display: none;
+  @include breakpoint(950px){
+      display: inherit;
+  }
+}
+
+.menu-icon {
+  margin: 1em;
+   @include breakpoint(950px){
+       display: none;
+   }
 }
 
 .title-bar-title {
@@ -24,31 +46,48 @@
   }
 }
 
+.top-bar {
+
+  .top-bar-left, .top-bar-right {
+    @include breakpoint(medium down){
+      width: auto;
+    }
+  }
+}
+
 /* Tablet and desktop menu */
 .top-bar {
+  font-family: $sans-serif;
+  text-transform: uppercase;
 
   .menu .home a {
     font-size: 1rem;
-    color: #B9B9B9;
-  }
-
-  .menu a {
-    height: 45px;
-    line-height: 45px;
-    color: #e6e6e6;
-    padding-top: 0;
-    padding-bottom: 0;
-    font-weight: bold;
-    font-size: 0.8rem;
-    line-height: 1;
-
-    &:hover:not(.button) {
-      background-color: #2a2a2a;
+    #happy-place-horiz {
+      fill: $white;
+      height: 25px;
+      @include breakpoint(large){
+        height: 35px;
+      }
     }
   }
 
-  .menu>li:not(.menu-text)>a { padding: 1rem; }
-  .menu li:not(:last-child) { border-right: 1px solid #4e4e4e; }
+  .menu a {
+    color: $white;
+    // height: 45px;
+    // line-height: 45px;
+    padding-top: 0;
+    padding-bottom: 0;
+    font-weight: bold;
+    font-size: 1.75rem;
+    line-height: 1;
+
+    &:hover:not(.button) {
+      color: lighten($green, 20%);
+    }
+  }
+
+  .menu>li:not(.menu-text)>a { padding: 1rem 1.5rem; }
+  .menu li:not(:last-child) { border-right: 1px solid darken($green, 10%); }
 
   .dropdown.menu .submenu {
     background-color: #121212;

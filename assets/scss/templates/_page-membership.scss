@@ -1,0 +1,104 @@
+.page-template-page-membership {
+	.top-bar, .top-bar ul {
+		background-color: $red;
+	}
+	.top-bar .menu li:not(:last-child) {
+		border-color: darken($red, 10%);
+	}
+	.top-bar .menu li a:hover:not(.button), .top-bar .menu li.active a {
+		color: darken($red, 10%);
+	}
+	.entry-content {
+		text-align: center;
+	}
+	#intro {
+		background: $red;
+		h1 {
+		}
+	}
+	#vision {
+		background: $blue;
+		background-color: $white;
+		// color: $white;
+		h2 {
+			// color: $white;
+		}
+		p {
+			color: $blue;
+			@include breakpoint(medium){
+				padding: 0 4em;
+				font-size: 1.75em;
+			}
+		}
+	} /* vision */
+
+	#stay-tuned {
+		color: $white;
+		background: $blue;
+		// @include grid-column();
+		h2 {
+			color: $white;
+		}
+		#mc_embed_signup {
+			// background-color: $light-gray;
+			padding: 2em;
+			label {
+				color: $white;
+			}
+			.indicates-required {
+				font-style: italic;
+				// color: $dark-gray;
+				margin-bottom: 1em;
+				font-size: .8em;
+			}
+			.mc-email {
+				@include breakpoint(large){
+					@include grid-column(12);
+				}
+			}
+			.mc-first, .mc-last {
+				@include breakpoint(large){
+					@include grid-column(6);
+				}
+			}
+			input:not([type="submit"]) {
+				font-size: 1.75em;
+				font-family: $serif;
+				padding: 1.25em 1em;
+			}
+			.button {
+				background-color: $red;
+				margin-top: 2em;
+				font-size: 1.25em;
+			}
+		}
+		.contact-disclaim {
+			margin-top: 1.5em;
+			font-size: .8em;
+		}
+	} /* stay-tuned */
+
+	#levels {
+		background-color: $red;
+		ul {
+			li {
+				@include breakpoint(large){
+					@include grid-column(6);
+				}
+			}
+		}
+	} /* levels */
+	#cta {
+		background-color: $blue;
+		h2,p {
+			color: $white;
+		}
+		.accordion-title {
+			background-color: darken($red, 5%);
+		}
+		.accordion-content {
+			background-color: darken($red, 10%);
+		}
+	} /* cta */
+
+} /* page-template-page-membership */

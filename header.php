@@ -33,28 +33,27 @@
 	<body <?php body_class(); ?>>
 	<?php do_action( 'foundationpress_after_body' ); ?>
 
-<!-- 	<?php if ( get_theme_mod( 'wpt_mobile_menu_layout' ) == 'offcanvas' ) : ?>
 	<div class="off-canvas-wrapper">
 		<div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
 		<?php get_template_part( 'template-parts/mobile-off-canvas' ); ?>
-	<?php endif; ?>
 
 	<?php do_action( 'foundationpress_layout_start' ); ?>
 
 	<header id="masthead" class="site-header" role="banner">
-		<div class="title-bar" data-responsive-toggle="site-navigation">
-			<button class="menu-icon" type="button" data-toggle="mobile-menu"></button>
-		</div>
-	</header> -->
-
-<div class="off-canvas-wrapper">
-	<div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
-	<?php get_template_part( 'template-parts/mobile-off-canvas' ); ?>
-	<header id="masthead" class="site-header" role="banner" data-sticky-container>
-		<div class="title-bar" data-responsive-toggle="site-navigation" data-sticky data-margin-top="0">
-			<button class="menu-icon" type="button" data-toggle="mobile-menu"></button>
-		</div>
+		<nav id="site-navigation" class="main-navigation top-bar" role="navigation">
+			<div class="top-bar-left">
+				<ul class="menu">
+					<li class="home"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php get_template_part('/assets/images/inline', 'happy-place-horiz.svg') ?></a></li>
+				</ul>
+			</div>
+			<div class="top-bar-right">
+				<?php foundationpress_top_bar_r(); ?>
+				<button class="menu-icon" type="button" data-toggle="mobile-menu"></button>
+			</div>
+<!-- 			<div class="title-bar">
+				<button class="menu-icon" type="button" data-toggle="mobile-menu"></button>
+			</div> -->
+		</nav>
 	</header>
 
-	<section class="container">
-		<?php do_action( 'foundationpress_after_header' );
+	<?php do_action( 'foundationpress_after_header' );

@@ -13,3 +13,305 @@
   }
 
 }
+
+.entry-content {
+  #test-contain {
+    text-align: center;
+    text-transform: uppercase;
+    li:not(:last-child) {
+      border-right: solid 1px $dark-gray;
+    }
+    li {
+      background-color: darken($dark-gray, 10%);
+      @include breakpoint(small only){
+          font-size: .6em;
+      }
+      &:hover {
+        background-color: darken($dark-gray, 20%);
+      }
+    }
+    a {
+      color: $white;
+    }
+  }
+}
+
+section {
+  // min-height: 75vh;
+  h2 {
+    font-size: 3.5em;
+    line-height: 1em;
+    @include breakpoint(medium) {
+      font-size: 6em;
+      margin-bottom: .5em;
+    }
+    color: $blue;
+    text-align: center;
+    strong {
+      font-family: $serif;
+      color: $alert-color;
+    }
+  }
+  p.subhead {
+    font-family: $sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    padding: .5em;
+    font-size: 1.5em;
+    @include breakpoint(medium) {
+      font-size: 2.5em;
+      margin: 1em 0 .75em;
+    }
+      
+    strong {
+      font-family: $serif;
+      color: $alert-color;
+      padding: 0 .15em;
+      text-transform: none;
+    }
+  }
+  ul {
+    margin: 0;
+    li {
+      list-style: none;
+      background: $white;
+      padding: 1em 1.5em .75em;
+      display: inline-block;
+      width: 100%;
+      margin: .5em 0;
+      @include breakpoint(medium) {
+        margin: 1em 0;
+      }
+        
+      h4 {
+        margin: 0;
+      }
+    }
+  }
+  .section-contain {
+    @include grid-row();
+    padding: 4em 1em;
+    @include breakpoint(large) {
+      padding: 4em;
+    }
+      
+  }
+  &#intro {
+    background: $success-color;
+    color: $white;
+    padding: 4em 0;
+    h1 {
+      text-align: center;
+      font-size: 4em;
+      @include breakpoint(medium){
+          text-align: left;
+          font-size: 6em;
+      }
+      @include breakpoint(large){
+        font-size: 8em;
+      }
+    }
+    .icon-contain {
+      text-align:center;
+      #hc-icon {
+        width: 200px;
+        height: 200px;
+        .hc-icon-fill {
+          fill: $white;
+        }
+      }
+    }
+    p {
+      font-family: $sans-serif;
+      font-size: 2em;
+      text-align: center;
+      @include breakpoint(medium) {
+        font-size: 3em;
+        text-align: justify;
+      }
+    }
+    em {
+      font-style: normal;
+      font-weight: 700;
+    }
+    strong {
+      color: darken($green, 20%);
+      font-weight: 700;
+      // text-transform: uppercase;
+    }
+    a {
+      font-size: .75em;
+      font-family: $serif;
+      color: darken($blue, 10%);
+    }
+  }
+  &.why {
+    background: $yellow;
+  }
+}
+
+.contain {
+  @include grid-row();
+}
+
+.cost {
+  color: $red;
+  font-family: $serif;
+  font-size: 2em;
+}
+
+#cta {
+  background-color: $yellow;
+  .contact-intro {
+    color: $white;
+    @include breakpoint(large){
+      font-size: 1.5em;
+    }
+  }
+  .accordion {
+    background: transparent;
+    text-align: center;
+    #tour  {
+      background-color: $green;
+      i {
+        color: lighten($green, 15%);
+      }
+    }
+    #message  {
+      background-color: $blue;
+      i {
+        color: lighten($blue, 15%);
+      }
+    }
+    #raptor a {
+      background-color: $red;
+      i {
+        color: lighten($red, 15%);
+      }
+    }
+  } /* cta */
+
+  // Form Styling
+
+  select, [type='text'], [type='password'], [type='date'], [type='datetime'], [type='datetime-local'], [type='month'], [type='week'], [type='email'], [type='number'], [type='search'], [type='tel'], [type='time'], [type='url'], [type='color'], textarea {
+    color: $red;
+    font-family: $serif;
+    margin: 0;
+    @include breakpoint(medium) {
+      font-size: 150%;
+      padding: 10px 20px;
+      // text-align: center;
+      height: 4rem;
+    }
+      
+    &::selection {
+      background: $yellow;
+    }
+  }
+
+  div.wpcf7-mail-sent-ok {
+    color: $white!important;
+    background: $blue;
+    border: none;
+  }
+
+  .wpcf7-not-valid-tip {
+    background: $blue;
+  }
+
+  div.wpcf7-validation-errors, div.wpcf7-mail-sent-ng {
+    color: $red!important;
+    background: $blue;
+    border: none;
+  }
+
+  .wpcf7-submit {
+    margin-right: -50px;
+    background: $red;
+    @include breakpoint(medium) {
+      font-size: 2em;
+    }
+      
+  }
+
+  .g-recaptcha {
+    margin: 0 auto;
+      width: 304px;
+  }
+
+  .ajax-loader {
+    // display: none;
+    width: 50px;
+    position: relative;
+    bottom: 8px;
+    left: 50px;
+    opacity: .50;
+  }
+} /* #cta */
+
+ul.accordion {
+  li {
+    padding: 0;
+    background-color: transparent;
+    a.button {
+      color: $white;
+      font-size: 2em;
+      font-family: $sans-serif;
+      text-transform: uppercase;
+      font-weight: 700;
+      @include breakpoint(medium) {
+        font-family: $serif;
+        // font-size: 2.5em;
+        text-transform: none;
+      }
+      @include breakpoint(large){
+        font-size: 3em;
+          
+      }
+      margin: 0;
+      // display: inline-block;
+      i {
+        color: lighten($blue, 15%);
+        display: block;
+        padding: 0 0 1em 0;
+        // @include breakpoint(medium) {
+          float: left;
+          display: inline-block;
+          padding: 0;
+        // }
+      } /* i */
+    } /* a.button */
+    .accordion-title {
+      border: none;
+      
+      &::before {
+        display: none;
+        // color: $blue;
+        // font-family: FontAwesome;
+        // content: "\f0dd";
+        // font-size: 2em;
+        // right: -2.5rem;
+        // top: 0;
+        // background: lighten($blue, 10%);
+      }
+      &:hover, &:focus {
+        background-color: lighten($blue, 10%);
+      }
+    } /* accordion-title */
+    .accordion-content {
+      border: none;
+      background: transparent;
+      @include breakpoint(large){
+        padding: 2em;
+      }
+      label {
+        color: white;
+        font-size: 1.5em;
+        font-weight: 100;
+      }
+      textarea {
+        min-height: 300px;
+      }
+    } /* accordion-content */
+  } /* li */
+} /* ul */

@@ -53,5 +53,10 @@ require_once( 'library/custom-functions.php' );
 /** Custom Gallery Shortcodes */
 require_once( 'library/custom-gallery-shortcodes.php' );
 
+/** Custom Events Shortcodes */
+// require_once( 'library/custom-events-shortcode.php' );
+
+define( 'GITHUB_UPDATER_OVERRIDE_DOT_ORG', true );
+
 /** If your site requires protocol relative url's for theme assets, uncomment the line below */
 // require_once( 'library/protocol-relative-theme-assets.php' );

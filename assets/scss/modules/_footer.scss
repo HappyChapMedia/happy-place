@@ -8,15 +8,17 @@
 
 	#footer {
 		@include grid-row();
-		padding: 8em 0;
+		padding: 8em 1em;
 		.branding {
-			font-family: $sans-serif;
-			font-size: 4em;
-			.cls-1 {
-				fill: $blue;
-			}
-			#happy_place {
-				width: 300px;
+			#happy-place-logo-circle {
+				width: 350px;
+				// fill: $blue;
+				#text {
+					fill: $blue;
+				}
+				#circle {
+					display: none;
+				}
 			}
 		}
 		.address {

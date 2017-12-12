@@ -1,0 +1,158 @@
+.page-template-page-desk-rental {
+	.top-bar, .top-bar ul {
+		background-color: $blue;
+	}
+	.top-bar .menu li:not(:last-child) {
+		border-color: darken($blue, 10%);
+	}
+	.top-bar .menu li a:hover:not(.button), .top-bar .menu li.active a {
+		color: darken($blue, 10%);
+	}
+	#intro {
+		background-color: $blue;
+		h1 {
+
+		}
+	}
+	#amenities {
+		color: $blue;
+		background: darken($yellow, 15%);
+		h2, h3 {
+			color: $blue;
+		}
+		ul {
+			@include breakpoint(medium) {
+				columns: 2;
+				column-gap: 5em;
+			}
+			li {
+				h4 {
+					font-size: 1.85em;
+					text-transform: uppercase;
+					strong {
+
+					}
+				}
+			} /* li */
+		} /* ul */
+	} /* amenities */
+
+	#floor-map {
+		h2,p {
+			color: $white;
+		}
+		background-color: rgb(82, 86, 89);
+		padding: 3em 0;
+		.overlay {
+		   background:transparent; 
+		   position:relative; 
+		   width:100%;
+		   @include breakpoint(large) {
+			   height:550px; /* your iframe height */
+			   top:550px;  /* your iframe height */
+			   margin-top:-550px;  /* your iframe height */
+		   }
+		}
+		#map-embed {
+			height: 350px;
+			@include breakpoint(large) {
+				height: 550px;
+			}
+			
+		}
+		border-bottom: solid 20px rgb(82, 86, 89);
+		figure {
+			margin: 0;
+		}
+	} /* floor-map */
+
+	#rates {
+		ul {
+			text-align: center;
+			li {
+				h4 {
+					font-size: 2em;
+					text-transform: uppercase;
+				}
+				padding: 2em 4em;
+				border: solid 1px $light-gray;
+			}
+		}
+	} /* rates */
+	
+	#availability {
+		background-color: $green;
+		color: $white;
+		h2 {
+			color: $white;
+		}
+	}
+
+	#cta {
+		background-color: $red;
+		h2 {
+			color: lighten($red, 20%);
+		}
+		.accordion #tour {
+			background-color: $blue;
+			@include breakpoint(small only){
+				font-size: 1.5em;
+			}
+			i {
+				color: darken($blue, 10%);
+				@include breakpoint(large){
+					margin-right: 1em;
+				}
+			}
+			.accordion-title {
+				@include breakpoint(small only){
+					font-family: $sans-serif;
+					text-transform: uppercase;
+				}
+			}
+		}
+	}
+
+	#uses {
+		background: $white;
+		// @include grid-column();
+		ul {
+			@include breakpoint(medium) {
+				columns: 2;
+				column-gap: 5em;
+			}
+			list-style: inherit;
+			li {
+				color: $blue;
+				// border-bottom: solid 2px;
+				border-bottom: solid 2px;
+				padding: 1.5em 0 0em;
+				margin: 0;
+				// background: $yellow;
+			}
+			.cta {
+				border: none;
+				.cta-button {
+					margin-top: 2.5em;
+					.button {
+						font-size: 1.2em;
+						background: $red;
+						display: block;
+						width: 80%;
+					}
+				}
+			}
+			li:before {
+				color: lighten($blue, 25%);
+				content:"\f046";
+				font-size: 2.95em;
+				font-family: FontAwesome;
+				float: left;
+				position: relative;
+				top: -.17em;
+				padding: 0 .25em .15em 0;
+				display: inline-block;
+			}
+		}
+	} /* uses */
+}
