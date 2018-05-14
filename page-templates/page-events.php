@@ -4,6 +4,7 @@ Template Name: Page Events
 */
 get_header(); ?>
 
+<?php get_template_part( 'template-parts/featured-image' ); ?>
 
 <section id="intro" role="banner">
 	<div class="section-contain">
@@ -17,7 +18,6 @@ get_header(); ?>
 </section>
 
 <?php get_template_part( 'template-parts/featured-gallery' ); ?>
-
 
 
 <?php do_action( 'foundationpress_before_content' ); ?>

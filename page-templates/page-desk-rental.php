@@ -4,6 +4,7 @@ Template Name: Page Desk Rental
 */
 get_header(); ?>
 
+<?php get_template_part( 'template-parts/featured-image' ); ?>
 
 <section id="intro" role="banner">
 	<div class="section-contain">
