@@ -70,6 +70,9 @@
 		ul {
 			text-align: center;
 			li {
+				@include breakpoint(large) {
+					@include grid-column(6);
+				}
 				h4 {
 					font-size: 2em;
 					text-transform: uppercase;
