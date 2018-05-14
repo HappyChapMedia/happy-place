@@ -21,7 +21,7 @@ get_header(); ?>
 			</h1>
 		</div>
 	</div> <!-- branding-contain -->
-
+	<?php get_template_part( 'template-parts/featured-gallery' ); ?>
 	<div class="tag-contain">
 		<div class="tag">
 			<p>A flexible event space <span class="amp">&amp;</span> members-only creative office.</p>
