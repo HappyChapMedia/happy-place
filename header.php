@@ -28,13 +28,7 @@
 		<script>
 			 $('#nav-contain').foundation();
 		</script>
-		<script type="text/javascript">
-		    var feed = new Instafeed({
-		        get: 'popular',
-		        clientId: '37976a488ec9413ca96d7ad46600d0d5'
-		    });
-		    feed.run();
-		</script>
+
 
 	</head>
 	<body <?php body_class(); ?>>
