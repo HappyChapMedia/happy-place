@@ -23,7 +23,7 @@ get_header(); ?>
 	</div> <!-- branding-contain -->
 	<div class="tag-contain">
 		<div class="tag">
-			<p>A flexible event space <span class="amp">&amp;</span> members-only creative office.</p>
+			<p>A flexible event space <span class="amp">&amp;</span> members-only social <span class="slash">/</span> coworking club.</p>
 		</div>
 		<div class="section-divider"><hr></div>
 		<div class="location">
@@ -56,6 +56,12 @@ get_header(); ?>
 	        </div><!-- map -->
 	    </div><!-- section-contain -->
 	</section><!-- location-map -->
+
+	<section id="instafeed">
+		<div class="section-contain">
+			<h2><a href="http://www.instagram.com/happyplacebellingham/" target="_blank" title=" Follow @happyplacebellingham on Instagram "><?php get_template_part('assets/images/inline', 'social-instagram.svg') ?></a></h2>
+		</div>
+	</section>
 	
 </div> <!-- entry-content -->
 

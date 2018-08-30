@@ -148,10 +148,10 @@
 			}
 		},
 		{
-			"file": "assets/images/inline-happy-place-circle.svg.php",
+			"file": "index.php",
 			"settings":
 			{
-				"buffer_size": 7246,
+				"buffer_size": 1427,
 				"line_ending": "Windows"
 			}
 		},
@@ -178,6 +178,23 @@
 			"settings":
 			{
 				"buffer_size": 6057,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "header.php",
+			"settings":
+			{
+				"buffer_size": 2344,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "assets/scss/global/_mixins.scss",
+			"settings":
+			{
+				"buffer_size": 521,
 				"line_ending": "Windows"
 			}
 		},
@@ -241,23 +258,19 @@
 	},
 	"expanded_folders":
 	[
-		"/C/Program Files (x86)/Ampps/www/happy-place/wp-content/themes/happy-place",
-		"/C/Program Files (x86)/Ampps/www/happy-place/wp-content/themes/happy-place/assets",
-		"/C/Program Files (x86)/Ampps/www/happy-place/wp-content/themes/happy-place/assets/images",
-		"/C/Program Files (x86)/Ampps/www/happy-place/wp-content/themes/happy-place/assets/javascript",
-		"/C/Program Files (x86)/Ampps/www/happy-place/wp-content/themes/happy-place/assets/javascript/custom",
-		"/C/Program Files (x86)/Ampps/www/happy-place/wp-content/themes/happy-place/assets/scss",
-		"/C/Program Files (x86)/Ampps/www/happy-place/wp-content/themes/happy-place/assets/scss/components",
-		"/C/Program Files (x86)/Ampps/www/happy-place/wp-content/themes/happy-place/assets/scss/global",
-		"/C/Program Files (x86)/Ampps/www/happy-place/wp-content/themes/happy-place/assets/scss/modules",
-		"/C/Program Files (x86)/Ampps/www/happy-place/wp-content/themes/happy-place/assets/scss/templates",
-		"/C/Program Files (x86)/Ampps/www/happy-place/wp-content/themes/happy-place/library",
-		"/C/Program Files (x86)/Ampps/www/happy-place/wp-content/themes/happy-place/page-templates",
-		"/C/Program Files (x86)/Ampps/www/happy-place/wp-content/themes/happy-place/pages",
-		"/C/Program Files (x86)/Ampps/www/happy-place/wp-content/themes/happy-place/template-parts"
+		"/C/Program Files (x86)/Ampps/www/happy-place-new/wp-content/themes/happy-place",
+		"/C/Program Files (x86)/Ampps/www/happy-place-new/wp-content/themes/happy-place/assets",
+		"/C/Program Files (x86)/Ampps/www/happy-place-new/wp-content/themes/happy-place/assets/images",
+		"/C/Program Files (x86)/Ampps/www/happy-place-new/wp-content/themes/happy-place/assets/scss",
+		"/C/Program Files (x86)/Ampps/www/happy-place-new/wp-content/themes/happy-place/assets/scss/global",
+		"/C/Program Files (x86)/Ampps/www/happy-place-new/wp-content/themes/happy-place/assets/scss/modules",
+		"/C/Program Files (x86)/Ampps/www/happy-place-new/wp-content/themes/happy-place/template-parts"
 	],
 	"file_history":
 	[
+		"/C/Program Files (x86)/Ampps/www/happy-place-new/wp-content/themes/happy-place/gulpfile.js",
+		"/C/Program Files (x86)/Ampps/www/happy-place-new/wp-content/themes/happy-place/package.json",
+		"/C/Program Files (x86)/Ampps/www/happy-place-new/wp-content/themes/happy-place/bower.json",
 		"/C/Program Files (x86)/Ampps/www/happy-place/wp-content/themes/happy-place/assets/scss/templates/_page-membership.scss",
 		"/C/Program Files (x86)/Ampps/www/happy-place/wp-content/themes/happy-place/pages/contact-form.html",
 		"/C/Program Files (x86)/Ampps/www/happy-place/wp-content/themes/happy-place/assets/scss/templates/_page-events.scss",
@@ -382,14 +395,11 @@
 		"/D/Ampps/www/skagitfoodcoop/wp-content/themes/eat-beets/functions.php",
 		"/D/Ampps/www/skagitfoodcoop/wp-content/themes/eat-beets/pages/Learn/newsletter.html",
 		"/D/Ampps/www/skagitfoodcoop/wp-content/themes/eat-beets/parts/shop-sales-specials-new.php",
-		"/D/Ampps/www/skagitfoodcoop/wp-content/themes/eat-beets/scss/config/_variables.scss",
-		"/D/Ampps/www/skagitfoodcoop/wp-content/themes/eat-beets/category-coop-brew-corner.php",
-		"/D/Ampps/www/skagitfoodcoop/wp-content/themes/eat-beets/single-post.php",
-		"/D/Ampps/www/skagitfoodcoop/wp-content/themes/eat-beets/scss/config/_colors.scss"
+		"/D/Ampps/www/skagitfoodcoop/wp-content/themes/eat-beets/scss/config/_variables.scss"
 	],
 	"find":
 	{
-		"height": 27.0
+		"height": 24.0
 	},
 	"find_in_files":
 	{
@@ -553,7 +563,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -569,8 +579,8 @@
 						"selection":
 						[
 							[
-								1057,
-								1057
+								1364,
+								1364
 							]
 						],
 						"settings":
@@ -583,24 +593,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "assets/images/inline-happy-place-circle.svg.php",
+					"file": "index.php",
 					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 7246,
+						"buffer_size": 1427,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1042,
-								1042
+								0,
+								0
 							]
 						],
 						"settings":
@@ -612,7 +622,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
@@ -628,8 +638,8 @@
 						"selection":
 						[
 							[
-								536,
-								536
+								556,
+								556
 							]
 						],
 						"settings":
@@ -642,7 +652,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 5,
 					"type": "text"
 				}
 			]
@@ -677,7 +687,7 @@
 						"translation.y": 1296.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 8,
 					"type": "text"
 				},
 				{
@@ -693,8 +703,8 @@
 						"selection":
 						[
 							[
-								219,
-								219
+								508,
+								508
 							]
 						],
 						"settings":
@@ -712,6 +722,63 @@
 				},
 				{
 					"buffer": 5,
+					"file": "header.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2344,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								681,
+								748
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 75.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "assets/scss/global/_mixins.scss",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 521,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								521,
+								521
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/SCSS.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
 					"file": "assets/scss/templates/_page-membership.scss",
 					"semi_transient": false,
 					"settings":
@@ -736,11 +803,11 @@
 						"translation.y": 108.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
-					"buffer": 6,
+					"buffer": 8,
 					"file": "assets/scss/templates/_page-desk-rental.scss",
 					"semi_transient": false,
 					"settings":
@@ -752,8 +819,8 @@
 						"selection":
 						[
 							[
-								1318,
-								1318
+								1562,
+								1562
 							]
 						],
 						"settings":
@@ -765,7 +832,7 @@
 						"translation.y": 792.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 6,
 					"type": "text"
 				}
 			]
@@ -773,7 +840,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 27.0
+		"height": 24.0
 	},
 	"input":
 	{
@@ -799,7 +866,7 @@
 		"cols":
 		[
 			0.0,
-			0.608901967732,
+			0.457844565919,
 			1.0
 		],
 		"rows":
@@ -817,7 +884,7 @@
 	"project": "happy-place.sublime-project",
 	"replace":
 	{
-		"height": 50.0
+		"height": 44.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -855,7 +922,7 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 0,
+	"selected_group": 1,
 	"settings":
 	{
 	},
@@ -863,7 +930,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 265.0,
+	"side_bar_width": 409.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

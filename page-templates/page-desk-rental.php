@@ -19,8 +19,6 @@ get_header(); ?>
 
 <?php get_template_part( 'template-parts/featured-gallery' ); ?>
 
-
-
 <?php do_action( 'foundationpress_before_content' ); ?>
 <?php while ( have_posts() ) : the_post(); ?>
 <div class="entry-content">

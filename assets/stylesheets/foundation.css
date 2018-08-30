@@ -7363,7 +7363,7 @@ body.lb-disable-scrolling {
   /* section */
   /* events-lead */
   /* membership-lead */
-  /* events-lead */ }
+  /* desk-lead */ }
   .page-template-front #front-hero {
     background: #f9ef78;
     display: inline-block;
@@ -7435,7 +7435,7 @@ body.lb-disable-scrolling {
             float: left;
             padding-left: 0.625rem;
             padding-right: 0.625rem;
-            padding: 4em !important; } }
+            padding: 4em 6em !important; } }
   @media screen and (min-width: 64em) and (min-width: 40em) {
     .page-template-front section .section-contain .section-text {
       padding-left: 0.9375rem;
@@ -7445,6 +7445,16 @@ body.lb-disable-scrolling {
               float: right; }
             .page-template-front section .section-contain .section-text p {
               font-size: 1.5em; } }
+        .page-template-front section .section-contain .section-text p {
+          line-height: 1.8; }
+      .page-template-front section .section-contain p.cta {
+        font-weight: 900;
+        letter-spacing: .05em;
+        font-weight: 900;
+        text-transform: uppercase; }
+        @media screen and (min-width: 64em) {
+          .page-template-front section .section-contain p.cta a.button {
+            font-size: .6em; } }
       .page-template-front section .section-contain .section-img {
         display: block;
         padding: 0 !important;
@@ -7469,15 +7479,15 @@ body.lb-disable-scrolling {
   .page-template-front #events-lead {
     padding: 0;
     background-color: #bcd85f;
-    color: #fefefe; }
+    color: #0a0a0a; }
     .page-template-front #events-lead .section-contain .section-text h2 {
-      color: #fefefe;
+      color: #0a0a0a;
       text-align: center; }
     .page-template-front #events-lead .section-contain .section-text p.cta {
       margin-top: 2em; }
       .page-template-front #events-lead .section-contain .section-text p.cta .button {
         color: #b3d34a;
-        background-color: #fefefe; }
+        background-color: #0a0a0a; }
     .page-template-front #events-lead .section-contain .section-img {
       background-image: url("../images/happy-place-events-happy-dance-1.gif");
       -webkit-background-size: contain;
@@ -7493,32 +7503,27 @@ body.lb-disable-scrolling {
     /* section-contain */ }
     .page-template-front #membership-lead .section-contain .section-text {
       /* section-img */ }
-      .page-template-front #membership-lead .section-contain .section-text .section-img {
-        background-image: url("../images/happy-place-coworking-membership-mr-rodgers.jpg");
-        background-repeat: no-repeat;
-        background-position: top center;
-        display: block; }
+      .page-template-front #membership-lead .section-contain .section-text .section-img .img-container {
+        -webkit-animation: spinX 3s linear infinite;
+                animation: spinX 3s linear infinite;
+        content: '';
+        background: url("../images/outerspace-desk-chair-spinning.jpg") no-repeat center center;
+        -webkit-background-size: cover;
+                background-size: cover;
+        display: block;
+        width: 100%;
+        height: 100%;
+        -webkit-animation: rotatedesk 15s linear infinite; }
         @media screen and (min-width: 64em) {
-          .page-template-front #membership-lead .section-contain .section-text .section-img {
-            width: 41.66667%;
-            float: left;
-            padding-left: 0.625rem;
-            padding-right: 0.625rem;
-            -webkit-background-size: cover;
-                    background-size: cover;
-            min-height: 600px; } }
-  @media screen and (min-width: 64em) and (min-width: 40em) {
-    .page-template-front #membership-lead .section-contain .section-text .section-img {
-      padding-left: 0.9375rem;
-      padding-right: 0.9375rem; } }
-        @media screen and (min-width: 64em) {
-            .page-template-front #membership-lead .section-contain .section-text .section-img:last-child:not(:first-child) {
-              float: right; } }
-        @media screen and (min-width: 90em) {
-          .page-template-front #membership-lead .section-contain .section-text .section-img {
-            min-height: 500px; } }
-        .page-template-front #membership-lead .section-contain .section-text .section-img .img-container {
-          height: 100%; }
+          .page-template-front #membership-lead .section-contain .section-text .section-img .img-container {
+            width: 100%;
+            height: 100%; } }
+
+@-webkit-keyframes rotatedesk {
+  0% {
+    -webkit-transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg); } }
     .page-template-front #membership-lead h2 {
       color: #ec5840;
       text-align: center; }
@@ -7637,6 +7642,11 @@ body.lb-disable-scrolling {
     @media screen and (min-width: 64em) {
         #location-map #map:last-child:not(:first-child) {
           float: right; } }
+
+section#instafeed .section-contain {
+  max-width: 100%; }
+  section#instafeed .section-contain h2 svg {
+    width: 50px; }
 
 .entry-content {
   display: block; }
