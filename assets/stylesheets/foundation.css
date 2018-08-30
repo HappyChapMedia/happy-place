@@ -7501,23 +7501,41 @@ body.lb-disable-scrolling {
     border-bottom: solid 5em #ec5840;
     text-align: center;
     /* section-contain */ }
-    .page-template-front #membership-lead .section-contain .section-text {
+    .page-template-front #membership-lead .section-contain {
       /* section-img */ }
-      .page-template-front #membership-lead .section-contain .section-text .section-img .img-container {
-        -webkit-animation: spinX 3s linear infinite;
-                animation: spinX 3s linear infinite;
-        content: '';
-        background: url("../images/outerspace-desk-chair-spinning.jpg") no-repeat center center;
-        -webkit-background-size: cover;
-                background-size: cover;
-        display: block;
-        width: 100%;
-        height: 100%;
-        -webkit-animation: rotatedesk 15s linear infinite; }
+      .page-template-front #membership-lead .section-contain .section-img {
+        height: 300px !important;
+        width: 300px;
+        overflow: hidden;
+        border-radius: 100%;
+        margin: 4em auto;
+        position: relative;
+        text-align: center; }
+        @media screen and (min-width: 40em) {
+          .page-template-front #membership-lead .section-contain .section-img {
+            height: 400px !important;
+            width: 400px; } }
         @media screen and (min-width: 64em) {
-          .page-template-front #membership-lead .section-contain .section-text .section-img .img-container {
-            width: 100%;
-            height: 100%; } }
+          .page-template-front #membership-lead .section-contain .section-img {
+            left: 5%; } }
+        @media screen and (min-width: 75em) {
+          .page-template-front #membership-lead .section-contain .section-img {
+            left: 10%; } }
+        .page-template-front #membership-lead .section-contain .section-img .img-container {
+          -webkit-animation: spinX 3s linear infinite;
+                  animation: spinX 3s linear infinite;
+          content: '';
+          background: url("../images/outerspace-desk-chair-spinning.jpg") no-repeat center center;
+          -webkit-background-size: cover;
+                  background-size: cover;
+          display: block;
+          width: 100%;
+          height: 100%;
+          -webkit-animation: rotatedesk 15s linear infinite; }
+          @media screen and (min-width: 64em) {
+            .page-template-front #membership-lead .section-contain .section-img .img-container {
+              width: 100%;
+              height: 100%; } }
 
 @-webkit-keyframes rotatedesk {
   0% {

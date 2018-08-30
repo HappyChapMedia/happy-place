@@ -180,7 +180,25 @@
 				// h2 {
 				// 	color: $white;
 				// }
+			}
 			.section-img {
+				height: 300px!important;
+				width: 300px;
+				@include breakpoint(medium){
+					height: 400px!important;
+					width: 400px;
+				}
+				overflow: hidden;
+				border-radius: 100%;
+				margin: 4em auto;
+				position: relative;
+				@include breakpoint(large){
+					left: 5%;
+				}
+				@include breakpoint(xlarge){
+					left: 10%;
+				}
+				text-align: center;
 				.img-container {
 				    animation: spinX 3s linear infinite;
 				    content: '';
@@ -204,7 +222,6 @@
 					100% {-webkit-transform: rotate(360deg);}  
 				}
 			} /* section-img */
-			}	
 		} /* section-contain */
 		h2 {
 			color: $red;

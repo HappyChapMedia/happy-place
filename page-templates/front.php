@@ -23,7 +23,7 @@ get_header(); ?>
 	</div> <!-- branding-contain -->
 	<div class="tag-contain">
 		<div class="tag">
-			<p>A flexible event space <span class="amp">&amp;</span> members-only social <span class="slash">/</span> coworking club.</p>
+			<p>A flexible event space <span class="amp">&amp;</span> members-only social club <span class="slash">/</span> coworking .</p>
 		</div>
 		<div class="section-divider"><hr></div>
 		<div class="location">
