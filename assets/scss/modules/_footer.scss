@@ -13,8 +13,48 @@
 			#happy-place-logo-circle {
 				width: 350px;
 				// fill: $blue;
+				@include trans(200ms);
+				&:hover {
+					@include trans(200ms);
+					transform: scale(1.1);
+				}
+					overflow: visible;
 				#text {
-					fill: $blue;
+					fill: desaturate(darken($yellow, 10%), 100%);
+					@include trans(100ms);
+					#the {
+						@include trans(200ms);
+						transform-origin: center top;
+						
+					}
+					#happy {
+						@include trans(200ms);
+						transform-origin: center bottom;
+						// transform-origin: top;
+					}
+					#place {
+						@include trans(200ms);
+						transform-origin: center bottom;
+					}
+				}
+				&:hover {
+					#text {
+						@include trans(100ms);
+						fill: darken($yellow, 15%);
+
+						#the {
+							@include trans(200ms);
+							transform: scale(.8) translateY(-8em);
+						}
+						#happy {
+							@include trans(200ms);
+							transform: scale(1.4) translateY(4em);
+						}
+						#place {
+							@include trans(200ms);
+							transform: scale(1.2) translateY(2em);
+						}
+					}
 				}
 				#circle {
 					display: none;

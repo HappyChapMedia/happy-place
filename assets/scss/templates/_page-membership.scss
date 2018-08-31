@@ -1,4 +1,5 @@
 .page-template-page-membership {
+
 	.top-bar, .top-bar ul {
 		background-color: $red;
 	}
@@ -10,6 +11,51 @@
 	}
 	.entry-content {
 		text-align: center;
+		section {
+			text-align: center;
+			// padding: 4em 0;
+			.section-contain {
+				padding: 0;
+				max-width: 100%;
+				.section-text {
+					padding: 4em!important;
+					// @include breakpoint(large){
+					// 	@include grid-column(7);
+					// 	padding: 4em 6em!important;
+					// 	p {
+					// 		font-size: 1.5em;
+					// 	}
+					// }
+					p {
+						line-height: 1.8;
+					}
+				} 
+				p.cta {
+					font-weight: 900;
+					// font-family: $sans-serif;
+					letter-spacing: .05em;
+					font-weight: 900;
+					text-transform: uppercase;
+					a.button {
+						@include breakpoint(large) {
+							font-size: .6em;
+						}
+					}
+				}
+				.section-img {
+					@include breakpoint(medium down){
+						height: 300px!important;
+					}
+					display: block;
+					@include breakpoint(large){
+						@include grid-column(4);
+					}
+					padding: 0!important;
+					background-size: cover;
+				}
+			}
+		} /* section */
+
 	}
 	#intro {
 		background: $red;
@@ -20,9 +66,19 @@
 		background: $blue;
 		background-color: $white;
 		// color: $white;
-		height: 75vh;
+		// height: 75vh;
 		h2 {
-			// color: $white;
+			color: $medium-gray;
+			text-transform: uppercase;
+			font-size: 8em;
+			line-height: .8em;
+			margin-top: 0;
+		}
+		p.subheader {
+			text-transform: uppercase;
+			font-family: $serif;
+			margin: 0 ;
+			color: $dark-gray;
 		}
 		p {
 			color: $blue;
@@ -38,12 +94,77 @@
 		.section-text {
 			min-height: 600px;
 			@include breakpoint(large){
-				// @include grid-column(7);
+				@include grid-column(12);
 				// min-height: 600px;
 			}
 			@include breakpoint(xxlarge){
 				// min-height: 500px;
-			}	
+			}
+		    ol.mission-list {
+		      margin: 0;
+		      counter-reset: li;
+		      li {
+		        list-style: none;
+		        display: block;
+		        // padding-top: 10em;
+		        margin-bottom: 2em;
+		        text-align: center;
+		        @include breakpoint(large) {
+			        padding: 1em 20%;
+		        }
+		        
+		        &:before {
+		          font-size: 2em;
+		          font-family: $serif;
+		          background-color: $red;
+		          color: $white;
+		          font-weight: 900;
+		          width: 1.5em;
+		          height: 1.5em;
+		          margin: 0 auto;
+		          display: block;
+		          border-radius: 100%;
+		          content: counter(li);
+		          counter-increment: li;
+		          text-align: center;
+		        }
+		        h3 {
+		          font-size: 2em;
+		          line-height: 1.2em;
+		          @include breakpoint(medium){
+		              font-size: 5em;
+		          }
+		          @include breakpoint(large){
+		              font-size: 6em;
+		          }
+		          text-transform: uppercase;
+		          font-family: $sans-serif;
+		          strong {
+		            font-family: $serif;
+		            font-size: 1.4em;
+		          }
+		        } /* h3 */
+		        p {
+			      border-top: solid 1px $red;
+		          padding: 1em 0;
+		          margin-top: 1em;
+		        }
+		      } /* li */
+		      .half-assed, .great-folks {
+		        background-color: $blue;
+		        color: $white;
+		        &:before {
+		          color: $blue;
+		        }
+		      }
+		      .altruism, .donate {
+		        background-color: $red;
+		        color: $white;
+		        &:before {
+		          color: $red;
+		        }
+		      }
+		    } /* ul.mission-list */
 		}
 		.section-img {
 			background-image: url("../images/1965-orwell.jpeg");
@@ -108,26 +229,117 @@
 		}
 	} /* stay-tuned */
 
-	#levels {
-		background-color: $red;
+	#cowork {
+		background-color: $blue;
+		header {
+			padding-bottom: 2em;
+			margin: 0 10% 2em;
+			border-bottom: solid 1px $white;
+			h2 {
+				color: $white;
+			}
+			p.intro {
+				color: $white;
+				font-size: 1.5em;
+			}
+		}
+		h3 {
+			color: $white;
+		}
 		ul {
+			@include grid-row();
 			li {
-				@include breakpoint(large){
-					@include grid-column(6);
+				background-color: transparent;
+				@include breakpoint(large) {
+					@include grid-column(4);
+					padding: 1em;
+				}
+				.contain {
+					text-align: center;
+					background-color: $white;
+					border: solid 1px $light-gray;
+					padding: 1em 1em;
+					h4 {
+						color: $red;
+						text-transform: uppercase;
+						font-size: 2em;
+						@include breakpoint(large) {
+							font-size: 3em;
+						}
+					}
+					.cost {
+						color: $red;
+						font-family: $serif;
+						font-size: 2em;
+						@include breakpoint(large) {
+							font-size: 3em;	
+						}
+					}
+					.cost-sub {
+
+					}
+					.hours {
+						font-weight: 900;
+						color: $dark-gray;
+						text-transform: uppercase;
+					}
+					.hours {
+					}
 				}
 			}
 		}
-	} /* levels */
+		.rate-extras {
+			// @include grid-column(12);
+			@include grid-row();
+			padding: 2em 0;
+			.rate-contain {
+				margin: 1em 0;
+				@include breakpoint(small only){
+					text-align: center;
+				}
+				h4 {
+					font-size: 2em;
+				}
+			}
+			.discount {
+				color: $white;
+				@include breakpoint(medium){
+					@include grid-column(6);
+				}
+				.rate-contain {
+					padding: 1em;
+					background-color: $blue;
+				}
+			}
+			.partner {
+				color: $white;
+				@include breakpoint(medium){
+					@include grid-column(6);
+				}
+				.rate-contain {
+					padding: 1em;
+					background-color: $green;
+				}
+			}
+		}
+		.cta {
+			@include grid-row();
+			text-align: center;
+		}
+	} /* coworking */
 	#cta {
-		background-color: $blue;
+		background-color: $red;
 		h2,p {
 			color: $white;
 		}
+		.section-contain {
+			padding: 4em;
+		}
 		.accordion-title {
-			background-color: darken($red, 5%);
+			background-color: darken($blue, 5%);
 		}
 		.accordion-content {
-			background-color: darken($red, 10%);
+			background-color: darken($blue, 10%);
 		}
 	} /* cta */
 

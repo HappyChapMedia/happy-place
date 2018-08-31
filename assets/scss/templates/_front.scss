@@ -28,12 +28,27 @@
 					margin: 0;
 					#happy-place-logo-circle {
 						max-height: 400px;
+				        @include trans(200ms);
+				        #happy {
+				        	@include trans(200ms);
+				        }
 						#text {
 							fill: transparent;
 						} /* text */
 						#circle {
 							fill: $yellow;
+				            @include trans(200ms);
 						}
+				          &:hover #circle  {
+				            @include trans(200ms);
+				            transform: translate(-.35em, -.35em);
+				          }
+				        &:hover {
+				          #text #happy {
+				            fill: $yellow!important;
+				            @include trans(200ms);
+				          }
+				        }
 					}
 
 				}
@@ -55,7 +70,7 @@
 						// padding: 1em .5em;
 					}
 					@include breakpoint(xlarge){
-						font-size: 4em;
+						font-size: 6em;
 						line-height: 1.2em;
 						// padding: 1em .5em;
 					}
@@ -66,6 +81,8 @@
 						font-family: $serif;
 						font-weight: 900;
 						color: $red;
+						display: block;
+						margin-bottom: -.25em;
 					}
 				}
 			} /* tag */
@@ -317,7 +334,7 @@
 				fill: $white;
 				@include global-trans(1500ms);
 				&:hover {
-					fill: darken($blue, 10%);
+					// fill: darken($blue, 10%);
 				}
 				#text {
 					width: 400px;
@@ -397,4 +414,59 @@ section#instafeed {
 		@extend .dotted;
 		box-sizing: border-box;
 	}
+}
+
+#hp-address {
+@include trans(200ms);
+.add-1a, .add-2, .add-1b, .add-5 {
+  @include trans(2s);
+}
+&:hover {
+  @include trans(2s);
+
+  .add-1a{
+    animation: addr-one-a 2s infinite linear;
+    @include trans(2s);
+    @keyframes addr-one-a {
+      0% { transform: translate( 0em, 0em); }
+      25% { transform: translate( 0em, .5em); }
+      50% { transform: translate( 0em, 0em); }
+      75% { transform: translate( 0em, -.5em); }
+      100% { transform: translate( 0em, 0em); }
+    }
+  } /* 1a */
+  .add-2{
+    animation: addr-two 2s infinite linear;
+    @include trans(2s);
+    @keyframes addr-two {
+      0% { transform: translate( 0em, 0em); }
+      25% { transform: translate( 0em, -.5em); }
+      50% { transform: translate( 0em, 0em); }
+      75% { transform: translate( 0em, .5em); }
+      100% { transform: translate( 0em, 0em); }
+    }
+  } /* 2 */
+  .add-1b{
+    animation: addr-one-b 2s infinite linear;
+    @include trans(2s);
+    @keyframes addr-one-b {
+      0% { transform: translate( 0em, 0em); }
+      25% { transform: translate( 0em, .5em); }
+      50% { transform: translate( 0em, 0em); }
+      75% { transform: translate( 0em, -.5em); }
+      100% { transform: translate( 0em, 0em); }
+    }
+  } /* 1b */
+  .add-5{
+    animation: addr-five 2s infinite linear;
+    @include trans(2s);
+    @keyframes addr-five {
+      0% { transform: translate( 0em, 0em); }
+      25% { transform: translate( 0em, -.5em); }
+      50% { transform: translate( 0em, 0em); }
+      75% { transform: translate( 0em, .5em); }
+      100% { transform: translate( 0em, 0em); }
+    }
+  } /* 5 */
+} /* hover */
 }

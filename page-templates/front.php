@@ -33,15 +33,37 @@ get_header(); ?>
 	</div>  <!-- tag-contain -->
 </header>
 
-<?php get_template_part( 'template-parts/featured-gallery' ); ?>
-
-
 
 <?php do_action( 'foundationpress_before_content' ); ?>
 <?php while ( have_posts() ) : the_post(); ?>
 <div class="entry-content">
 
-	 <?php the_content(); ?>
+	<section id="events-lead" data-equalizer="events-lead" data-equalize-on="medium">
+	    <div class="section-contain">
+	        <div class="section-text" data-equalizer-watch="events-lead">
+	            <h2>Have your event here.</h2>
+	            <p>Rent the Happy Place for your event. Located in the heart of downtown B-ham the Happy Place is perfect for your speaking event, pop-up shop, party or shindig of all sorts.</p>
+	            <p class="cta"><a href="/event-rental" class="button">Info / Book Rental</a></p>
+	        </div>
+	        <div class="section-img" data-equalizer-watch="events-lead">
+	        </div>
+	    </div> 
+	</section><!-- events-lead -->
+
+	<section id="membership-lead" data-equalizer="members-lead" data-equalize-on="medium">
+	    <div class="section-contain">
+	        <div class="section-img" data-equalizer="members-lead">
+	            <div class="img-container">
+	            </div>
+	        </div>
+	        <div class="section-text" data-equalizer="members-lead">
+	            <h2>Social / coworking club membership</h2>
+	            <p>Find your Happy Place here - apply to join the club and be a part of something that's not too much of a drag.</p>
+	            <p class="cta"><a href="/coworking-social-club" class="button">Info / Apply</a></p>
+	        </div>
+	    </div>
+	</section><!-- membership-lead -->
+
 	
 	<section id="location-map">
 	    <div id="location-map-anchor" data-magellan-target="location-map"></div>
@@ -64,6 +86,8 @@ get_header(); ?>
 	</section>
 	
 </div> <!-- entry-content -->
+
+
 
 <?php endwhile;?>
 <?php do_action( 'foundationpress_after_content' ); ?>

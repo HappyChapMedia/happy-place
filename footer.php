@@ -50,6 +50,7 @@
 <script type="text/javascript">
     var feed = new Instafeed({
         get: 'user',
+        target: '#instafeed',
         userID: '8230458451',
         clientId: '37976a488ec9413ca96d7ad46600d0d5'
 		accessToken: '175112416.59aee0f.f85d1cd2330140e8b3ff1904fc7b2efe',
