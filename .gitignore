@@ -11,3 +11,5 @@ happy-place.sublime-workspace
 *.sublime-workspace
 happy-place.sublime-workspace
 happy-place.sublime-workspace
+bower.json
+gulpfile.js
