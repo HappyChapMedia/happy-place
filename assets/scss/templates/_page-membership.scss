@@ -9,6 +9,22 @@
 	.top-bar .menu li a:hover:not(.button), .top-bar .menu li.active a {
 		color: darken($red, 10%);
 	}
+	#sub-nav-contain {
+		z-index: 100;
+		display: block;
+		background-color: darken($red, 0%);
+		.nav-contain {
+		}
+		nav {
+			background-color: darken($red, 0%);
+			
+		}
+		a {
+			color: $white;
+			text-transform: uppercase;
+
+		}
+	}
 	.entry-content {
 		text-align: center;
 		section {
@@ -19,13 +35,9 @@
 				max-width: 100%;
 				.section-text {
 					padding: 4em!important;
-					// @include breakpoint(large){
-					// 	@include grid-column(7);
-					// 	padding: 4em 6em!important;
-					// 	p {
-					// 		font-size: 1.5em;
-					// 	}
-					// }
+					h2 {
+						text-transform: uppercase;
+					}
 					p {
 						line-height: 1.8;
 					}
@@ -59,182 +71,212 @@
 	}
 	#intro {
 		background: $red;
+		p.subheader {
+			color: $white;
+			text-transform: uppercase;
+			letter-spacing: .08em;
+		}
 		h1 {
 		}
 	}
-	#vision {
+	#mission {
 		background: $blue;
 		background-color: $white;
-		// color: $white;
-		// height: 75vh;
-		h2 {
-			color: $medium-gray;
-			text-transform: uppercase;
-			font-size: 8em;
-			line-height: .8em;
-			margin-top: 0;
-		}
-		p.subheader {
-			text-transform: uppercase;
-			font-family: $serif;
-			margin: 0 ;
-			color: $dark-gray;
-		}
-		p {
-			color: $blue;
-			@include breakpoint(medium){
-				padding: 0 4em;
-				font-size: 1.75em;
-			}
-		}
 		.section-contain {
 			padding: 0;
 			max-width: 100%;
-		}
-		.section-text {
-			min-height: 600px;
-			@include breakpoint(large){
-				@include grid-column(12);
-				// min-height: 600px;
-			}
-			@include breakpoint(xxlarge){
-				// min-height: 500px;
-			}
-		    ol.mission-list {
-		      margin: 0;
-		      counter-reset: li;
-		      li {
-		        list-style: none;
-		        display: block;
-		        // padding-top: 10em;
-		        margin-bottom: 2em;
-		        text-align: center;
-		        @include breakpoint(large) {
-			        padding: 1em 20%;
-		        }
-		        
-		        &:before {
-		          font-size: 2em;
-		          font-family: $serif;
-		          background-color: $red;
-		          color: $white;
-		          font-weight: 900;
-		          width: 1.5em;
-		          height: 1.5em;
-		          margin: 0 auto;
-		          display: block;
-		          border-radius: 100%;
-		          content: counter(li);
-		          counter-increment: li;
-		          text-align: center;
-		        }
-		        h3 {
-		          font-size: 2em;
-		          line-height: 1.2em;
-		          @include breakpoint(medium){
-		              font-size: 5em;
-		          }
-		          @include breakpoint(large){
-		              font-size: 6em;
-		          }
-		          text-transform: uppercase;
-		          font-family: $sans-serif;
-		          strong {
-		            font-family: $serif;
-		            font-size: 1.4em;
-		          }
-		        } /* h3 */
-		        p {
-			      border-top: solid 1px $red;
-		          padding: 1em 0;
-		          margin-top: 1em;
-		        }
-		      } /* li */
-		      .half-assed, .great-folks {
-		        background-color: $blue;
-		        color: $white;
-		        &:before {
-		          color: $blue;
-		        }
-		      }
-		      .altruism, .donate {
-		        background-color: $red;
-		        color: $white;
-		        &:before {
-		          color: $red;
-		        }
-		      }
-		    } /* ul.mission-list */
-		}
-		.section-img {
-			background-image: url("../images/1965-orwell.jpeg");
-			background-repeat: no-repeat;
-			background-position: top center;
-			display: block;
-			@include breakpoint(large){
-				@include grid-column(5);
-				background-size: cover;
+			.section-text {
 				min-height: 600px;
-			}
-			.img-container {
-				height: 100%;
-			}
-		} /* section-img */
+				@include breakpoint(large){
+					@include grid-column(12);
+					// min-height: 600px;
+				}
+				@include breakpoint(xxlarge){
+					// min-height: 500px;
+				}
+				h2 {
+					color: $medium-gray;
+					text-transform: uppercase;
+					font-size: 8em;
+					line-height: .8em;
+					margin-top: 0;
+				}
+				p.subheader {
+					text-transform: uppercase;
+					font-family: $serif;
+					margin: 0 ;
+					color: $dark-gray;
+				}
+				p {
+					color: $blue;
+					@include breakpoint(medium){
+						padding: 0 4em;
+						font-size: 1.75em;
+					}
+				}
+			    ol.mission-list {
+			      margin: 0;
+			      counter-reset: li;
+			      li {
+			        list-style: none;
+			        display: block;
+			        // padding-top: 10em;
+			        margin-bottom: 2em;
+			        text-align: center;
+			        @include breakpoint(large) {
+				        padding: 1em 20%;
+			        }
+			        
+			        &:before {
+			          font-size: 2em;
+			          font-family: $serif;
+			          background-color: $red;
+			          color: $white;
+			          font-weight: 900;
+			          width: 1.5em;
+			          height: 1.5em;
+			          margin: 0 auto;
+			          display: block;
+			          border-radius: 100%;
+			          content: counter(li);
+			          counter-increment: li;
+			          text-align: center;
+			        }
+			        h3 {
+			          font-size: 2em;
+			          line-height: 1.2em;
+			          @include breakpoint(medium){
+			              font-size: 5em;
+			          }
+			          @include breakpoint(large){
+			              font-size: 6em;
+			          }
+			          text-transform: uppercase;
+			          font-family: $sans-serif;
+			          strong {
+			            font-family: $serif;
+			            font-size: 1.4em;
+			          }
+			        } /* h3 */
+			        p {
+				      border-top: solid 1px $red;
+			          padding: 1em 0;
+			          margin-top: 1em;
+			        }
+			      } /* li */
+			    } /* ul.mission-list */
 
-	} /* vision */
+			} /* section-text */
+		} /* section-contain */
 
-	#stay-tuned {
-		color: $white;
-		background: $blue;
-		// @include grid-column();
+	} /* mission */
+
+	#details {
+		background-color: $red;
+		// color: $white;
 		h2 {
 			color: $white;
 		}
-		#mc_embed_signup {
-			// background-color: $light-gray;
-			padding: 2em;
-			label {
+		header {
+			margin: 2em 0;
+			p.subheader {
 				color: $white;
 			}
-			.indicates-required {
-				font-style: italic;
-				// color: $dark-gray;
-				margin-bottom: 1em;
-				font-size: .8em;
+		}
+		section {
+			background-color: $white;
+			font-size: 1.4em;
+			padding: 2em;
+			@include breakpoint(xlarge) {
+				margin: 2em 8em;
 			}
-			.mc-email {
-				@include breakpoint(large){
-					@include grid-column(12);
-				}
+		}
+		section.membership-cost {
+			margin-bottom: 4em;
+			.cost {
+				text-align: center;
+				color: $red;
+				font-size: 2.75em;
+				font-weight: 100;
 			}
-			.mc-first, .mc-last {
-				@include breakpoint(large){
+			.plus-token {
+				font-size: .5em;
+				border-bottom: solid 1px;
+				padding-bottom: 3em;
+			}
+			section.coworking-costs, section.event-rental-costs {
+				margin: 2em 0;
+				padding: 0;
+				font-size: .5em;
+				color: $dark-gray;
+				@include breakpoint(large) {
 					@include grid-column(6);
 				}
-			}
-			input:not([type="submit"]) {
-				font-size: 1.75em;
-				font-family: $serif;
-				padding: 1.25em 1em;
-			}
-			.button {
-				background-color: $red;
-				margin-top: 2em;
-				font-size: 1.25em;
+				@include breakpoint(xxlarge) {
+					font-size: .6em;
+
+				}
+				h4 {
+					color: $red;
+					text-transform: uppercase;
+					font-size: 1.8em;
+				}
+				ul {
+					li {
+						border-bottom: solid 1px $light-gray;
+						margin: .25em;
+						text-align: left;
+						.price {
+							float: right;
+
+							strong {
+								color: $dark-gray;
+								// font-size: 1.4em;
+								padding: 0 .25em;
+
+							}
+						}
+					}
+				}
 			}
 		}
-		.contact-disclaim {
-			margin-top: 1.5em;
+		section.profit {
+			color: $white;
+			background-color: lighten($black, 10%);
 			font-size: .8em;
+			padding: 4em 6em;
+			h3 {
+				color: $yellow;
+				strong {
+					font-family: $serif;
+					font-weight: 100;
+				}
+			}
+
 		}
-	} /* stay-tuned */
+		section.joining {
+			padding: 2em 8em;
+		}
+		ul.benefits-list {
+			li {
+				background-color: transparent;
+				// font-size: 1.4em;
+				border-bottom: solid 1px;
+				p {
+
+				}
+			}
+		}
+	}
 
 	#cowork {
 		background-color: $blue;
 		header {
 			padding-bottom: 2em;
 			margin: 0 10% 2em;
-			border-bottom: solid 1px $white;
+			p.subheader {
+				color: $white;
+			}
 			h2 {
 				color: $white;
 			}
@@ -245,7 +287,19 @@
 		}
 		h3 {
 			color: $white;
+			border-bottom: solid 1px $white;
 		}
+
+		section.pricing-access {
+			.rate-extras {
+				// background-color: $white;
+				padding: 2em 4em;
+				margin-bottom: 2em;
+			}
+		}
+
+		
+
 		ul {
 			@include grid-row();
 			li {
@@ -327,7 +381,29 @@
 			text-align: center;
 		}
 	} /* coworking */
-	#cta {
+	#amenities {
+		color: $blue;
+		background: darken($yellow, 15%);
+		h2, h3 {
+			color: $blue;
+		}
+		ul {
+			@include breakpoint(medium) {
+				columns: 2;
+				column-gap: 5em;
+			}
+			li {
+				h4 {
+					font-size: 1.85em;
+					text-transform: uppercase;
+					strong {
+
+					}
+				}
+			} /* li */
+		} /* ul */
+	} /* amenities */
+	#apply {
 		background-color: $red;
 		h2,p {
 			color: $white;

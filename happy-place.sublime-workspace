@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"section",
+				"section-contain"
+			],
+			[
+				"tex",
+				"text-align\t(membership.html)"
+			],
+			[
 				"gr",
 				"grid-column"
 			],
@@ -92,10 +100,6 @@
 				"width"
 			],
 			[
-				"tex",
-				"text-align"
-			],
-			[
 				"padding",
 				"padding-bottom"
 			],
@@ -144,28 +148,22 @@
 	"buffers":
 	[
 		{
-			"file": "page-templates/front.php",
-			"settings":
-			{
-				"buffer_size": 2628,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "pages/membership.html",
-			"settings":
-			{
-				"buffer_size": 5229,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
 			"file": "page-templates/page-membership.php",
 			"settings":
 			{
-				"buffer_size": 4032,
+				"buffer_size": 8810,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "<div id=\"test-contain\">\n    <div id=\"nav-contain\" data-sticky-container=\"\">\n    <div class=\"sticky\" id=\"events-page-nav\" data-sticky=\"\" style=\"width: 100%;\" data-margin-top=\"0\" data-margin-bottom=\"0\" data-top-anchor=\"nav-contain:top\">\n        <nav data-magellan=\"\" data-magellan-expedition=\"fixed\">\n        <ul class=\"horizontal menu expanded\">\n            <li><a href=\"#amenities\">Office Amenities</a></li>\n            <li><a href=\"#rates\">Rates</a></li>\n            <li><a href=\"#availability\">Availability</a></li>\n            <li><a href=\"#cta\">Inquire</a></li>\n        </ul>\n        </nav>\n    </div>\n    </div><!-- nav-contain -->\n</div>\n\n<section id=\"amenities\">\n    <div id=\"amenities-anchor\" data-magellan-target=\"amenities\"></div>\n    <div class=\"section-contain\">\n        <h2>Office Amenities</h2>\n        <ul>\n            <li>\n                <h4>What a <strong>location</strong></h4>\n                <p>Smack dab in downtown Bellingham's shopping &amp; business district. Walk or bike to work and enjoy oh so many lunch options!</p>\n            </li>\n            <li>\n                <h4>Your own personal space</h4>\n                <p>Get a dedicated desk to call your own. Spread out your collection of stale pizza crusts (please don't), or connect four monitors to make an IMAX.</p>\n            </li>\n            <li>\n                <h4>Lockers on lock</h4>\n                <p>Get your very own locker to stash your non-perishable snacks, valuables and unmentionables whenever we open up our space for an event.</p>\n            </li>\n            <li>\n                <h4>Dog-friendly environment</h4>\n                <p>Bring your friendly well-behaved pals in when visiting or sharing the space with us. Our resident mutt, Sammy, needs some company!</p>\n            </li>\n            <li>\n                <h4>Creative, laid-back vibes</h4>\n                <p>Coming in to work everyday can actually be enjoyable: our priority is productivity, but we don't mind if you come to work in your pajamas.</p>\n            </li>\n            <li>\n                <h4>Fridge access</h4>\n                <p>Meal-prepper? 4pm beer-cracker? Feel free to stuff your stuff on the shelves of our high-tech refrigeration chamber. Beware: unlabeled items may get gobbled up by the fridge goblins.</p>\n            </li>\n        </ul>\n    </div>\n</section>\n\n<section id=\"rates\">\n<div class=\"section-contain\">\n        <div id=\"rates-anchor\" data-magellan-target=\"rates\"></div>\n        <h2>Desk Rental Rates</h2>\n        <ul>\n            <li>\n                <h4>Mezzanine Desk</h4>\n                <p>Overlook the hoi polloi, avoid small tsunamis and floods, etc. The Mezzanine is upstairs, and it has desks. </p>\n                <p class=\"cost\">$250/mo</p>\n            </li>\n            <li>\n                <h4>Downstairs Desk</h4>\n                <p>Enjoy proximity to the earth and easy access to the fridge. There are also desks Downstairs, where the bathroom is one stairwell nearer than it would be if you were on the Mezzanine.</p>\n                <p class=\"cost\">$250/mo</p>\n            </li>\n        </ul>\n</div>\n</section><!-- rates -->\n\n<section id=\"availability\">\n<div class=\"section-contain\">\n        <div id=\"availability-anchor\" data-magellan-target=\"availability\"></div>\n        <h2>Desk Availability</h2>\n        <p style=\"text-align: center;\">We currently have several openings for desk rentals and can pre-approve Happy Place membership for the right candidate if you are committed to renting your own desk. Keep in mind we are still in beta-testing: give us a holler, shout, or yodel to learn more.</p>\n</div>\n</section><!-- availability -->\n\n<section id=\"cta\">\n    <div id=\"cta-anchor\" data-magellan-target=\"cta\"></div>\n    <div class=\"section-contain\">\n        <h2>Inquire Here</h2>\n        <ul class=\"accordion\" data-accordion=\"\" data-allow-all-closed=\"true\">\n            <li id=\"tour\" class=\"accordion-item\" data-accordion-item=\"\">\n                <a href=\"#\" class=\"accordion-title button cta\"><i class=\"fa fa-calendar\"></i>Check availability and learn more.</a>\n                <div class=\"accordion-content\" data-tab-content=\"\">\n                 [contact-form-7 id=\"49\" title=\"Tenant Inquiry\"]\n                </div>\n            </li>\n        </ul>\n    </div>\n</section><!-- cta -->",
+			"file": "pages/desk-rental.html",
+			"file_size": 3540,
+			"file_write_time": 131707917184089902,
+			"settings":
+			{
+				"buffer_size": 4306,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -183,7 +181,7 @@
 			"file": "footer.php",
 			"settings":
 			{
-				"buffer_size": 2342,
+				"buffer_size": 2372,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -192,7 +190,25 @@
 			"file": "assets/scss/templates/_front.scss",
 			"settings":
 			{
-				"buffer_size": 7815,
+				"buffer_size": 9917,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "assets/scss/modules/_footer.scss",
+			"settings":
+			{
+				"buffer_size": 1408,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "assets/scss/global/_mixins.scss",
+			"settings":
+			{
+				"buffer_size": 584,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -201,7 +217,7 @@
 			"file": "assets/scss/templates/_page-membership.scss",
 			"settings":
 			{
-				"buffer_size": 3313,
+				"buffer_size": 5931,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -212,6 +228,14 @@
 			{
 				"buffer_size": 2785,
 				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "assets/scss/templates/_page-events.scss",
+			"settings":
+			{
+				"buffer_size": 3559,
 				"line_ending": "Windows"
 			}
 		}
@@ -272,13 +296,15 @@
 	],
 	"file_history":
 	[
+		"/C/Program Files (x86)/Ampps/www/happy-place-new/wp-content/themes/happy-place/page-templates/front.php",
+		"/C/Program Files (x86)/Ampps/www/happy-place-new/wp-content/themes/happy-place/assets/scss/modules/_navigation.scss",
+		"/C/Program Files (x86)/Ampps/www/happy-place-new/wp-content/themes/happy-place/pages/membership.html",
+		"/C/Program Files (x86)/Ampps/www/happy-place-new/wp-content/themes/happy-place/assets/images/inline-happy-place-address.svg.php",
 		"/C/Program Files (x86)/Ampps/www/happy-place-new/wp-content/themes/happy-place/assets/javascript/foundation.js",
 		"/C/Program Files (x86)/Ampps/www/happy-place-new/wp-content/themes/happy-place/assets/scss/templates/_page-default.scss",
 		"/C/Program Files (x86)/Ampps/www/happy-place-new/wp-content/themes/happy-place/assets/images/inline-social-instagram.svg.php",
-		"/C/Program Files (x86)/Ampps/www/happy-place-new/wp-content/themes/happy-place/pages/membership.html",
 		"/C/Program Files (x86)/Ampps/www/happy-place-new/wp-content/themes/happy-place/assets/javascript/custom/instafeed.js",
 		"/C/Program Files (x86)/Ampps/www/happy-place-new/wp-content/themes/happy-place/pages/front.html",
-		"/C/Program Files (x86)/Ampps/www/happy-place-new/wp-content/themes/happy-place/assets/images/inline-happy-place-address.svg.php",
 		"/C/Program Files (x86)/Ampps/www/happy-place-new/wp-content/themes/happy-place/gulpfile.js",
 		"/C/Program Files (x86)/Ampps/www/happy-place-new/wp-content/themes/happy-place/package.json",
 		"/C/Program Files (x86)/Ampps/www/happy-place-new/wp-content/themes/happy-place/bower.json",
@@ -397,13 +423,11 @@
 		"/D/Ampps/www/lyndale/wp-content/themes/lyndale/assets/images/svg-defs.svg",
 		"/D/Ampps/www/lyndale/wp-content/themes/lyndale/gulpfile.js",
 		"/D/Ampps/www/skagitfoodcoop/wp-content/themes/eat-beets/scss/config/_settings.scss",
-		"/D/Ampps/www/skagitfoodcoop/wp-content/themes/eat-beets/style.css",
-		"/D/Ampps/www/skagitfoodcoop/wp-content/themes/eat-beets/scss/site/_structure.scss",
-		"/D/Ampps/www/skagitfoodcoop/wp-content/themes/eat-beets/footer.php"
+		"/D/Ampps/www/skagitfoodcoop/wp-content/themes/eat-beets/style.css"
 	],
 	"find":
 	{
-		"height": 40.0
+		"height": 24.0
 	},
 	"find_in_files":
 	{
@@ -419,6 +443,31 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"cta",
+			"vision",
+			"cost-benefits",
+			"benefits",
+			"Benefits",
+			"benefits",
+			"Benefits",
+			"benefits",
+			"vision",
+			"red",
+			"span",
+			"levels",
+			"thru",
+			"hourse",
+			"access-times",
+			", event access, discounted space rental, desk rental option, company store discounts, etc.",
+			"?",
+			"vision",
+			"old",
+			"ul",
+			"happy-gallery",
+			"ul",
+			"2",
+			"1em",
+			"trans",
 			"'",
 			"members-lead",
 			"test-contain",
@@ -521,32 +570,7 @@
 			":00",
 			"p",
 			"(360)",
-			"</span>",
-			".",
-			">\n",
-			"span",
-			"image",
-			"repeater_field_name",
-			"left",
-			"lyndale_products_menu",
-			"sub-footer",
-			"footer",
-			"http://www.facebook.com/pages/Mount-Vernon-WA/Skagit-Valley-Food-Co-op/119521910103",
-			"span",
-			"header",
-			"prefix-button",
-			"prefix",
-			"label",
-			"newsletter",
-			"contact",
-			"constant",
-			"learn-page",
-			"cc_",
-			"panel",
-			"em",
-			"orbit",
-			"sales-specials",
-			"member-owner"
+			"</span>"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -567,83 +591,24 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "page-templates/front.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2628,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1468,
-								1468
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "pages/membership.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 5229,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								5229
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
 					"file": "page-templates/page-membership.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4032,
+						"buffer_size": 8810,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1981,
-								1981
+								8678,
+								8678
 							]
 						],
 						"settings":
@@ -651,14 +616,44 @@
 							"syntax": "Packages/PHP/PHP.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 495.0,
+						"translation.y": 1637.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 1,
+					"file": "pages/desk-rental.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4306,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2353,
+								645
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 106.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
 					"file": "header.php",
 					"semi_transient": false,
 					"settings":
@@ -683,24 +678,24 @@
 						"translation.y": 15.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 9,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 3,
 					"file": "footer.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2342,
+						"buffer_size": 2372,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1936,
-								1936
+								1684,
+								1684
 							]
 						],
 						"settings":
@@ -708,33 +703,62 @@
 							"syntax": "Packages/PHP/PHP.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 330.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 8,
 					"type": "text"
 				}
 			]
 		},
 		{
-			"selected": 1,
+			"selected": 3,
 			"sheets":
 			[
 				{
-					"buffer": 5,
+					"buffer": 4,
 					"file": "assets/scss/templates/_front.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 7815,
+						"buffer_size": 9917,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2534,
-								1697
+								7299,
+								7299
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/SCSS.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 4590.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "assets/scss/modules/_footer.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1408,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								907,
+								907
 							]
 						],
 						"settings":
@@ -746,24 +770,52 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
 					"buffer": 6,
-					"file": "assets/scss/templates/_page-membership.scss",
+					"file": "assets/scss/global/_mixins.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3313,
+						"buffer_size": 584,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1326,
-								1326
+								77,
+								77
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/SCSS.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "assets/scss/templates/_page-membership.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5931,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1595,
+								1718
 							]
 						],
 						"settings":
@@ -772,14 +824,14 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 855.0,
+						"translation.y": 141.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 7,
+					"buffer": 8,
 					"file": "assets/scss/templates/_page-desk-rental.scss",
 					"semi_transient": false,
 					"settings":
@@ -791,8 +843,8 @@
 						"selection":
 						[
 							[
-								1562,
-								1562
+								646,
+								320
 							]
 						],
 						"settings":
@@ -801,10 +853,39 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 792.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "assets/scss/templates/_page-events.scss",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 3559,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2205,
+								1143
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/SCSS.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 810.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
 					"type": "text"
 				}
 			]

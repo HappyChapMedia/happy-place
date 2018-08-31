@@ -8571,9 +8571,9 @@ ul.accordion {
         display: inline-block; }
 
 .page-template-page-membership {
-  /* vision */
-  /* stay-tuned */
+  /* mission */
   /* coworking */
+  /* amenities */
   /* cta */ }
   .page-template-page-membership .top-bar, .page-template-page-membership .top-bar ul {
     background-color: #ec5840; }
@@ -8581,6 +8581,15 @@ ul.accordion {
     border-color: #e23317; }
   .page-template-page-membership .top-bar .menu li a:hover:not(.button), .page-template-page-membership .top-bar .menu li.active a {
     color: #e23317; }
+  .page-template-page-membership #sub-nav-contain {
+    z-index: 100;
+    display: block;
+    background-color: #ec5840; }
+    .page-template-page-membership #sub-nav-contain nav {
+      background-color: #ec5840; }
+    .page-template-page-membership #sub-nav-contain a {
+      color: #fefefe;
+      text-transform: uppercase; }
   .page-template-page-membership .entry-content {
     text-align: center;
     /* section */ }
@@ -8591,6 +8600,8 @@ ul.accordion {
         max-width: 100%; }
         .page-template-page-membership .entry-content section .section-contain .section-text {
           padding: 4em !important; }
+          .page-template-page-membership .entry-content section .section-contain .section-text h2 {
+            text-transform: uppercase; }
           .page-template-page-membership .entry-content section .section-contain .section-text p {
             line-height: 1.8; }
         .page-template-page-membership .entry-content section .section-contain p.cta {
@@ -8624,187 +8635,189 @@ ul.accordion {
                 float: right; } }
   .page-template-page-membership #intro {
     background: #ec5840; }
-  .page-template-page-membership #vision {
+    .page-template-page-membership #intro p.subheader {
+      color: #fefefe;
+      text-transform: uppercase;
+      letter-spacing: .08em; }
+  .page-template-page-membership #mission {
     background: #54c2b6;
     background-color: #fefefe;
-    /* section-img */ }
-    .page-template-page-membership #vision h2 {
-      color: #cacaca;
-      text-transform: uppercase;
-      font-size: 8em;
-      line-height: .8em;
-      margin-top: 0; }
-    .page-template-page-membership #vision p.subheader {
-      text-transform: uppercase;
-      font-family: "abril-fatface", "Garamond Bold", Times, serif;
-      margin: 0;
-      color: #8a8a8a; }
-    .page-template-page-membership #vision p {
-      color: #54c2b6; }
-      @media screen and (min-width: 40em) {
-        .page-template-page-membership #vision p {
-          padding: 0 4em;
-          font-size: 1.75em; } }
-    .page-template-page-membership #vision .section-contain {
+    /* section-contain */ }
+    .page-template-page-membership #mission .section-contain {
       padding: 0;
-      max-width: 100%; }
-    .page-template-page-membership #vision .section-text {
-      min-height: 600px;
-      /* ul.mission-list */ }
-      @media screen and (min-width: 64em) {
-        .page-template-page-membership #vision .section-text {
-          width: 100%;
-          float: left;
-          padding-left: 0.625rem;
-          padding-right: 0.625rem; } }
+      max-width: 100%;
+      /* section-text */ }
+      .page-template-page-membership #mission .section-contain .section-text {
+        min-height: 600px;
+        /* ul.mission-list */ }
+        @media screen and (min-width: 64em) {
+          .page-template-page-membership #mission .section-contain .section-text {
+            width: 100%;
+            float: left;
+            padding-left: 0.625rem;
+            padding-right: 0.625rem; } }
   @media screen and (min-width: 64em) and (min-width: 40em) {
-    .page-template-page-membership #vision .section-text {
+    .page-template-page-membership #mission .section-contain .section-text {
       padding-left: 0.9375rem;
       padding-right: 0.9375rem; } }
-      @media screen and (min-width: 64em) {
-          .page-template-page-membership #vision .section-text:last-child:not(:first-child) {
-            float: right; } }
-      .page-template-page-membership #vision .section-text ol.mission-list {
-        margin: 0;
-        counter-reset: li;
-        /* li */ }
-        .page-template-page-membership #vision .section-text ol.mission-list li {
-          list-style: none;
-          display: block;
-          margin-bottom: 2em;
-          text-align: center;
-          /* h3 */ }
-          @media screen and (min-width: 64em) {
-            .page-template-page-membership #vision .section-text ol.mission-list li {
-              padding: 1em 20%; } }
-          .page-template-page-membership #vision .section-text ol.mission-list li:before {
-            font-size: 2em;
-            font-family: "abril-fatface", "Garamond Bold", Times, serif;
-            background-color: #ec5840;
-            color: #fefefe;
-            font-weight: 900;
-            width: 1.5em;
-            height: 1.5em;
-            margin: 0 auto;
+        @media screen and (min-width: 64em) {
+            .page-template-page-membership #mission .section-contain .section-text:last-child:not(:first-child) {
+              float: right; } }
+        .page-template-page-membership #mission .section-contain .section-text h2 {
+          color: #cacaca;
+          text-transform: uppercase;
+          font-size: 8em;
+          line-height: .8em;
+          margin-top: 0; }
+        .page-template-page-membership #mission .section-contain .section-text p.subheader {
+          text-transform: uppercase;
+          font-family: "abril-fatface", "Garamond Bold", Times, serif;
+          margin: 0;
+          color: #8a8a8a; }
+        .page-template-page-membership #mission .section-contain .section-text p {
+          color: #54c2b6; }
+          @media screen and (min-width: 40em) {
+            .page-template-page-membership #mission .section-contain .section-text p {
+              padding: 0 4em;
+              font-size: 1.75em; } }
+        .page-template-page-membership #mission .section-contain .section-text ol.mission-list {
+          margin: 0;
+          counter-reset: li;
+          /* li */ }
+          .page-template-page-membership #mission .section-contain .section-text ol.mission-list li {
+            list-style: none;
             display: block;
-            border-radius: 100%;
-            content: counter(li);
-            counter-increment: li;
-            text-align: center; }
-          .page-template-page-membership #vision .section-text ol.mission-list li h3 {
-            font-size: 2em;
-            line-height: 1.2em;
-            text-transform: uppercase;
-            font-family: "acumin-pro-extra-condensed", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; }
-            @media screen and (min-width: 40em) {
-              .page-template-page-membership #vision .section-text ol.mission-list li h3 {
-                font-size: 5em; } }
+            margin-bottom: 2em;
+            text-align: center;
+            /* h3 */ }
             @media screen and (min-width: 64em) {
-              .page-template-page-membership #vision .section-text ol.mission-list li h3 {
-                font-size: 6em; } }
-            .page-template-page-membership #vision .section-text ol.mission-list li h3 strong {
+              .page-template-page-membership #mission .section-contain .section-text ol.mission-list li {
+                padding: 1em 20%; } }
+            .page-template-page-membership #mission .section-contain .section-text ol.mission-list li:before {
+              font-size: 2em;
               font-family: "abril-fatface", "Garamond Bold", Times, serif;
-              font-size: 1.4em; }
-          .page-template-page-membership #vision .section-text ol.mission-list li p {
-            border-top: solid 1px #ec5840;
-            padding: 1em 0;
-            margin-top: 1em; }
-        .page-template-page-membership #vision .section-text ol.mission-list .half-assed, .page-template-page-membership #vision .section-text ol.mission-list .great-folks {
-          background-color: #54c2b6;
-          color: #fefefe; }
-          .page-template-page-membership #vision .section-text ol.mission-list .half-assed:before, .page-template-page-membership #vision .section-text ol.mission-list .great-folks:before {
-            color: #54c2b6; }
-        .page-template-page-membership #vision .section-text ol.mission-list .altruism, .page-template-page-membership #vision .section-text ol.mission-list .donate {
-          background-color: #ec5840;
-          color: #fefefe; }
-          .page-template-page-membership #vision .section-text ol.mission-list .altruism:before, .page-template-page-membership #vision .section-text ol.mission-list .donate:before {
-            color: #ec5840; }
-    .page-template-page-membership #vision .section-img {
-      background-image: url("../images/1965-orwell.jpeg");
-      background-repeat: no-repeat;
-      background-position: top center;
-      display: block; }
-      @media screen and (min-width: 64em) {
-        .page-template-page-membership #vision .section-img {
-          width: 41.66667%;
-          float: left;
-          padding-left: 0.625rem;
-          padding-right: 0.625rem;
-          -webkit-background-size: cover;
-                  background-size: cover;
-          min-height: 600px; } }
-  @media screen and (min-width: 64em) and (min-width: 40em) {
-    .page-template-page-membership #vision .section-img {
-      padding-left: 0.9375rem;
-      padding-right: 0.9375rem; } }
-      @media screen and (min-width: 64em) {
-          .page-template-page-membership #vision .section-img:last-child:not(:first-child) {
-            float: right; } }
-      .page-template-page-membership #vision .section-img .img-container {
-        height: 100%; }
-  .page-template-page-membership #stay-tuned {
-    color: #fefefe;
-    background: #54c2b6; }
-    .page-template-page-membership #stay-tuned h2 {
+              background-color: #ec5840;
+              color: #fefefe;
+              font-weight: 900;
+              width: 1.5em;
+              height: 1.5em;
+              margin: 0 auto;
+              display: block;
+              border-radius: 100%;
+              content: counter(li);
+              counter-increment: li;
+              text-align: center; }
+            .page-template-page-membership #mission .section-contain .section-text ol.mission-list li h3 {
+              font-size: 2em;
+              line-height: 1.2em;
+              text-transform: uppercase;
+              font-family: "acumin-pro-extra-condensed", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; }
+              @media screen and (min-width: 40em) {
+                .page-template-page-membership #mission .section-contain .section-text ol.mission-list li h3 {
+                  font-size: 5em; } }
+              @media screen and (min-width: 64em) {
+                .page-template-page-membership #mission .section-contain .section-text ol.mission-list li h3 {
+                  font-size: 6em; } }
+              .page-template-page-membership #mission .section-contain .section-text ol.mission-list li h3 strong {
+                font-family: "abril-fatface", "Garamond Bold", Times, serif;
+                font-size: 1.4em; }
+            .page-template-page-membership #mission .section-contain .section-text ol.mission-list li p {
+              border-top: solid 1px #ec5840;
+              padding: 1em 0;
+              margin-top: 1em; }
+  .page-template-page-membership #details {
+    background-color: #ec5840; }
+    .page-template-page-membership #details h2 {
       color: #fefefe; }
-    .page-template-page-membership #stay-tuned #mc_embed_signup {
-      padding: 2em; }
-      .page-template-page-membership #stay-tuned #mc_embed_signup label {
+    .page-template-page-membership #details header {
+      margin: 2em 0; }
+      .page-template-page-membership #details header p.subheader {
         color: #fefefe; }
-      .page-template-page-membership #stay-tuned #mc_embed_signup .indicates-required {
-        font-style: italic;
-        margin-bottom: 1em;
-        font-size: .8em; }
-      @media screen and (min-width: 64em) {
-        .page-template-page-membership #stay-tuned #mc_embed_signup .mc-email {
-          width: 100%;
-          float: left;
-          padding-left: 0.625rem;
-          padding-right: 0.625rem; } }
+    .page-template-page-membership #details section {
+      background-color: #fefefe;
+      font-size: 1.4em;
+      padding: 2em; }
+      @media screen and (min-width: 75em) {
+        .page-template-page-membership #details section {
+          margin: 2em 8em; } }
+    .page-template-page-membership #details section.membership-cost {
+      margin-bottom: 4em; }
+      .page-template-page-membership #details section.membership-cost .cost {
+        text-align: center;
+        color: #ec5840;
+        font-size: 2.75em;
+        font-weight: 100; }
+      .page-template-page-membership #details section.membership-cost .plus-token {
+        font-size: .5em;
+        border-bottom: solid 1px;
+        padding-bottom: 3em; }
+      .page-template-page-membership #details section.membership-cost section.coworking-costs, .page-template-page-membership #details section.membership-cost section.event-rental-costs {
+        margin: 2em 0;
+        padding: 0;
+        font-size: .5em;
+        color: #8a8a8a; }
+        @media screen and (min-width: 64em) {
+          .page-template-page-membership #details section.membership-cost section.coworking-costs, .page-template-page-membership #details section.membership-cost section.event-rental-costs {
+            width: 50%;
+            float: left;
+            padding-left: 0.625rem;
+            padding-right: 0.625rem; } }
   @media screen and (min-width: 64em) and (min-width: 40em) {
-    .page-template-page-membership #stay-tuned #mc_embed_signup .mc-email {
+    .page-template-page-membership #details section.membership-cost section.coworking-costs, .page-template-page-membership #details section.membership-cost section.event-rental-costs {
       padding-left: 0.9375rem;
       padding-right: 0.9375rem; } }
-      @media screen and (min-width: 64em) {
-          .page-template-page-membership #stay-tuned #mc_embed_signup .mc-email:last-child:not(:first-child) {
-            float: right; } }
-      @media screen and (min-width: 64em) {
-        .page-template-page-membership #stay-tuned #mc_embed_signup .mc-first, .page-template-page-membership #stay-tuned #mc_embed_signup .mc-last {
-          width: 50%;
-          float: left;
-          padding-left: 0.625rem;
-          padding-right: 0.625rem; } }
-  @media screen and (min-width: 64em) and (min-width: 40em) {
-    .page-template-page-membership #stay-tuned #mc_embed_signup .mc-first, .page-template-page-membership #stay-tuned #mc_embed_signup .mc-last {
-      padding-left: 0.9375rem;
-      padding-right: 0.9375rem; } }
-      @media screen and (min-width: 64em) {
-          .page-template-page-membership #stay-tuned #mc_embed_signup .mc-first:last-child:not(:first-child), .page-template-page-membership #stay-tuned #mc_embed_signup .mc-last:last-child:not(:first-child) {
-            float: right; } }
-      .page-template-page-membership #stay-tuned #mc_embed_signup input:not([type="submit"]) {
-        font-size: 1.75em;
-        font-family: "abril-fatface", "Garamond Bold", Times, serif;
-        padding: 1.25em 1em; }
-      .page-template-page-membership #stay-tuned #mc_embed_signup .button {
-        background-color: #ec5840;
-        margin-top: 2em;
-        font-size: 1.25em; }
-    .page-template-page-membership #stay-tuned .contact-disclaim {
-      margin-top: 1.5em;
-      font-size: .8em; }
+        @media screen and (min-width: 64em) {
+            .page-template-page-membership #details section.membership-cost section.coworking-costs:last-child:not(:first-child), .page-template-page-membership #details section.membership-cost section.event-rental-costs:last-child:not(:first-child) {
+              float: right; } }
+        @media screen and (min-width: 90em) {
+          .page-template-page-membership #details section.membership-cost section.coworking-costs, .page-template-page-membership #details section.membership-cost section.event-rental-costs {
+            font-size: .6em; } }
+        .page-template-page-membership #details section.membership-cost section.coworking-costs h4, .page-template-page-membership #details section.membership-cost section.event-rental-costs h4 {
+          color: #ec5840;
+          text-transform: uppercase;
+          font-size: 1.8em; }
+        .page-template-page-membership #details section.membership-cost section.coworking-costs ul li, .page-template-page-membership #details section.membership-cost section.event-rental-costs ul li {
+          border-bottom: solid 1px #e6e6e6;
+          margin: .25em;
+          text-align: left; }
+          .page-template-page-membership #details section.membership-cost section.coworking-costs ul li .price, .page-template-page-membership #details section.membership-cost section.event-rental-costs ul li .price {
+            float: right; }
+            .page-template-page-membership #details section.membership-cost section.coworking-costs ul li .price strong, .page-template-page-membership #details section.membership-cost section.event-rental-costs ul li .price strong {
+              color: #8a8a8a;
+              padding: 0 .25em; }
+    .page-template-page-membership #details section.profit {
+      color: #fefefe;
+      background-color: #242424;
+      font-size: .8em;
+      padding: 4em 6em; }
+      .page-template-page-membership #details section.profit h3 {
+        color: #fbf5a9; }
+        .page-template-page-membership #details section.profit h3 strong {
+          font-family: "abril-fatface", "Garamond Bold", Times, serif;
+          font-weight: 100; }
+    .page-template-page-membership #details section.joining {
+      padding: 2em 8em; }
+    .page-template-page-membership #details ul.benefits-list li {
+      background-color: transparent;
+      border-bottom: solid 1px; }
   .page-template-page-membership #cowork {
     background-color: #54c2b6; }
     .page-template-page-membership #cowork header {
       padding-bottom: 2em;
-      margin: 0 10% 2em;
-      border-bottom: solid 1px #fefefe; }
+      margin: 0 10% 2em; }
+      .page-template-page-membership #cowork header p.subheader {
+        color: #fefefe; }
       .page-template-page-membership #cowork header h2 {
         color: #fefefe; }
       .page-template-page-membership #cowork header p.intro {
         color: #fefefe;
         font-size: 1.5em; }
     .page-template-page-membership #cowork h3 {
-      color: #fefefe; }
+      color: #fefefe;
+      border-bottom: solid 1px #fefefe; }
+    .page-template-page-membership #cowork section.pricing-access .rate-extras {
+      padding: 2em 4em;
+      margin-bottom: 2em; }
     .page-template-page-membership #cowork ul {
       max-width: 75rem;
       margin-left: auto;
@@ -8916,15 +8929,32 @@ ul.accordion {
         display: table; }
       .page-template-page-membership #cowork .cta::after {
         clear: both; }
-  .page-template-page-membership #cta {
+  .page-template-page-membership #amenities {
+    color: #54c2b6;
+    background: #f8ed60;
+    /* ul */ }
+    .page-template-page-membership #amenities h2, .page-template-page-membership #amenities h3 {
+      color: #54c2b6; }
+    .page-template-page-membership #amenities ul {
+      /* li */ }
+      @media screen and (min-width: 40em) {
+        .page-template-page-membership #amenities ul {
+          -webkit-columns: 2;
+                  columns: 2;
+          -webkit-column-gap: 5em;
+                  column-gap: 5em; } }
+      .page-template-page-membership #amenities ul li h4 {
+        font-size: 1.85em;
+        text-transform: uppercase; }
+  .page-template-page-membership #apply {
     background-color: #ec5840; }
-    .page-template-page-membership #cta h2, .page-template-page-membership #cta p {
+    .page-template-page-membership #apply h2, .page-template-page-membership #apply p {
       color: #fefefe; }
-    .page-template-page-membership #cta .section-contain {
+    .page-template-page-membership #apply .section-contain {
       padding: 4em; }
-    .page-template-page-membership #cta .accordion-title {
+    .page-template-page-membership #apply .accordion-title {
       background-color: #42baad; }
-    .page-template-page-membership #cta .accordion-content {
+    .page-template-page-membership #apply .accordion-content {
       background-color: #3ca79c; }
 
 /* page-template-page-membership */
