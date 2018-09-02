@@ -29,12 +29,17 @@
 		text-align: center;
 		section {
 			text-align: center;
-			// padding: 4em 0;
+			@include breakpoint(small only) {
+				padding: 2em 0;
+			}
 			.section-contain {
 				padding: 0;
 				max-width: 100%;
 				.section-text {
-					padding: 4em!important;
+					padding: 1em;
+					@include breakpoint(large) {
+						padding: 4em!important;
+					}
 					h2 {
 						text-transform: uppercase;
 					}
@@ -208,12 +213,12 @@
 				margin: 2em 0;
 				padding: 0;
 				font-size: .5em;
-				color: $dark-gray;
+				color: darken($dark-gray, 10%);
 				@include breakpoint(large) {
 					@include grid-column(6);
 				}
 				@include breakpoint(xxlarge) {
-					font-size: .6em;
+					font-size: .7em;
 
 				}
 				h4 {
@@ -240,13 +245,34 @@
 				}
 			}
 		}
+
+		section.benefits {
+			ul.benefits-list {
+				li {
+					background-color: transparent;
+					// font-size: 1.4em;
+					border-bottom: solid 1px $medium-gray;
+					p {
+
+					}
+				}
+			}
+			
+		} /* section.benefits */
+
 		section.profit {
 			color: $white;
 			background-color: lighten($black, 10%);
-			font-size: .8em;
-			padding: 4em 6em;
+			// font-size: .8em;
+			@include breakpoint(large) {
+				padding: 4em 6em;
+			}
 			h3 {
 				color: $yellow;
+				font-size: 2.5em;
+				@include breakpoint(large) {
+					font-size: 4em;
+				}
 				strong {
 					font-family: $serif;
 					font-weight: 100;
@@ -255,16 +281,8 @@
 
 		}
 		section.joining {
-			padding: 2em 8em;
-		}
-		ul.benefits-list {
-			li {
-				background-color: transparent;
-				// font-size: 1.4em;
-				border-bottom: solid 1px;
-				p {
-
-				}
+			@include breakpoint(large) {
+				padding: 2em 8em;
 			}
 		}
 	}
@@ -296,113 +314,135 @@
 				padding: 2em 4em;
 				margin-bottom: 2em;
 			}
+			ul {
+				@include grid-row();
+				li {
+					background-color: transparent;
+					@include breakpoint(large) {
+						@include grid-column(4);
+						padding: 1em;
+					}
+					.contain {
+						text-align: center;
+						background-color: $white;
+						border: solid 1px $light-gray;
+						padding: 1em 1em;
+						h4 {
+							color: $red;
+							text-transform: uppercase;
+							font-size: 2em;
+							@include breakpoint(large) {
+								font-size: 3em;
+							}
+						}
+						.cost {
+							color: $red;
+							font-family: $serif;
+							font-size: 2em;
+							@include breakpoint(large) {
+								font-size: 3em;	
+							}
+						}
+						.cost-sub {
+
+						}
+						.hours {
+							font-weight: 900;
+							color: $dark-gray;
+							text-transform: uppercase;
+						}
+						.hours {
+						}
+					}
+				}
+			}
+			.rate-extras {
+				// @include grid-column(12);
+				@include grid-row();
+				padding: 2em 0;
+				.rate-contain {
+					margin: 1em 0;
+					@include breakpoint(small only){
+						text-align: center;
+					}
+					h4 {
+						font-size: 2em;
+					}
+				}
+				.discount {
+					color: $white;
+					@include breakpoint(medium){
+						@include grid-column(6);
+					}
+					.rate-contain {
+						padding: 1em;
+						background-color: $blue;
+					}
+				}
+				.partner {
+					color: $white;
+					@include breakpoint(medium){
+						@include grid-column(6);
+					}
+					.rate-contain {
+						padding: 1em;
+						background-color: $green;
+					}
+				}
+			}
+			.cta {
+				@include grid-row();
+				text-align: center;
+			}
 		}
 
 		
 
-		ul {
-			@include grid-row();
-			li {
-				background-color: transparent;
+
+		#amenities {
+			// color: $blue;
+			// background: darken($yellow, 15%);
+			h2, h3 {
+				// color: $blue;
+			}
+			section {
 				@include breakpoint(large) {
-					@include grid-column(4);
-					padding: 1em;
+					@include grid-column(6);
+					font-size: 1.25em;
 				}
-				.contain {
-					text-align: center;
-					background-color: $white;
-					border: solid 1px $light-gray;
-					padding: 1em 1em;
+				header {
+					padding: 1em 0;
 					h4 {
-						color: $red;
+						// font-size: 1.85em;
+						color: $white;
 						text-transform: uppercase;
-						font-size: 2em;
-						@include breakpoint(large) {
-							font-size: 3em;
+						strong {
+							font-family: $serif;
+							text-transform: none;
+							font-weight: 100;
+							color: $black;
 						}
 					}
-					.cost {
-						color: $red;
-						font-family: $serif;
-						font-size: 2em;
-						@include breakpoint(large) {
-							font-size: 3em;	
-						}
-					}
-					.cost-sub {
-
-					}
-					.hours {
-						font-weight: 900;
-						color: $dark-gray;
-						text-transform: uppercase;
-					}
-					.hours {
+					p.subheader {
+						color: $black;
+						font-size: .8em;
 					}
 				}
 			}
-		}
-		.rate-extras {
-			// @include grid-column(12);
-			@include grid-row();
-			padding: 2em 0;
-			.rate-contain {
-				margin: 1em 0;
-				@include breakpoint(small only){
-					text-align: center;
-				}
-				h4 {
-					font-size: 2em;
-				}
+			ul {
+				background-color: $white;
+				li {
+					background-color: transparent;
+					margin: 0;
+					border-bottom: solid 1px $light-gray;
+					// padding: 8em;
+				} /* li */
+			} /* ul */
+			section.drop-in-amenities {
+				// background-color: $white;
 			}
-			.discount {
-				color: $white;
-				@include breakpoint(medium){
-					@include grid-column(6);
-				}
-				.rate-contain {
-					padding: 1em;
-					background-color: $blue;
-				}
-			}
-			.partner {
-				color: $white;
-				@include breakpoint(medium){
-					@include grid-column(6);
-				}
-				.rate-contain {
-					padding: 1em;
-					background-color: $green;
-				}
-			}
-		}
-		.cta {
-			@include grid-row();
-			text-align: center;
-		}
+		} /* amenities */
 	} /* coworking */
-	#amenities {
-		color: $blue;
-		background: darken($yellow, 15%);
-		h2, h3 {
-			color: $blue;
-		}
-		ul {
-			@include breakpoint(medium) {
-				columns: 2;
-				column-gap: 5em;
-			}
-			li {
-				h4 {
-					font-size: 1.85em;
-					text-transform: uppercase;
-					strong {
-
-					}
-				}
-			} /* li */
-		} /* ul */
-	} /* amenities */
 	#apply {
 		background-color: $red;
 		h2,p {

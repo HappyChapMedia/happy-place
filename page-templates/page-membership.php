@@ -55,6 +55,7 @@ get_header(); ?>
             	<li><p>To share our space through public events and event space rental to members and the public.</p></li>
             	<li><p>To support our downtown Bellingham neighborhood, local arts & artists, human rights and environmental sustainability.</p></li>
             </ol>
+            <i class="fa fa-arrow-down"></i>
         </div>
     </div>
 </section> <!-- mission -->
@@ -79,7 +80,7 @@ get_header(); ?>
                         <p class="for-members">For Happy Place members</p>
                         <ul>
                             <li><strong>1-Day Pass</strong> &bullet; 8am-6pm &bullet; M-F <span class="price"><strong>$10</strong>/day</span></li>
-                            <li><strong>Monthly Pass</strong> &bullet; 8am - 6pm &bullet; M-F <span class="price"><strong>$75</strong>/month</span></li>
+                            <li><strong>Drop-in</strong> &bullet; 8am - 6pm &bullet; M-F <span class="price"><strong>$75</strong>/month</span></li>
                             <li><strong>Dedicated Desk</strong> &bullet; 24/7 <span class="price"><strong>$225</strong>/month</span></li>
                         </ul>
                     </section> <!-- coworking-costs -->
@@ -108,14 +109,22 @@ get_header(); ?>
             </section>
 
             <section class="profit">
-                <h3>We're a <br><strong>Non-Pecuniary Club</strong></h3>
-                <p>This means that club revenue supports improvements to the communal space and functional management of the club. Any additional proceeds generated via club activities will be donated to organizations, creative projects, and causes that advance the ideals we support. On an ongoing basis, we will also produce media and host events to promote awareness and critical thinking related to these issues. At this time, we are not incorporated and operate as a private club.</p>
+                <h3>Purpose Over <strong>Profit</strong></h3>
+                <p>We're a non-penuciary club, meaning our revenue supports improvements to the communal space and functional management of the club. Any additional proceeds generated via club activities will be donated to organizations, creative projects, and causes that advance the ideals we support.</p>
             </section>
 
             <section class="joining">
                 <h3>How to Join</h3>
                 <p>To become a member, you must submit a <a href="#apply">written application</a> and be democratically approved by the board of directors. </p>
             </section>
+
+            <section class="criteria">
+                <h3>Member Criteria &amp; Review</h3>
+                <p>Age, gender, education, political beliefs have no bearing in who can become a HappyPlace member. We only pick folks who are not douchecannons based on a complicated algorithm and gut-instincts. But really though, this should be about how someone needs to be likeminded and willing to contribute and use the space respectfully, etc.</p>
+                <p>After a six-month probationary period the board will review your membership and determine if you should be subject to the street-gang bleed-in ritual out back in our alleyway. Goodluck.</p>
+
+            </section>
+            <i class="fa fa-arrow-down"></i>
         </div>
     </div>
 </section> <!-- details -->
@@ -145,7 +154,7 @@ get_header(); ?>
 		            </li>
 		            <li data-equalizer-watch="cowork">
 		                <div class="contain">
-		                	<h4>Monthly Pass</h4>
+		                	<h4>Drop-in</h4>
 		                	<p class="hours">8am &ndash; 6pm access</p>
 		                	<p class="days">Mon. &ndash; Fri.</p>
 		                	<p class="cost">$75/mo</p>
@@ -166,46 +175,59 @@ get_header(); ?>
 		        	<p>*Dedicated desk renters may have restricted access certain evenings/weekends when private events are scheduled. <br>A calendar of upcoming event bookings will be made available.</p>
 		        </div>
             </section> <!-- pricing-access -->
+            <section id="amenities">
+                <div id="amenities-anchor" data-magellan-target="amenities"></div>
+                <div class="section-contain">
+                    <div class="section-text" data-equalizer="cowork-amenities" data-equalize-on="medium">
+                        <header>
+                            <h3>Office Amenities</h3>
+                        </header>
+                        <section class="drop-in-amenities"  >
+                            <header>
+                                <h4><strong>Day Pass / Drop-in</strong> <br> General Space Amenities</h4>
+                                <p class="subheader">Use the space for work-related activities during business hours.</p>
+                            </header>
+                            <ul data-equalizer-watch="cowork-amenities">
+                                <li><p>Downstairs space access.</p></li>
+                                <li><p>Wireless internet access.</p></li>
+                                <li><p>Indoor bicycle parking.</p></li>
+                                <li><p>Bring your well-behaved dog.</p></li>
+                                <li><p>Usage of tables/chairs.</p></li>
+                                <li><p>Usage of ping-pong table.</p></li>
+                                <li><p>Kitchenette w/ mircowave &amp; toaster oven</p></li>
+                                <li><p>Free drip coffee.</p></li>
+                            </ul>
+                        </section> <!-- drop-in-amenities -->
+                        <section class="dedicated-desk"  >
+                            <header>
+                                <h4><strong>Dedicated Desk</strong><br>Additional Amenities</h4>
+                                <p class="subheader">The perfect desk-away-from-home, available when you need it. All the benefits of daytime access, plus:</p>
+                            </header>
+                            <ul data-equalize-watchr="cowork-amenities">
+                                <li><p>Your very own desk.</p></li>
+                                <li><p>Wired internet access.</p></li>
+                                <li><p>Access via personal keycode.</p></li>
+                                <li><p>Full-time (24/7) access</p></li>
+                                <li><p>Evening / weekend social hosting access*</p></li>
+                            </ul>
+                        </section> <!-- dedicated-desk -->
+                    </div>
+                </div>
+            </section> <!-- amenities -->
         </div>
     </div>	
 </section> <!-- #cowork -->
 
-<section id="amenities">
-    <div id="amenities-anchor" data-magellan-target="amenities"></div>
+<section id="club-rules">
+    <div id="club-rules-anchor" data-magellan-target="club-rules"></div>
     <div class="section-contain">
         <div class="section-text">
-        	<h2>Office Amenities</h2>
-        	<section class="">
-        		<ul>
-        		    <li>
-        		        <h4>What a <strong>location</strong></h4>
-        		        <p>Smack dab in downtown Bellingham's shopping &amp; business district. Walk or bike to work and enjoy oh so many lunch options!</p>
-        		    </li>
-        		    <li>
-        		        <h4>Your own personal space</h4>
-        		        <p>Get a dedicated desk to call your own. Spread out your collection of stale pizza crusts (please don't), or connect four monitors to make an IMAX.</p>
-        		    </li>
-        		    <li>
-        		        <h4>Lockers on lock</h4>
-        		        <p>Get your very own locker to stash your non-perishable snacks, valuables and unmentionables whenever we open up our space for an event.</p>
-        		    </li>
-        		    <li>
-        		        <h4>Dog-friendly environment</h4>
-        		        <p>Bring your friendly well-behaved pals in when visiting or sharing the space with us. Our resident mutt, Sammy, needs some company!</p>
-        		    </li>
-        		    <li>
-        		        <h4>Creative, laid-back vibes</h4>
-        		        <p>Coming in to work everyday can actually be enjoyable: our priority is productivity, but we don't mind if you come to work in your pajamas.</p>
-        		    </li>
-        		    <li>
-        		        <h4>Fridge access</h4>
-        		        <p>Meal-prepper? 4pm beer-cracker? Feel free to stuff your stuff on the shelves of our high-tech refrigeration chamber. Beware: unlabeled items may get gobbled up by the fridge goblins.</p>
-        		    </li>
-        		</ul>
-        	</section>
+            <header>
+                <h2></h2>
+            </header>
         </div>
     </div>
-</section> <!-- amenities -->
+</section>
 
 <section id="apply">
     <div id="apply-anchor" data-magellan-target="apply"></div>
