@@ -26,7 +26,7 @@ get_header(); ?>
 <?php while ( have_posts() ) : the_post(); ?>
 <div class="entry-content">
 
-<div id="sub-nav-contain"><span data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" class="mce_SELRES_start"> </span>
+    <div id="sub-nav-contain"><span data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" class="mce_SELRES_start"> </span>
     <div id="nav-contain" data-sticky-container>
       <div class="sticky" id="events-page-nav" data-sticky style="width:100%;" data-margin-top="0" data-margin-bottom="0" data-top-anchor="nav-contain:top" >
         <nav data-magellan data-magellan-expedition="fixed">
@@ -46,14 +46,14 @@ get_header(); ?>
     <div id="mission-anchor" data-magellan-target="mission"></div>
     <div class="section-contain">
         <div class="section-text">
-        	<header>
-        		<p class="subheader">Happy Place</p>
-	            <h2>Club Mission</h2>
-        	</header>
+            <header>
+                <p class="subheader">Happy Place</p>
+                <h2>Club Mission</h2>
+            </header>
             <ol class="mission-list">
-            	<li><p>To provide a place for modern remote workers, freelancers, writers, critical thinkers and the like to cowork, socialize &amp; revel.</p></li>
-            	<li><p>To share our space through public events and event space rental to members and the public.</p></li>
-            	<li><p>To support our downtown Bellingham neighborhood, local arts & artists, human rights and environmental sustainability.</p></li>
+                <li><p>To provide a place for modern remote workers, freelancers, writers, critical thinkers and the like to cowork, socialize &amp; revel.</p></li>
+                <li><p>To share our space through public events and event space rental to members and the public.</p></li>
+                <li><p>To support our downtown Bellingham neighborhood, local arts & artists, human rights and environmental sustainability.</p></li>
             </ol>
             <i class="fa fa-arrow-down"></i>
         </div>
@@ -65,13 +65,13 @@ get_header(); ?>
     <div class="section-contain">
         <div class="section-text">
 
-        	<header>
-        		<p class="subheader">Happy Place</p>
-	            <h2>Key Details</h2>
-        	</header>
+            <header>
+                <p class="subheader">Happy Place</p>
+                <h2>Key Details</h2>
+            </header>
 
-        	<section class="membership-cost">
-        		<div class="section-contain">
+            <section class="membership-cost">
+                <div class="section-contain">
                     <h3>Membership Cost</h3>
                     <p class="dues">Annual membership dues <br><strong class="cost">$75</strong></p>
                     <p class="plus-token">*Optionally bring one small annual token sacrifice to the keep the space happy - hot sauce, coffee mug, small plant, www.you-get-the-idea.com.</p>
@@ -94,7 +94,7 @@ get_header(); ?>
                         </ul>
                     </section>
                 </div> <!-- section-contain -->
-        	</section>
+            </section>
 
 
             <section class="benefits">
@@ -133,47 +133,47 @@ get_header(); ?>
     <div id="cowork-anchor" data-magellan-target="cowork"></div>
     <div class="section-contain" data-equalizer="cowork" data-equalize-on="medium">
         <div class="section-text">
-        	<header>
-        		<p class="subheader">Members Only</p>
-	            <h2>Coworking</h2>
-	            <p class="intro">The Happy Place offers a coworking experience unlike anywhere else. We are a dog-friendly space with giraffe-height ceilings, a neon-sign mural, musical ambiance, and occasional ping-pong skirmishes. This is coworking for creative workers and critical thinkers who don’t care about fuddy-duddy office antics. As long as you’re respectful, you can be as comfortable as you damn well please.</p>
-        	</header>
+            <header>
+                <p class="subheader">Members Only</p>
+                <h2>Coworking</h2>
+                <p class="intro">The Happy Place offers a coworking experience unlike anywhere else. We are a dog-friendly space with giraffe-height ceilings, a neon-sign mural, musical ambiance, and occasional ping-pong skirmishes. This is coworking for creative workers and critical thinkers who don’t care about fuddy-duddy office antics. As long as you’re respectful, you can be as comfortable as you damn well please.</p>
+            </header>
             <section class="pricing-access">
-            	<header>
-            		<h3>Pricing &amp; Access</h3>
-            	</header>
-		        <ul>
-		            <li data-equalizer-watch="cowork">
-		                <div class="contain">
-		                	<h4>Day Pass</h4>
-		                	<p class="hours">8am &ndash; 6pm access</p>
-		                	<p class="days">Mon. &ndash; Fri.</p>
-		                	<p class="cost members">$10/day</p>
-		                	<p class="cost-sub">$15/day for guests</p>
-		                </div>
-		            </li>
-		            <li data-equalizer-watch="cowork">
-		                <div class="contain">
-		                	<h4>Drop-in</h4>
-		                	<p class="hours">8am &ndash; 6pm access</p>
-		                	<p class="days">Mon. &ndash; Fri.</p>
-		                	<p class="cost">$75/mo</p>
-		                	<p class="cost-sub">Add locker for $10/mo</p>
-		                </div>
-		            </li>
-		            <li data-equalizer-watch="cowork">
-		                <div class="contain">
-		                	<h4>Dedicated Desk</h4>
-		                	<p class="hours">24/7 Access</p>
-		                	<p class="days">All Days*</p>
-		                	<p class="cost">$250/mo</p>
-		                	<p class="cost-sub">Other perks included.</p>
-		                </div>
-		            </li>
-		        </ul>
-		        <div class="rate-extras">
-		        	<p>*Dedicated desk renters may have restricted access certain evenings/weekends when private events are scheduled. <br>A calendar of upcoming event bookings will be made available.</p>
-		        </div>
+                <header>
+                    <h3>Pricing &amp; Access</h3>
+                </header>
+                <ul>
+                    <li data-equalizer-watch="cowork">
+                        <div class="contain">
+                            <h4>Day Pass</h4>
+                            <p class="hours">8am &ndash; 6pm access</p>
+                            <p class="days">Mon. &ndash; Fri.</p>
+                            <p class="cost members">$10/day</p>
+                            <p class="cost-sub">$15/day for guests</p>
+                        </div>
+                    </li>
+                    <li data-equalizer-watch="cowork">
+                        <div class="contain">
+                            <h4>Drop-in</h4>
+                            <p class="hours">8am &ndash; 6pm access</p>
+                            <p class="days">Mon. &ndash; Fri.</p>
+                            <p class="cost">$75/mo</p>
+                            <p class="cost-sub">Add locker for $10/mo</p>
+                        </div>
+                    </li>
+                    <li data-equalizer-watch="cowork">
+                        <div class="contain">
+                            <h4>Dedicated Desk</h4>
+                            <p class="hours">24/7 Access</p>
+                            <p class="days">All Days*</p>
+                            <p class="cost">$250/mo</p>
+                            <p class="cost-sub">Other perks included.</p>
+                        </div>
+                    </li>
+                </ul>
+                <div class="rate-extras">
+                    <p>*Dedicated desk renters may have restricted access certain evenings/weekends when private events are scheduled. <br>A calendar of upcoming event bookings will be made available.</p>
+                </div>
             </section> <!-- pricing-access -->
             <section id="amenities">
                 <div id="amenities-anchor" data-magellan-target="amenities"></div>
@@ -182,12 +182,12 @@ get_header(); ?>
                         <header>
                             <h3>Office Amenities</h3>
                         </header>
-                        <section class="drop-in-amenities"  >
+                        <section class="drop-in-amenities"   data-equalizer-watch="cowork-amenities">
                             <header>
                                 <h4><strong>Day Pass / Drop-in</strong> <br> General Space Amenities</h4>
                                 <p class="subheader">Use the space for work-related activities during business hours.</p>
                             </header>
-                            <ul data-equalizer-watch="cowork-amenities">
+                            <ul>
                                 <li><p>Downstairs space access.</p></li>
                                 <li><p>Wireless internet access.</p></li>
                                 <li><p>Indoor bicycle parking.</p></li>
@@ -198,12 +198,12 @@ get_header(); ?>
                                 <li><p>Free drip coffee.</p></li>
                             </ul>
                         </section> <!-- drop-in-amenities -->
-                        <section class="dedicated-desk"  >
+                        <section class="dedicated-amenities" data-equalize-watchr="cowork-amenities">
                             <header>
                                 <h4><strong>Dedicated Desk</strong><br>Additional Amenities</h4>
                                 <p class="subheader">The perfect desk-away-from-home, available when you need it. All the benefits of daytime access, plus:</p>
                             </header>
-                            <ul data-equalize-watchr="cowork-amenities">
+                            <ul >
                                 <li><p>Your very own desk.</p></li>
                                 <li><p>Wired internet access.</p></li>
                                 <li><p>Access via personal keycode.</p></li>
@@ -215,19 +215,8 @@ get_header(); ?>
                 </div>
             </section> <!-- amenities -->
         </div>
-    </div>	
+    </div>  
 </section> <!-- #cowork -->
-
-<section id="club-rules">
-    <div id="club-rules-anchor" data-magellan-target="club-rules"></div>
-    <div class="section-contain">
-        <div class="section-text">
-            <header>
-                <h2></h2>
-            </header>
-        </div>
-    </div>
-</section>
 
 <section id="apply">
     <div id="apply-anchor" data-magellan-target="apply"></div>
@@ -236,7 +225,7 @@ get_header(); ?>
         <p>Use the form below to start the application process.</p>
         <ul class="accordion" data-accordion="" data-allow-all-closed="true">
             <li class="accordion-item" data-accordion-item="">
-                <a href="#" class="accordion-title button cta"><i class="fa fa-hand-o-right"></i>Join the Happy Place <i class="fa fa-hand-o-left"></i></a>
+                <a href="#" class="accordion-title button cta">Join the Happy Place</i></a>
                 <div class="accordion-content" data-tab-content="">
                  <script type="text/javascript" src="https://form.jotform.com/jsform/82375349502156"></script>
                 </div>
@@ -244,6 +233,18 @@ get_header(); ?>
         </ul>
     </div>
 </section> <!-- apply -->
+
+<!-- <section id="club-rules">
+    <div id="club-rules-anchor" data-magellan-target="club-rules"></div>
+    <div class="section-contain">
+        <div class="section-text">
+            <header>
+                <h2></h2>
+            </header>
+        </div>
+    </div>
+</section> -->
+
 	
 </div> <!-- entry-content -->
 

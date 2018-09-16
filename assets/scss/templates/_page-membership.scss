@@ -87,6 +87,7 @@
 	#mission {
 		background: $blue;
 		background-color: $white;
+		padding: 12em 0;
 		.section-contain {
 			padding: 0;
 			max-width: 100%;
@@ -178,6 +179,7 @@
 
 	#details {
 		background-color: $red;
+		padding: 12em 0;
 		// color: $white;
 		h2 {
 			color: $white;
@@ -282,13 +284,27 @@
 		}
 		section.joining {
 			@include breakpoint(large) {
-				padding: 2em 8em;
+				padding: 2em 12em;
+			}
+			p {
+				font-size: 	1.1em;
+			}
+		}
+		section.criteria {
+			@include breakpoint(large) {
+				padding: 2em 12em;
+			}
+			p {
+				text-align: justify;
+				font-size: .9em;
+				margin: 1.75em 0 1.5em;
 			}
 		}
 	}
 
 	#cowork {
 		background-color: $blue;
+		padding: 12em 0;
 		header {
 			padding-bottom: 2em;
 			margin: 0 10% 2em;
@@ -407,20 +423,22 @@
 			}
 			section {
 				@include breakpoint(large) {
-					@include grid-column(6);
+					@include grid-column(48%);
+					// @include grid-column-gutter(4em);
 					font-size: 1.25em;
 				}
 				header {
 					padding: 1em 0;
+					margin-bottom: 0;
 					h4 {
-						// font-size: 1.85em;
-						color: $white;
 						text-transform: uppercase;
 						strong {
-							font-family: $serif;
-							text-transform: none;
-							font-weight: 100;
-							color: $black;
+							font-size: 1.85em;
+							color: $red;
+							// font-family: $serif;
+							// text-transform: none;
+							// font-weight: 100;
+							// color: $black;
 						}
 					}
 					p.subheader {
@@ -435,11 +453,20 @@
 					background-color: transparent;
 					margin: 0;
 					border-bottom: solid 1px $light-gray;
+					&:first-child {
+						border-top: solid 3px $light-gray;
+					}
+					p {
+						margin: 0;
+					}
 					// padding: 8em;
 				} /* li */
 			} /* ul */
-			section.drop-in-amenities {
-				// background-color: $white;
+			section.drop-in-amenities, section.dedicated-amenities {
+				background-color: $white;
+				@include breakpoint(large) {
+					min-height: 800px;
+				}
 			}
 		} /* amenities */
 	} /* coworking */
@@ -449,13 +476,23 @@
 			color: $white;
 		}
 		.section-contain {
-			padding: 4em;
+			padding: 8em 4em;
 		}
 		.accordion-title {
 			background-color: darken($blue, 5%);
+			font-weight: 100;
+			&:hover {
+				background-color: darken($blue, 15%);
+			}
 		}
 		.accordion-content {
 			background-color: darken($blue, 10%);
+		}
+		ul.accordion {
+			margin: 4em 0;
+			li {
+				margin: 0;
+			}
 		}
 	} /* cta */
 
