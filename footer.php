@@ -47,18 +47,7 @@
 
 </script>
 
-<script type="text/javascript">
-    var feed = new Instafeed({
-        get: 'user',
-        target: '#instafeed',
-        userID: '8230458451',
-        clientId: '37976a488ec9413ca96d7ad46600d0d5'
-		accessToken: '175112416.59aee0f.f85d1cd2330140e8b3ff1904fc7b2efe',
-        limit: '12',
-        template: '<a href="{{link}}" target="_blank"><img class="insta-img" src="{{image}}" title="{{caption}}"/></a>'
-    });
-    feed.run();
-</script>
+
 
 <?php do_action( 'foundationpress_before_closing_body' ); ?>
 </body>

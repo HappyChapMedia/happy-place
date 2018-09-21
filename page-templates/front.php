@@ -63,7 +63,6 @@ get_header(); ?>
 	        </div>
 	    </div>
 	</section><!-- membership-lead -->
-
 	
 	<section id="location-map">
 	    <div id="location-map-anchor" data-magellan-target="location-map"></div>
@@ -79,15 +78,14 @@ get_header(); ?>
 	    </div><!-- section-contain -->
 	</section><!-- location-map -->
 
-	<section id="instafeed">
+	<section class="social-feed">
 		<div class="section-contain">
 			<h2><a href="http://www.instagram.com/happyplacebellingham/" target="_blank" title=" Follow @happyplacebellingham on Instagram "><?php get_template_part('assets/images/inline', 'social-instagram.svg') ?></a></h2>
+			<div id="instafeed"></div>
 		</div>
 	</section>
 	
 </div> <!-- entry-content -->
-
-
 
 <?php endwhile;?>
 <?php do_action( 'foundationpress_after_content' ); ?>
