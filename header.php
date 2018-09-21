@@ -31,10 +31,10 @@
 		<script type="text/javascript">
 		    var feed = new Instafeed({
 		        get: 'user',
-		        target: '#instafeed',
 		        userID: '8230458451',
 		        clientId: '1db332138012480885782f465daec597'
-				accessToken: '175112416.59aee0f.f85d1cd2330140e8b3ff1904fc7b2efe',
+				accessToken: 'a9fa3a559d5541a2899e3d084a528dd7',
+		        target: '#instafeed',
 		        limit: '12',
 		        template: '<a href="{{link}}" target="_blank"><img class="insta-img" src="{{image}}" title="{{caption}}"/></a>'
 		    });
