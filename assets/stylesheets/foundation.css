@@ -7729,9 +7729,9 @@ body.lb-disable-scrolling {
         #location-map #map:last-child:not(:first-child) {
           float: right; } }
 
-section#instafeed .section-contain {
+section.social-feed .section-contain {
   max-width: 100%; }
-  section#instafeed .section-contain h2 svg {
+  section.social-feed .section-contain h2 svg {
     width: 50px; }
 
 .entry-content {
@@ -8031,12 +8031,13 @@ section ul {
   section ul li {
     list-style: none;
     background: #fefefe;
-    padding: 1em 1.5em .75em;
     display: inline-block;
     width: 100%;
-    margin: .5em 0; }
+    margin: .5em 0;
+    padding: .5em .25em; }
     @media screen and (min-width: 40em) {
       section ul li {
+        padding: 1em 1.5em .75em;
         margin: 1em 0; } }
     section ul li h4 {
       margin: 0; }
@@ -8583,7 +8584,8 @@ ul.accordion {
   .page-template-page-membership #sub-nav-contain {
     z-index: 100;
     display: block;
-    background-color: #ec5840; }
+    background-color: #ec5840;
+    display: none !important; }
     .page-template-page-membership #sub-nav-contain nav {
       background-color: #ec5840; }
     .page-template-page-membership #sub-nav-contain a {
@@ -8744,7 +8746,11 @@ ul.accordion {
     .page-template-page-membership #details section {
       background-color: #fefefe;
       font-size: 1.4em;
-      padding: 2em; }
+      padding: 1em;
+      margin: 2em 0; }
+      @media screen and (min-width: 40em) {
+        .page-template-page-membership #details section {
+          padding: 2em; } }
       @media screen and (min-width: 75em) {
         .page-template-page-membership #details section {
           margin: 2em 8em; } }
@@ -8811,18 +8817,22 @@ ul.accordion {
         .page-template-page-membership #details section.profit h3 strong {
           font-family: "abril-fatface", "Garamond Bold", Times, serif;
           font-weight: 100; }
-    @media screen and (min-width: 64em) {
+    @media screen and (min-width: 90em) {
       .page-template-page-membership #details section.joining {
         padding: 2em 12em; } }
-    .page-template-page-membership #details section.joining p {
-      font-size: 1.1em; }
-    @media screen and (min-width: 64em) {
+    @media screen and (min-width: 40em) {
+      .page-template-page-membership #details section.joining p {
+        font-size: 1.1em; } }
+    @media screen and (min-width: 90em) {
       .page-template-page-membership #details section.criteria {
         padding: 2em 12em; } }
     .page-template-page-membership #details section.criteria p {
+      font-size: .7em;
       text-align: justify;
-      font-size: .9em;
-      margin: 1.75em 0 1.5em; }
+      padding: 0 1em; }
+      @media screen and (min-width: 40em) {
+        .page-template-page-membership #details section.criteria p {
+          margin: 1.75em 0 1.5em; } }
   .page-template-page-membership #cowork {
     background-color: #54c2b6;
     padding: 12em 0;
@@ -8835,14 +8845,13 @@ ul.accordion {
       .page-template-page-membership #cowork header h2 {
         color: #fefefe; }
       .page-template-page-membership #cowork header p.intro {
-        color: #fefefe;
-        font-size: 1.5em; }
+        color: #fefefe; }
+        @media screen and (min-width: 40em) {
+          .page-template-page-membership #cowork header p.intro {
+            font-size: 1.5em; } }
     .page-template-page-membership #cowork h3 {
       color: #fefefe;
       border-bottom: solid 1px #fefefe; }
-    .page-template-page-membership #cowork section.pricing-access .rate-extras {
-      padding: 2em 4em;
-      margin-bottom: 2em; }
     .page-template-page-membership #cowork section.pricing-access ul {
       max-width: 75rem;
       margin-left: auto;
@@ -8895,7 +8904,7 @@ ul.accordion {
       max-width: 75rem;
       margin-left: auto;
       margin-right: auto;
-      padding: 2em 0; }
+      padding: 2em 4em; }
       .page-template-page-membership #cowork section.pricing-access .rate-extras::before, .page-template-page-membership #cowork section.pricing-access .rate-extras::after {
         content: ' ';
         display: table; }
@@ -8956,31 +8965,33 @@ ul.accordion {
         clear: both; }
     .page-template-page-membership #cowork #amenities {
       /* ul */ }
-      @media screen and (min-width: 64em) {
-        .page-template-page-membership #cowork #amenities section {
-          width: 48%;
-          float: left;
-          padding-left: 0.625rem;
-          padding-right: 0.625rem;
-          font-size: 1.25em; } }
+      .page-template-page-membership #cowork #amenities section {
+        margin: 2em 0; }
+        @media screen and (min-width: 64em) {
+          .page-template-page-membership #cowork #amenities section {
+            width: 48%;
+            float: left;
+            padding-left: 0.625rem;
+            padding-right: 0.625rem;
+            font-size: 1.25em; } }
   @media screen and (min-width: 64em) and (min-width: 40em) {
     .page-template-page-membership #cowork #amenities section {
       padding-left: 0.9375rem;
       padding-right: 0.9375rem; } }
-      @media screen and (min-width: 64em) {
-          .page-template-page-membership #cowork #amenities section:last-child:not(:first-child) {
-            float: right; } }
-      .page-template-page-membership #cowork #amenities section header {
-        padding: 1em 0;
-        margin-bottom: 0; }
-        .page-template-page-membership #cowork #amenities section header h4 {
-          text-transform: uppercase; }
-          .page-template-page-membership #cowork #amenities section header h4 strong {
-            font-size: 1.85em;
-            color: #ec5840; }
-        .page-template-page-membership #cowork #amenities section header p.subheader {
-          color: #0a0a0a;
-          font-size: .8em; }
+        @media screen and (min-width: 64em) {
+            .page-template-page-membership #cowork #amenities section:last-child:not(:first-child) {
+              float: right; } }
+        .page-template-page-membership #cowork #amenities section header {
+          padding: 1em 0;
+          margin-bottom: 0; }
+          .page-template-page-membership #cowork #amenities section header h4 {
+            text-transform: uppercase; }
+            .page-template-page-membership #cowork #amenities section header h4 strong {
+              font-size: 1.85em;
+              color: #ec5840; }
+          .page-template-page-membership #cowork #amenities section header p.subheader {
+            color: #0a0a0a;
+            font-size: .8em; }
       .page-template-page-membership #cowork #amenities ul {
         background-color: #fefefe;
         /* li */ }
@@ -9008,6 +9019,9 @@ ul.accordion {
       font-weight: 100; }
       .page-template-page-membership #apply .accordion-title:hover {
         background-color: #35958a; }
+      @media screen and (max-width: 39.9375em) {
+        .page-template-page-membership #apply .accordion-title {
+          font-weight: 600; } }
     .page-template-page-membership #apply .accordion-content {
       background-color: #3ca79c; }
     .page-template-page-membership #apply ul.accordion {

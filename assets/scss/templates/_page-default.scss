@@ -75,11 +75,12 @@ section {
     li {
       list-style: none;
       background: $white;
-      padding: 1em 1.5em .75em;
       display: inline-block;
       width: 100%;
       margin: .5em 0;
+      padding: .5em .25em;
       @include breakpoint(medium) {
+        padding: 1em 1.5em .75em;
         margin: 1em 0;
       }
         

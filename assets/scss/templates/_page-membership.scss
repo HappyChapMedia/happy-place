@@ -13,6 +13,7 @@
 		z-index: 100;
 		display: block;
 		background-color: darken($red, 0%);
+		@include hide-for(small);
 		.nav-contain {
 		}
 		nav {
@@ -193,7 +194,11 @@
 		section {
 			background-color: $white;
 			font-size: 1.4em;
-			padding: 2em;
+			padding: 1em;
+			margin: 2em 0;
+			@include breakpoint(medium) {
+				padding: 2em;
+			}
 			@include breakpoint(xlarge) {
 				margin: 2em 8em;
 			}
@@ -283,21 +288,26 @@
 
 		}
 		section.joining {
-			@include breakpoint(large) {
+			@include breakpoint(xxlarge) {
 				padding: 2em 12em;
 			}
 			p {
-				font-size: 	1.1em;
+				@include breakpoint(medium) {
+					font-size: 	1.1em;
+				}
 			}
 		}
 		section.criteria {
-			@include breakpoint(large) {
+			@include breakpoint(xxlarge) {
 				padding: 2em 12em;
 			}
 			p {
+				font-size: .7em;
 				text-align: justify;
-				font-size: .9em;
-				margin: 1.75em 0 1.5em;
+				padding: 0 1em;
+				@include breakpoint(medium) {
+					margin: 1.75em 0 1.5em;
+				}
 			}
 		}
 	}
@@ -316,7 +326,10 @@
 			}
 			p.intro {
 				color: $white;
-				font-size: 1.5em;
+				@include breakpoint(medium) {
+					font-size: 1.5em;
+
+				}
 			}
 		}
 		h3 {
@@ -325,11 +338,6 @@
 		}
 
 		section.pricing-access {
-			.rate-extras {
-				// background-color: $white;
-				padding: 2em 4em;
-				margin-bottom: 2em;
-			}
 			ul {
 				@include grid-row();
 				li {
@@ -375,7 +383,7 @@
 			.rate-extras {
 				// @include grid-column(12);
 				@include grid-row();
-				padding: 2em 0;
+				padding: 2em 4em;
 				.rate-contain {
 					margin: 1em 0;
 					@include breakpoint(small only){
@@ -422,6 +430,7 @@
 				// color: $blue;
 			}
 			section {
+				margin: 2em 0;
 				@include breakpoint(large) {
 					@include grid-column(48%);
 					// @include grid-column-gutter(4em);
@@ -483,6 +492,9 @@
 			font-weight: 100;
 			&:hover {
 				background-color: darken($blue, 15%);
+			}
+			@include breakpoint(small only) {
+				font-weight: 600;
 			}
 		}
 		.accordion-content {
