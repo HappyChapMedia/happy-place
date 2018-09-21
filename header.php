@@ -32,8 +32,8 @@
 		    var feed = new Instafeed({
 		        get: 'user',
 		        userID: '8230458451',
-		        clientId: '1db332138012480885782f465daec597'
-				accessToken: 'a9fa3a559d5541a2899e3d084a528dd7',
+		        clientId: '37976a488ec9413ca96d7ad46600d0d5'
+				accessToken: 'f85d1cd2330140e8b3ff1904fc7b2efe',
 		        target: '#instafeed',
 		        limit: '12',
 		        template: '<a href="{{link}}" target="_blank"><img class="insta-img" src="{{image}}" title="{{caption}}"/></a>'
